@@ -1,0 +1,91 @@
+module.exports = {
+  root: true,
+  env: {
+    browser: true,
+    node: true,
+    es2021: true,
+  },
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 2022,
+    sourceType: 'module',
+  },
+  extends: [
+    'plugin:prettier/recommended',
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+  ],
+  plugins: [],
+  rules: {
+    indent: ['error', 2],
+    'linebreak-style': ['error', 'unix'],
+    quotes: ['error', 'single'],
+    semi: ['error', 'never'],
+    camelcase: 'error',
+    'no-template-curly-in-string': 1,
+    'accessor-pairs': 1,
+    'consistent-return': 1,
+    curly: 2,
+    'default-case': 2,
+    'dot-location': ['error', 'property'],
+    eqeqeq: 2,
+    'no-alert': 1,
+    'no-else-return': 1,
+    'no-empty-function': 1,
+    'no-empty-pattern': 1,
+    '@typescript-eslint/no-non-null-assertion': 0,
+  },
+  overrides: [
+    {
+      files: ['packages/*/components/**/*.vue', 'docs/**/*.vue'],
+      env: {
+        browser: true,
+        node: true,
+        es2021: true,
+        'vue/setup-compiler-macros': true,
+      },
+      parserOptions: {
+        ecmaVersion: 2022,
+        parser: '@typescript-eslint/parser',
+        sourceType: 'module',
+      },
+      extends: [
+        'plugin:vue/vue3-essential',
+        'plugin:vue/vue3-strongly-recommended',
+        'plugin:vue/vue3-recommended',
+      ],
+      plugins: ['vue', 'prettier', '@typescript-eslint'],
+      rules: {
+        'vue/html-self-closing': [
+          'error',
+          {
+            html: {
+              void: 'always',
+              normal: 'never',
+              component: 'always',
+            },
+            svg: 'always',
+            math: 'always',
+          },
+        ],
+        'vue/max-attributes-per-line': 'off',
+        'vue/singleline-html-element-content-newline': 'off',
+        'vue/no-v-html': 'off',
+        'vue/multi-word-component-names': 'off',
+        'vue/no-use-v-if-with-v-for': 'off',
+        'no-unused-vars': 'off',
+        'no-console': 'off',
+        'no-undef': 'off',
+        '@typescript-eslint/no-unused-vars': 'error',
+        '@typescript-eslint/no-explicit-any': 'error',
+      },
+    },
+    {
+      files: ['docs/**/*.vue'],
+      rules: {
+        'no-alert': 0,
+      },
+    },
+  ],
+}

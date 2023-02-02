@@ -1,0 +1,5 @@
+$namespace: 'c' !default; // 命名空间
+$common-separator: '-' !default; // 连接命名空间与组件名称
+$element-separator: '__' !default; // 紧接 子(子孙)元素
+$modifier-separator: '--' !default; // 紧接修饰词
+$state-prefix: 'c-is' !default; // 状态前缀

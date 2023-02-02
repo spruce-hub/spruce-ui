@@ -1,0 +1,42 @@
+{
+  "name": "@spruce/ui-docs",
+  "private": true,
+  "version": "1.0.0",
+  "description": "组件库使用指南",
+  "scripts": {
+    "dev": "vuepress dev",
+    "build:docs": "vuepress build",
+    "changelog": "conventional-changelog -n '../changelog.config.js' -i CHANGELOG.md -s -r 0 -k ./package.json --commit-path ./"
+  },
+  "keywords": [
+    "飞讯云杉前端",
+    "Spruce Hub",
+    "Spruce UI"
+  ],
+  "author": "Spruce FE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spruce-hub/spruce-ui.git",
+    "directory": "docs"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "pnpm": ">=7"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@spruce/cui": "workspace:^0.0.0",
+    "@spruce/icons": "workspace:^0.0.0",
+    "@spruce/mui": "workspace:^0.0.0",
+    "@vuepress/client": "2.0.0-beta.60",
+    "@vuepress/plugin-register-components": "2.0.0-beta.60",
+    "@vuepress/plugin-search": "2.0.0-beta.60",
+    "vue": "^3.2.45",
+    "vuepress": "2.0.0-beta.60",
+    "vuepress-plugin-search-pro": "2.0.0-beta.171",
+    "vuepress-theme-hope": "2.0.0-beta.171"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "name": "spruce-ui",
+  "private": true,
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "dev": "pnpm -C preview dev",
+    "build": "pnpm -r exec rimraf dist && pnpm -r --parallel build && pnpm -C build start",
+    "docs:dev": "pnpm -C docs dev",
+    "changelog": "conventional-changelog -n './changelog.config.js' -i CHANGELOG.md -s -r 0 -k './packages/cui'",
+    "changelogs": "pnpm -r --parallel changelog && pnpm changelog && pnpm prettier",
+    "prettier": "prettier --config .prettierrc --write ./**/*.md",
+    "lint": "eslint --fix **/*.{js,ts,jsx,tsx,vue}",
+    "vitest": "vitest",
+    "vitest:c": "vitest run --coverage",
+    "vitest:u": "vitest --coverage --ui",
+    "create:comp": "node -r @esbuild-kit/cjs-loader ./create-component.ts",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "飞讯云杉前端",
+    "Spruce Hub",
+    "Spruce UI"
+  ],
+  "author": "Spruce FE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spruce-hub/spruce-ui.git"
+  },
+  "homepage": "https://github.com/spruce-hub/spruce-ui",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "pnpm": ">=7"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.0",
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@esbuild-kit/cjs-loader": "^2.4.1",
+    "@types/node": "18.11.18",
+    "@types/rimraf": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.0",
+    "@vitest/coverage-c8": "^0.28.3",
+    "@vitest/ui": "^0.28.3",
+    "@vue/compiler-dom": "3.2.45",
+    "@vue/test-utils": "^2.2.8",
+    "@spruce/cui": "workspace:^0.0.0",
+    "@spruce/icons": "workspace:^0.0.0",
+    "@spruce/mui": "workspace:^0.0.0",
+    "c8": "^7.12.0",
+    "chalk": "^5.2.0",
+    "commitizen": "^4.3.0",
+    "compare-func": "^2.0.0",
+    "consola": "^2.15.3",
+    "conventional-changelog-angular": "^5.0.13",
+    "conventional-changelog-cli": "^2.2.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.0.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.9.0",
+    "fs-extra": "^11.1.0",
+    "husky": "^8.0.3",
+    "jsdom": "^21.1.0",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.3",
+    "rimraf": "^4.1.2",
+    "typescript": "^4.9.5",
+    "vite": "^4.0.4",
+    "vitest": "^0.28.3",
+    "vue": "^3.2.45"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,vue}": "eslint --fix"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  }
+}
