@@ -9,11 +9,11 @@
     "changelog": "conventional-changelog -n './changelog.config.js' -i CHANGELOG.md -s -r 0 -k './packages/cui'",
     "changelogs": "pnpm -r --parallel changelog && pnpm changelog && pnpm prettier",
     "prettier": "prettier --config .prettierrc --write ./**/*.md",
-    "lint": "eslint --fix **/*.{js,ts,jsx,tsx,vue}",
+    "lint": "eslint . --ext .js,.ts,.jsx,.tsx,.vue --fix",
     "vitest": "vitest",
     "vitest:c": "vitest run --coverage",
     "vitest:u": "vitest --coverage --ui",
-    "create:comp": "node -r @esbuild-kit/cjs-loader ./create-component.ts",
+    "create:comp": "node -r @esbuild-kit/cjs-loader ./scripts/create-component.ts",
     "prepare": "husky install"
   },
   "keywords": [
@@ -75,7 +75,7 @@
     "vue": "^3.2.45"
   },
   "lint-staged": {
-    "*.{ts,tsx,vue}": "eslint --fix"
+    "*.{js,ts,jsx,tsx,vue}": "eslint --fix"
   },
   "config": {
     "commitizen": {

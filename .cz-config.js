@@ -42,6 +42,7 @@ module.exports = {
     { name: 'cli' }, // 命令行
     { name: 'package' }, // 依赖
     { name: 'types' }, // 类型声明
+    { name: 'script' }, // 类型声明
     { name: 'other' }, // 其他
   ],
   // 选择以下类型时覆盖默认提交范围
