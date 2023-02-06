@@ -1,51 +1,53 @@
 module.exports = {
-  /** 提交类型
-   * -------------------------- */
   types: [
-    { value: 'feat', name: 'feat: 新增功能' },
-    { value: 'fix', name: 'fix: 修复漏洞' },
-    { value: 'refactor', name: 'refactor: 代码重构' },
-    { value: 'perf', name: 'perf: 性能优化' },
-    { value: 'test', name: 'test: 添加、修改单元测试' },
-    { value: 'style', name: 'style: 代码格式化' },
-    { value: 'chore', name: 'chore: 配置变更' },
-    { value: 'release', name: 'release: 发布版本' },
-    { value: 'build', name: 'build: 构建流程变更' },
-    { value: 'ci', name: 'ci: CI 配置变更' },
-    { value: 'revert', name: 'revert: 代码回滚' },
-    { value: 'docs', name: 'docs: 新增、修改文档' },
+    { value: 'feat', name: 'feat:     A new feature' },
+    { value: 'fix', name: 'fix:      A bug fix' },
+    {
+      value: 'refactor',
+      name: 'refactor: A code change that neither fixes a bug nor adds a feature',
+    },
+    { value: 'perf', name: 'perf:     A code change that improves performance' },
+    { value: 'test', name: 'test:     Adding missing tests' },
+    {
+      value: 'style',
+      name: 'style:    Changes that do not affect the meaning of the code',
+    },
+    {
+      value: 'chore',
+      name: 'chore:    Changes to the build process or auxiliary tools',
+    },
+    { value: 'release', name: 'release:  Release version' },
+    { value: 'build', name: 'build:    Changes project build' },
+    { value: 'ci', name: 'ci:       Change CI' },
+    { value: 'revert', name: 'revert:   Revert to a commit' },
+    { value: 'docs', name: 'docs:     Documentation only changes' },
   ],
 
   /** 提交消息
    * -------------------------- */
   messages: {
-    type: '选择本次提交的类型:',
-    scope: '选择本次更改影响的范围(可选):',
-    customScope: '输入自定义影响范围:',
-    subject: '输入本次修改的描述:\n',
-    body: '输入本次修改的详细描述,使用"|"换行(可选):\n',
-    breaking: '列出重大更改(可选):\n',
-    footer: '列举出所有变更的 ISSUES CLOSED(可选):\n',
-    confirmCommit: '确认提交?',
+    type: "Select the type of change that you're committing:",
+    scope: 'Denote the SCOPE of this change (optional):',
+    customScope: 'Denote the SCOPE of this change:',
+    subject: 'Write a SHORT, IMPERATIVE tense description of the change:\n',
+    body: 'Provide a LONGER description of the change (optional). Use "|" to break new line:\n',
+    breaking: 'List any BREAKING CHANGES (optional):\n',
+    footer: 'List any ISSUES CLOSED by this change (optional):\n',
+    confirmCommit: 'Are you sure you want to proceed with the commit above?',
   },
 
-  subjectLimit: 100, // 字符限制
-  // typePrefix: '[', // 提交类型前缀
-  // typeSuffix: ']', // 提交类型后缀
-  // subjectSeparator: '：', // 分隔符
-  // 默认提交范围
+  subjectLimit: 100,
+  // typePrefix: '[',
+  // typeSuffix: ']',
+  // subjectSeparator: '：',
+
   scopes: [
-    { name: 'component' }, // 组件
-    { name: 'style' }, // 样式
-    { name: 'plugin' }, // 插件
-    { name: 'lib' }, // 库
-    { name: 'cli' }, // 命令行
-    { name: 'package' }, // 依赖
-    { name: 'types' }, // 类型声明
-    { name: 'script' }, // 类型声明
-    { name: 'other' }, // 其他
+    { name: 'component' },
+    { name: 'style' },
+    { name: 'script' },
+    { name: 'other' },
   ],
-  // 选择以下类型时覆盖默认提交范围
+
   // scopeOverrides: {
   //   fix: [
   //     {name: 'merge'},
@@ -54,15 +56,16 @@ module.exports = {
   //     {name: 'unitTest'}
   //   ]
   // },
-  allowCustomScopes: true, // 允许自定义范围
-  allowBreakingChanges: ['feat', 'fix', 'refactor'], // 需描述重大更改
-  // skipQuestions: ['body', 'footer'], // 跳过
-  appendBranchNameToCommitMessage: true, // 附加提交分支
-  allowTicketNumber: false, // 是否允许页脚
-  ticketNumberPrefix: 'TICKET-', // 页脚代码的自定义前缀
+
+  allowCustomScopes: true,
+  allowBreakingChanges: ['feat', 'fix', 'refactor'],
+  // skipQuestions: ['body', 'footer'],
+  appendBranchNameToCommitMessage: true,
+  allowTicketNumber: false,
+  ticketNumberPrefix: 'TICKET-',
   isTicketNumberRequired: false,
   ticketNumberRegExp: '\\d{1,5}',
-  breaklineChar: '|', // "|"换行,只有body 和 footer生效
+  breaklineChar: '|',
   // breakPrefix: 'BREAKING CHANGE:',
   // footerPrefix : 'ISSUES CLOSED:',
   // askForBreakingChangeFirst : true,
