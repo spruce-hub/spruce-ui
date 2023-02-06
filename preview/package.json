@@ -7,7 +7,7 @@
     "build:test": "vue-tsc --noEmit && cross-env VUE_APP_MODE=test vite build"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",

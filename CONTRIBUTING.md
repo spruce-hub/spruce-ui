@@ -2,7 +2,7 @@
 
 ## 本地环境
 
-- NodeJS >= 16
+- NodeJS >= 18
 - pnpm >= 7
 - git >= 2
 
