@@ -8,6 +8,7 @@ importers:
       '@commitlint/cli': ^17.4.2
       '@commitlint/config-conventional': ^17.4.2
       '@esbuild-kit/cjs-loader': ^2.4.1
+      '@noahyu/eslint-config-vue': ^1.1.0
       '@spruce/cui': workspace:^0.0.0
       '@spruce/icons': workspace:^0.0.0
       '@spruce/mui': workspace:^0.0.0
@@ -49,6 +50,7 @@ importers:
       '@commitlint/cli': 17.4.2
       '@commitlint/config-conventional': 17.4.2
       '@esbuild-kit/cjs-loader': 2.4.1
+      '@noahyu/eslint-config-vue': 1.1.0_ixt4l6ptf47gmhhuxcve5dmsda
       '@spruce/cui': link:packages/cui
       '@spruce/icons': link:packages/icons
       '@spruce/mui': link:packages/mui
@@ -2563,6 +2565,26 @@ packages:
       non-layered-tidy-tree-layout: 2.0.2
     dev: true
 
+  /@noahyu/eslint-config-vue/1.1.0_ixt4l6ptf47gmhhuxcve5dmsda:
+    resolution: {integrity: sha512-D9t+9SGgrpGwra/qXaoAg8PIf+pjKZ+jmbGiDTE7MTixSCASJAqvNLRyadNrEjem4FN3DpmsW+JMT4jBJjcULQ==}
+    engines: {node: '>=16.0.0', pnpm: '>=7'}
+    peerDependencies:
+      eslint: '>=8.33.0'
+      prettier: '>=2.8.0'
+    dependencies:
+      '@typescript-eslint/eslint-plugin': 5.50.0_go4drrxstycfikanvu45pi4vgq
+      '@typescript-eslint/parser': 5.50.0_4vsywjlpuriuw3tl5oq6zy5a64
+      eslint: 8.33.0
+      eslint-config-prettier: 8.6.0_eslint@8.33.0
+      eslint-plugin-prettier: 4.2.1_jqplj6qf3uqpxpu4gdyhwwasnq
+      eslint-plugin-vue: 9.9.0_eslint@8.33.0
+      prettier: 2.8.3
+      vue-eslint-parser: 9.1.0_eslint@8.33.0
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+    dev: true
+
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -2936,7 +2958,6 @@ packages:
 
   /@types/node/18.11.18:
     resolution: {integrity: sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==}
-    dev: true
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -3164,7 +3185,7 @@ packages:
       '@babel/core': 7.20.12
       '@babel/plugin-transform-typescript': 7.20.13_@babel+core@7.20.12
       '@vue/babel-plugin-jsx': 1.1.1_@babel+core@7.20.12
-      vite: 4.0.4_sass@1.58.0
+      vite: 4.0.4_@types+node@18.11.18
       vue: 3.2.45
     transitivePeerDependencies:
       - supports-color
@@ -3176,7 +3197,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.0.4_sass@1.58.0
+      vite: 4.0.4_@types+node@18.11.18
       vue: 3.2.45
 
   /@vitest/coverage-c8/0.28.3_a7aimjszcawcicrmfep77vgtlm:
@@ -11454,7 +11475,6 @@ packages:
       rollup: 3.12.1
     optionalDependencies:
       fsevents: 2.3.2
-    dev: true
 
   /vite/4.0.4_sass@1.58.0:
     resolution: {integrity: sha512-xevPU7M8FU0i/80DMR+YhgrzR5KS2ORy1B4xcX/cXLsvnUWvfHuqMmVU6N0YiJ4JWGRJJsLCgjEzKjG9/GKoSw==}
@@ -11488,6 +11508,7 @@ packages:
       sass: 1.58.0
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
 
   /vitest/0.28.3_a7aimjszcawcicrmfep77vgtlm:
     resolution: {integrity: sha512-N41VPNf3VGJlWQizGvl1P5MGyv3ZZA2Zvh+2V8L6tYBAAuqqDK4zExunT1Cdb6dGfZ4gr+IMrnG8d4Z6j9ctPw==}
