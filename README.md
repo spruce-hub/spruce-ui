@@ -19,7 +19,7 @@
 
 - Composition API
 - TypeScript
-- SCSS
+- SASS
 
 ## 环境
 
