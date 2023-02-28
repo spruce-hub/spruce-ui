@@ -17,7 +17,7 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](./Basic.vue)
+@[code](../../components/alert/Basic.vue)
 :::
 
 ### 文本内容
@@ -31,7 +31,7 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](./Description.vue)
+@[code](../../components/alert/Description.vue)
 :::
 
 ### 图标位置
@@ -43,7 +43,7 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](./Icon.vue)
+@[code](../../components/alert/Icon.vue)
 :::
 
 ### 文本居中
@@ -55,21 +55,21 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](./Center.vue)
+@[code](../../components/alert/Center.vue)
 :::
 
 ### Loading 状态
 
 `loading` 属性控制 icon 旋转，默认值为 `false`
 
-此属性会修改 icon 为 [Loading.svg](/components/icons/)，并处于旋转状态
+此属性会修改 icon 为 [Loading.svg](/icons/)，并处于旋转状态
 
 <Preview>
   <AlertLoading />
 </Preview>
 
 ::: details Code
-@[code](./Loading.vue)
+@[code](../../components/alert/Loading.vue)
 :::
 
 ### 可点击文案
@@ -87,7 +87,7 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](./More.vue)
+@[code](../../components/alert/More.vue)
 :::
 
 ### 可关闭按钮
@@ -99,7 +99,7 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](./Closable.vue)
+@[code](../../components/alert/Closable.vue)
 :::
 
 ### 标题 + 描述
@@ -111,7 +111,7 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](./Title.vue)
+@[code](../../components/alert/Title.vue)
 :::
 
 ::: warning 注意

@@ -4,7 +4,7 @@ author: Noah Yu
 
 # Icon
 
-为 [SVG 图标](/components/icons/) 提供一个规范的宿主环境
+为 [SVG 图标](/icons/) 提供一个规范的宿主环境
 
 ## Icon Docs
 
@@ -26,7 +26,7 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](./Basic.vue)
+@[code](../../components/icon/Basic.vue)
 :::
 
 ### 图标尺寸
@@ -38,7 +38,7 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](./Size.vue)
+@[code](../../components/icon/Size.vue)
 :::
 
 ### 通过 Props 接收组件
@@ -52,7 +52,7 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](./Component.vue)
+@[code](../../components/icon/Component.vue)
 :::
 
 ## Icon API
