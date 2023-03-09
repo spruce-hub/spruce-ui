@@ -61,7 +61,7 @@ export const buildCui = async () => {
       }),
       vueJsx(),
       nodeResolve({
-        moduleDirectories: [resolve(cuiRoot, 'node_modules')],
+        modulePaths: [resolve(cuiRoot, 'node_modules')],
       }),
       commonjs(),
       esbuild({
