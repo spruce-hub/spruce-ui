@@ -3,11 +3,10 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    es2021: true,
+    es2022: true,
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 2022,
     sourceType: 'module',
   },
   extends: [
@@ -16,7 +15,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'prettier',
   ],
-  plugins: [],
+  plugins: ['@typescript-eslint'],
   rules: {
     indent: ['error', 2],
     'linebreak-style': ['error', 'unix'],
@@ -46,6 +45,10 @@ module.exports = {
       rules: {
         'no-alert': 0,
       },
+    },
+    {
+      files: ['preview/**/*.vue', 'preview/**/*.ts'],
+      extends: ['@noahyu/vue'],
     },
   ],
 }
