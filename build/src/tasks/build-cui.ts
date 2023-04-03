@@ -33,9 +33,9 @@ const pkgPath = resolve(cuiRoot, 'package.json')
 const pkg = parseJson(readFileSync(pkgPath, 'utf-8'))
 
 const paths = {
-  '@cui/components': '@spruce/cui/dist/components',
-  '@cui/styles': '@spruce/cui/dist/styles',
-  '@cui/utils': '@spruce/cui/dist/utils',
+  '@cui/components': '@spruce-hub/cui/dist/components',
+  '@cui/styles': '@spruce-hub/cui/dist/styles',
+  '@cui/utils': '@spruce-hub/cui/dist/utils',
 }
 
 const excludeFiles = (files: string[]) => {

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { mount } from '@vue/test-utils'
 
-import { Success } from '@spruce/icons'
+import { Success } from '@spruce-hub/icons'
 
 import Icon from '../../src/icon.vue'
 

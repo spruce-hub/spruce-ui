@@ -1,5 +1,5 @@
 {
-  "name": "@spruce/mui",
+  "name": "@spruce-hub/mui",
   "version": "0.0.0",
   "description": "管理端组件库",
   "main": "./dist/index.js",
@@ -40,10 +40,10 @@
     "vue": ">=3.2.0"
   },
   "dependencies": {
-    "@spruce/icons": "workspace:^0.0.0"
+    "@spruce-hub/icons": "workspace:^0.0.0"
   },
   "devDependencies": {
-    "typescript": "^4.9.5",
+    "typescript": "^5.0.3",
     "vue": "^3.2.47"
   }
 }

@@ -33,9 +33,9 @@ const pkgPath = resolve(muiRoot, 'package.json')
 const pkg = parseJson(readFileSync(pkgPath, 'utf-8'))
 
 const paths = {
-  '@mui/components': '@spruce/mui/dist/components',
-  '@mui/styles': '@spruce/mui/dist/styles',
-  '@mui/utils': '@spruce/mui/dist/utils',
+  '@mui/components': '@spruce-hub/mui/dist/components',
+  '@mui/styles': '@spruce-hub/mui/dist/styles',
+  '@mui/utils': '@spruce-hub/mui/dist/utils',
 }
 
 const excludeFiles = (files: string[]) => {

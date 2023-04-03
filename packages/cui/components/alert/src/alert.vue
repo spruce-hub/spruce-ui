@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { Success, Warning, Error, Info, Close, Loading } from '@spruce/icons'
+import { Success, Warning, Error, Info, Close, Loading } from '@spruce-hub/icons'
 import { className } from '@cui/utils'
 import { CIcon } from '@cui/components/icon'
 import { alertProps, alertEmits } from './alert'

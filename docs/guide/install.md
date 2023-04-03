@@ -20,11 +20,11 @@ author: Noah Yu
   <CodeGroupItem title="pnpm" active>
 
 ```bash
-pnpm add @spruce/cui@next -P
+pnpm add @spruce-hub/cui@next -P
 
 # or
 
-pnpm add @spruce/mui@next -P
+pnpm add @spruce-hub/mui@next -P
 ```
 
   </CodeGroupItem>
@@ -32,11 +32,11 @@ pnpm add @spruce/mui@next -P
   <CodeGroupItem title="npm">
 
 ```bash
-npm install @spruce/cui@next --save
+npm install @spruce-hub/cui@next --save
 
 # or
 
-npm install @spruce/mui@next --save
+npm install @spruce-hub/mui@next --save
 ```
 
   </CodeGroupItem>
@@ -48,14 +48,14 @@ Spruce UI 不建议使用该方式引入，如果你因为项目的某些特殊�
 
 ```html
 <head>
-  <link rel="stylesheet" href="${cdn_url}/@spruce/cui/dist/styles/index.css" />
-  <script src="${cdn_url}/@spruce/cui"></script>
+  <link rel="stylesheet" href="${cdn_url}/@spruce-hub/cui/dist/styles/index.css" />
+  <script src="${cdn_url}/@spruce-hub/cui"></script>
 </head>
 
 <!-- or -->
 
 <head>
-  <link rel="stylesheet" href="${cdn_url}/@spruce/mui/dist/styles/index.css" />
-  <script src="${cdn_url}/@spruce/mui"></script>
+  <link rel="stylesheet" href="${cdn_url}/@spruce-hub/mui/dist/styles/index.css" />
+  <script src="${cdn_url}/@spruce-hub/mui"></script>
 </head>
 ```

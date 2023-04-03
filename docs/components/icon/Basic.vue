@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Success } from '@spruce/icons'
-import { CIcon } from '@spruce/cui'
+import { Success } from '@spruce-hub/icons'
+import { CIcon } from '@spruce-hub/cui'
 </script>
 
 <template>

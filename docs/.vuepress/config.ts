@@ -16,10 +16,10 @@ const projectRoot = resolve(cwd(), '../packages/cui')
 const __dirname = getDirname(import.meta.url)
 
 const alias = {
-  '@spruce/cui': `${projectRoot}`,
-  '@spruce/cui/*': `${projectRoot}/*`,
-  '@spruce/mui': `${projectRoot}`,
-  '@spruce/mui/*': `${projectRoot}/*`,
+  '@spruce-hub/cui': `${projectRoot}`,
+  '@spruce-hub/cui/*': `${projectRoot}/*`,
+  '@spruce-hub/mui': `${projectRoot}`,
+  '@spruce-hub/mui/*': `${projectRoot}/*`,
 }
 
 export default defineUserConfig({

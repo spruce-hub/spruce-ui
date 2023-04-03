@@ -28,12 +28,12 @@
     "access": "public"
   },
   "devDependencies": {
-    "@spruce/cui": "workspace:^0.0.0",
-    "@spruce/icons": "workspace:^0.0.0",
-    "@spruce/mui": "workspace:^0.0.0",
+    "@spruce-hub/cui": "workspace:^0.0.0",
+    "@spruce-hub/icons": "workspace:^0.0.0",
+    "@spruce-hub/mui": "workspace:^0.0.0",
     "@vuepress/client": "2.0.0-beta.61",
-    "@vuepress/plugin-register-components": "2.0.0-beta.60",
-    "@vuepress/plugin-search": "2.0.0-beta.60",
+    "@vuepress/plugin-register-components": "2.0.0-beta.61",
+    "@vuepress/plugin-search": "2.0.0-beta.61",
     "vue": "^3.2.47",
     "vuepress": "2.0.0-beta.61",
     "vuepress-plugin-search-pro": "2.0.0-beta.190",

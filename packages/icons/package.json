@@ -1,5 +1,5 @@
 {
-  "name": "@spruce/icons",
+  "name": "@spruce-hub/icons",
   "version": "0.0.0",
   "description": "图标库",
   "main": "./dist/index.js",
@@ -39,7 +39,7 @@
     "vue": ">=3.2.0"
   },
   "devDependencies": {
-    "typescript": "^4.9.5",
+    "typescript": "^5.0.3",
     "vue": "^3.2.47"
   }
 }

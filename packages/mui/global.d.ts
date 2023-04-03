@@ -1,7 +1,7 @@
 declare module 'vue' {
   export interface GlobalComponents {
-    MAlert: typeof import('@spruce/mui')['MAlert']
-    MIcon: typeof import('@spruce/mui')['MIcon']
+    MAlert: typeof import('@spruce-hub/mui')['MAlert']
+    MIcon: typeof import('@spruce-hub/mui')['MIcon']
   }
 }
 

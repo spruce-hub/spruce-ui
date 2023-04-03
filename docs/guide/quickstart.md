@@ -13,8 +13,8 @@ author: Noah Yu
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import cui from '@spruce/cui'
-import '@spruce/cui/dist/styles/index.css'
+import cui from '@spruce-hub/cui'
+import '@spruce-hub/cui/dist/styles/index.css'
 
 const app = createApp(App)
 
@@ -37,7 +37,7 @@ app.mount('#app')
 {
   "compilerOptions": {
     // ...
-    "types": ["@spruce/cui/global"]
+    "types": ["@spruce-hub/cui/global"]
   }
 }
 ```
@@ -48,8 +48,8 @@ app.mount('#app')
 
 ```vue
 <script setup lang="ts">
-import '@spruce/cui/dist/components/alert/style/css'
-import { CAlert } from '@spruce/cui'
+import '@spruce-hub/cui/dist/components/alert/style/css'
+import { CAlert } from '@spruce-hub/cui'
 </script>
 
 <template>
@@ -64,7 +64,7 @@ import { CAlert } from '@spruce/cui'
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import '@spruce/cui/dist/styles/index.css'
+import '@spruce-hub/cui/dist/styles/index.css'
 
 const app = createApp(App)
 
@@ -73,7 +73,7 @@ app.mount('#app')
 
 ```vue
 <script setup lang="ts">
-import { CAlert } from '@spruce/cui'
+import { CAlert } from '@spruce-hub/cui'
 </script>
 
 <template>

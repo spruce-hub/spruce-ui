@@ -6,8 +6,8 @@ author: Noah Yu
 
 ```vue
 <script setup lang="ts">
-import { CIcon } from '@spruce/cui'
-import { Loading } from '@spruce/icons'
+import { CIcon } from '@spruce-hub/cui'
+import { Loading } from '@spruce-hub/icons'
 </script>
 
 <template>

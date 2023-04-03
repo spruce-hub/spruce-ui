@@ -1,10 +1,10 @@
 ## 环境
 
-- [ ] @spruce/cui
+- [ ] @spruce-hub/cui
 
   - version:
 
-- [ ] @spruce/mui
+- [ ] @spruce-hub/mui
 
   - version:
 

@@ -31,19 +31,19 @@
 
 ### CUI
 
-> @spruce/cui
+> @spruce-hub/cui
 
 适用于客户端（品牌官网、电商平台等）的 **公共组件** 或 **完整模块**
 
 ### MUI
 
-> @spruce/mui
+> @spruce-hub/mui
 
 适用于管理端（CMS、CRM、SCM 等）的 **公共组件** 或 **完整模块**
 
 ### ICONS
 
-> @spruce/icons
+> @spruce-hub/icons
 
 图标库
 

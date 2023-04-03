@@ -64,7 +64,7 @@ pnpm dev
 
 ```html
 <script setup lang="ts">
-  import { CAlert } from '@spruce/cui/index'
+  import { CAlert } from '@spruce-hub/cui/index'
   import Preview from './components/Preview.vue'
 </script>
 

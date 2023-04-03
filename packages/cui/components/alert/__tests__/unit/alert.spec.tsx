@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { mount } from '@vue/test-utils'
 
-import { Success, Warning, Error, Info, Close, Loading } from '@spruce/icons'
+import { Success, Warning, Error, Info, Close, Loading } from '@spruce-hub/icons'
 
 import Alert from '../../src/alert.vue'
 
