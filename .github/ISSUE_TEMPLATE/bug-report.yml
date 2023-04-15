@@ -1,0 +1,63 @@
+name: '🐞 Bug report'
+description: Create a report to help us improve Spruce UI
+labels: ['pending triage']
+body:
+  - type: checkboxes
+    id: lib
+    attributes:
+      label: Packages
+      description: 选择对应的库
+      options:
+        - label: '@spruce-hub/cui'
+        - label: '@spruce-hub/mui'
+        - label: '@spruce-hub/icons'
+  - type: textarea
+    id: bug-env
+    attributes:
+      label: Environment
+      description: 提供你的环境信息
+      value: |
+        - Vue Version:
+        - Nuxt Version:
+        - Browser/OS:
+        - Builder Tool:
+        - Package Manager:
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: 如果有的话，请提供你的线上案例
+      placeholder: Reproduction
+    validations:
+      required: true
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the bug
+      description: 请详细描述你遇到的问题，顺便告诉我们你是否有提交 PR 的计划
+      placeholder: Bug description
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+      description: 预期效果
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual
+      description: 实际效果
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: 请提供日志信息
+      render: shell-script
+  - type: textarea
+    id: comments
+    attributes:
+      label: Any additional comments
+      description: 你还想提供哪些信息？
