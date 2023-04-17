@@ -1,4 +1,3 @@
-@use './common/common.scss';
 @use './transition/transition.scss';
 
 :root {
@@ -41,4 +40,9 @@
   --m-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
     monospace;
   --m-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+html {
+  font: normal normal normal var(--c-font-size) / var(--c-line-height) var(--c-font-sans-serif);
+  min-height: 100vh;
 }
