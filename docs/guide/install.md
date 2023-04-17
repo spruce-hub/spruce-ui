@@ -16,8 +16,9 @@ author: Noah Yu
 
 [Spruce UI](https://github.com/spruce-hub/spruce-ui.git) 发布在私有[包管理仓库](https://npm.sprucefe.com/)，安装时请确保已设置正确的[源地址](https://npm.sprucefe.com/)
 
-<CodeGroup>
-  <CodeGroupItem title="pnpm" active>
+::: tabs#pm
+
+@tab pnpm
 
 ```bash
 pnpm add @spruce-hub/cui@next -P
@@ -27,9 +28,7 @@ pnpm add @spruce-hub/cui@next -P
 pnpm add @spruce-hub/mui@next -P
 ```
 
-  </CodeGroupItem>
-
-  <CodeGroupItem title="npm">
+@tab npm
 
 ```bash
 npm install @spruce-hub/cui@next --save
@@ -39,8 +38,9 @@ npm install @spruce-hub/cui@next --save
 npm install @spruce-hub/mui@next --save
 ```
 
-  </CodeGroupItem>
-</CodeGroup>
+:::
+
+使用
 
 ## 浏览器直接引入
 

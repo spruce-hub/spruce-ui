@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import * as icons from '../../../packages/icons'
+import * as other from '@spruce-hub/icons/components/building'
 </script>
 
 <template>
   <div class="icons">
-    <div v-for="icon in icons" :key="icon.name" class="icon-list">
+    <div v-for="icon in other" :key="icon.name" class="icon-list">
       <div class="icon-item">
         <div class="icon">
           <component :is="icon" />

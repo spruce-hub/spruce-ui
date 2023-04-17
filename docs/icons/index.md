@@ -2,6 +2,15 @@
 author: Noah Yu
 ---
 
-# 图标
+# 图标集
 
-<IconsList />
+## 箭头
+<IconsArrow />
+
+## 建筑
+
+<IconsBuilding />
+
+## 其他
+
+<IconsOther />

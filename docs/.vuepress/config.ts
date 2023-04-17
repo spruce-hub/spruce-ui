@@ -11,15 +11,19 @@ import { searchProPlugin } from 'vuepress-plugin-search-pro'
 
 import { navbars, sidebars } from './configs'
 
-const projectRoot = resolve(cwd(), '../packages/cui')
+const cuiRoot = resolve(cwd(), '../packages/cui')
+const muiRoot = resolve(cwd(), '../packages/mui')
+const iconsRoot = resolve(cwd(), '../packages/icons')
 
 const __dirname = getDirname(import.meta.url)
 
 const alias = {
-  '@spruce-hub/cui': `${projectRoot}`,
-  '@spruce-hub/cui/*': `${projectRoot}/*`,
-  '@spruce-hub/mui': `${projectRoot}`,
-  '@spruce-hub/mui/*': `${projectRoot}/*`,
+  '@spruce-hub/cui': `${cuiRoot}`,
+  '@spruce-hub/cui/*': `${cuiRoot}/*`,
+  '@spruce-hub/mui': `${muiRoot}`,
+  '@spruce-hub/mui/*': `${muiRoot}/*`,
+  '@spruce-hub/icons': `${iconsRoot}`,
+  '@spruce-hub/icons/*': `${iconsRoot}/*`,
 }
 
 export default defineUserConfig({
@@ -32,8 +36,13 @@ export default defineUserConfig({
     navbar: navbars,
     sidebar: sidebars,
     headerDepth: 3,
-    darkmode: 'switch',
+    darkmode: 'toggle',
     print: false,
+    plugins: {
+      mdEnhance: {
+        tabs: true,
+      },
+    },
   }),
   public: 'public',
   plugins: [
@@ -59,6 +68,4 @@ export default defineUserConfig({
     },
     vuePluginOptions: {},
   }),
-  templateDev: path.resolve(__dirname, './index.html'),
-  templateBuild: path.resolve(__dirname, './index.html'),
 })

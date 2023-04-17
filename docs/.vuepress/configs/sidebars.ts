@@ -8,38 +8,13 @@ const children = (lib: string, componentName: string[]) => {
 
 export const sidebars = {
   '/guide/': [
-    {
-      text: '使用指南',
-      children: [
-        {
-          text: '设计原则',
-          link: '/guide/design.md',
-        },
-        {
-          text: '安装',
-          link: '/guide/install.md',
-        },
-        {
-          text: '快速开始',
-          link: '/guide/quickstart.md',
-        },
-      ],
-    },
+    { text: '设计原则', link: '/guide/design.md' },
+    { text: '安装', link: '/guide/install.md' },
+    { text: '快速开始', link: '/guide/quickstart.md' },
   ],
   '/icons/': [
-    {
-      text: '图标库',
-      children: [
-        {
-          text: '图标集合',
-          link: '/icons/index.md',
-        },
-        {
-          text: '基础用法',
-          link: '/icons/instructions.md',
-        },
-      ],
-    },
+    { text: '图标集', link: '/icons/index.md' },
+    { text: '基础用法', link: '/icons/instructions.md' },
   ],
   '/cui/': [
     {
