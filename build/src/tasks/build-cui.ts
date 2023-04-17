@@ -1,24 +1,23 @@
-import { resolve } from 'node:path'
-import { readFileSync } from 'node:fs'
-
-import { rollup } from 'rollup'
-import nodeResolve from '@rollup/plugin-node-resolve'
-import commonjs from '@rollup/plugin-commonjs'
-import esbuild from 'rollup-plugin-esbuild'
-import gulp from 'gulp'
-import gulpSass from 'gulp-sass'
-import autoprefixer from 'gulp-autoprefixer'
-import cleanCSS from 'gulp-clean-css'
-import rename from 'gulp-rename'
-import dartSass from 'sass'
-
-import parseJson from 'parse-json'
-import glob from 'fast-glob'
-import chalk from 'chalk'
-import consola from 'consola'
-
-import vuePlugin from '@vitejs/plugin-vue'
-import vueJsx from '@vitejs/plugin-vue-jsx'
+import {
+  resolve,
+  gulp,
+  gulpSass,
+  autoprefixer,
+  cleanCSS,
+  rename,
+  rollup,
+  nodeResolve,
+  commonjs,
+  esbuild,
+  parseJson,
+  glob,
+  consola,
+  chalk,
+  dartSass,
+  vuePlugin,
+  vueJsx,
+  readFileSync,
+} from '../utils'
 
 import { dts } from '../plugins/build-dts'
 import { alias } from '../plugins/build-alias'
@@ -83,7 +82,7 @@ export const buildCui = async () => {
         paths,
       }),
     ],
-    external: [...Object.keys(pkg.dependencies), ...Object.keys(pkg.devDependencies)],
+    external: [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.devDependencies || {})],
     watch: {
       exclude: ['./node_modules/**', './dist/**'],
     },

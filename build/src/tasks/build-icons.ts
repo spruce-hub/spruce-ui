@@ -1,25 +1,26 @@
-import { basename, resolve } from 'node:path'
-import { readFileSync } from 'node:fs'
-import { readFile, writeFile } from 'node:fs/promises'
-
-import gulp from 'gulp'
-
-import { rollup } from 'rollup'
-import nodeResolve from '@rollup/plugin-node-resolve'
-import commonjs from '@rollup/plugin-commonjs'
-import esbuild from 'rollup-plugin-esbuild'
-
-import { emptyDir, ensureDir } from 'fs-extra'
-import camelcase from 'camelcase'
-import parseJson from 'parse-json'
-import glob from 'fast-glob'
-import { format } from 'prettier'
-import consola from 'consola'
-import chalk from 'chalk'
-import { JSDOM } from 'jsdom'
-
-import vuePlugin from '@vitejs/plugin-vue'
-import vueJsx from '@vitejs/plugin-vue-jsx'
+import {
+  resolve,
+  basename,
+  gulp,
+  rollup,
+  nodeResolve,
+  commonjs,
+  esbuild,
+  camelCase,
+  parseJson,
+  glob,
+  format,
+  consola,
+  chalk,
+  JSDOM,
+  vuePlugin,
+  vueJsx,
+  readFileSync,
+  writeFileSync,
+  emptyDir,
+  ensureDir,
+  ensureDirSync,
+} from '../utils'
 
 import { dts } from '../plugins/build-dts'
 
