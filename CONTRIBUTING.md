@@ -2,24 +2,20 @@
 
 ## 本地环境
 
-- NodeJS >= 18
-- pnpm >= 7
-- git >= 2
+| tool   | version |
+| ------ | ------- |
+| NodeJS | >= 18   |
+| pnpm   | >= 8    |
+| Git    | >= 2    |
 
 ## 初始化项目
 
-1. 点击右上角的 Fork 按钮，把项目添加到你的账户下
-2. 把 Fork 的项目克隆到本地
+1. 把项目 Fork 到您的账户
+2. 把您账户中的项目 clone 到您的开发环境
 3. 执行以下命令安装相关依赖
 
 ```bash
 pnpm install
-```
-
-4. 执行以下命令初始化构建项目
-
-```bash
-pnpm build
 ```
 
 ## 开发组件
@@ -34,7 +30,7 @@ pnpm create:comp <lib-name> <component-name>
 
 - `lib-name`: 组件库类型
 
-  - `cui | mui | icons`
+  - `cui | mui`
 
 - `component-name`: 组件名称
 
@@ -193,7 +189,7 @@ pnpm docs:dev
 
 ### 推送 PR
 
-把你的代码推送到你账户下的项目中后，向源仓库的 `dev` 分支推送 PR。
+把你的代码推送到你账户下的项目中后，向源仓库的 `main` 分支推送 PR。
 
 ### 等待审核
 

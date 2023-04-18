@@ -43,6 +43,8 @@
 
       "@cui": ["../packages/cui"],
       "@cui/*": ["../packages/cui/*"],
+      "@mui": ["../packages/mui"],
+      "@mui/*": ["../packages/mui/*"]
     },
     // "rootDirs": ["../preview"], // 根文件夹列表，其组合内容表示项目运行时的结构内容
     // "typeRoots": [], // 包含类型声明的文件列表
