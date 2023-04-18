@@ -25,4 +25,4 @@ body:
       description: 我们还想了解更多的信息.
       options:
         - label: 您是否有提交 PR 的计划?
-        - label: 您是否急需此功能?
+        - label: 您是否急需使用此功能?
