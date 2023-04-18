@@ -1,6 +1,6 @@
-name: '🐞 Bug report'
+name: '🐛 Bug report'
 description: Create a report to help us improve Spruce UI
-labels: ['pending triage']
+labels: ['💡pending triage']
 body:
   - type: checkboxes
     id: lib
