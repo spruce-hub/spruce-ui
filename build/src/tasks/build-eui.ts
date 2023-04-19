@@ -115,7 +115,7 @@ export const buildEuiStyle = () => {
     .pipe(
       rename((path) => {
         if (!noPrefixFile.test(path.basename)) {
-          path.basename = `c-${path.basename}`
+          path.basename = `e-${path.basename}`
         }
       })
     )
