@@ -41,20 +41,20 @@ const handleMore = () => {
           <MIcon :class="[bem('icon', icon), ...s({ loading })]">
             <component :is="loading ? Loading : iconComponent" />
           </MIcon>
-          <p :class="[e('text')]">
+          <span :class="[e('text')]">
             <slot> {{ description || type }} </slot>
-          </p>
+          </span>
         </template>
         <template v-else>
           <MIcon :class="[...s({ loading })]">
             <component :is="loading ? Loading : iconComponent" />
           </MIcon>
-          <p :class="[e('title')]">
+          <span :class="[e('title')]">
             {{ title }}
-          </p>
-          <p :class="[e('text')]">
+          </span>
+          <span :class="[e('text')]">
             <slot> {{ description || type }} </slot>
-          </p>
+          </span>
         </template>
       </div>
       <template v-if="more.text">
