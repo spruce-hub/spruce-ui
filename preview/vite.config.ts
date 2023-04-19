@@ -6,6 +6,7 @@ import vue from '@vitejs/plugin-vue'
 import { visualizer } from 'rollup-plugin-visualizer'
 
 const cui = resolve(cwd(), '../packages/cui')
+const eui = resolve(cwd(), '../packages/eui')
 const mui = resolve(cwd(), '../packages/mui')
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -17,6 +18,8 @@ export default defineConfig({
       '@assets': '/src/assets',
       '@cui': `${cui}`,
       '@cui/*': `${cui}/*`,
+      '@eui': `${eui}`,
+      '@eui/*': `${eui}/*`,
       '@mui': `${mui}`,
       '@mui/*': `${mui}/*`,
     },

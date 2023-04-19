@@ -41,6 +41,7 @@
     "@esbuild-kit/cjs-loader": "^2.4.2",
     "@noahyu/eslint-config-vue": "^1.1.0",
     "@spruce-hub/cui": "workspace:^0.0.0",
+    "@spruce-hub/eui": "workspace:^0.0.0",
     "@spruce-hub/icons": "workspace:^0.0.0",
     "@spruce-hub/mui": "workspace:^0.0.0",
     "@types/node": "18.15.11",

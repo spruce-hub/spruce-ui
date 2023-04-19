@@ -1,0 +1,27 @@
+@use './mixins/mixins' as *;
+@use 'sass:color';
+
+.#{getBlock('icon')} {
+  --color: inherit;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  fill: currentColor;
+  height: 1em;
+  width: 1em;
+  color: var(--color);
+  font-size: inherit;
+  &.#{getState('loading')} {
+    animation: icon-rotating 2s linear infinite;
+  }
+}
+
+@keyframes icon-rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

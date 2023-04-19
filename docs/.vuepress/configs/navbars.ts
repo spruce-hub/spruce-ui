@@ -12,12 +12,17 @@ export const navbars: NavbarConfig = [
     activeMatch: '^/icons/',
   },
   {
-    text: '客户端组件',
+    text: '(S)CRM 系统',
     link: '/cui/icon/index.md',
     activeMatch: '^/cui/',
   },
   {
-    text: '管理端组件',
+    text: '电商系统',
+    link: '/eui/icon/index.md',
+    activeMatch: '^/eui/',
+  },
+  {
+    text: '管理系统',
     link: '/mui/icon/index.md',
     activeMatch: '^/mui/',
   },

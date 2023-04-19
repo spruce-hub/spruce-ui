@@ -12,6 +12,7 @@ import { searchProPlugin } from 'vuepress-plugin-search-pro'
 import { navbars, sidebars } from './configs'
 
 const cuiRoot = resolve(cwd(), '../packages/cui')
+const euiRoot = resolve(cwd(), '../packages/eui')
 const muiRoot = resolve(cwd(), '../packages/mui')
 const iconsRoot = resolve(cwd(), '../packages/icons')
 
@@ -20,6 +21,8 @@ const __dirname = getDirname(import.meta.url)
 const alias = {
   '@spruce-hub/cui': `${cuiRoot}`,
   '@spruce-hub/cui/*': `${cuiRoot}/*`,
+  '@spruce-hub/eui': `${euiRoot}`,
+  '@spruce-hub/eui/*': `${euiRoot}/*`,
   '@spruce-hub/mui': `${muiRoot}`,
   '@spruce-hub/mui/*': `${muiRoot}/*`,
   '@spruce-hub/icons': `${iconsRoot}`,
@@ -38,9 +41,15 @@ export default defineUserConfig({
     headerDepth: 3,
     darkmode: 'toggle',
     print: false,
+    displayFooter: true,
+    footer:
+      'MIT Licensed | Copyright © 2023-present Spruce FE <a href="https://beian.miit.gov.cn/">粤ICP备2022018468号-3</a>',
+    copyright: false,
     plugins: {
       mdEnhance: {
         tabs: true,
+        vuePlayground: true,
+        chart: true,
       },
     },
   }),

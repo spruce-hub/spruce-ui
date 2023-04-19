@@ -43,6 +43,8 @@
 
       "@cui": ["../packages/cui"],
       "@cui/*": ["../packages/cui/*"],
+      "@eui": ["../packages/eui"],
+      "@eui/*": ["../packages/eui/*"],
       "@mui": ["../packages/mui"],
       "@mui/*": ["../packages/mui/*"]
     },

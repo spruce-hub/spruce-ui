@@ -1,0 +1,48 @@
+@use './transition/transition.scss';
+
+:root {
+  --e-turquoise-dark: #12b8b8;
+  --e-turquoise: #13c2c2;
+  --e-turquoise-light: #42cece;
+  --e-blue-dark: #3e9bf0;
+  --e-blue: #41a3fd;
+  --e-blue-light: #67b6fe;
+  --e-red-dark: #ec6363;
+  --e-red: #f96868;
+  --e-red-light: #fa8686;
+  --e-orange-dark: #e88420;
+  --e-orange: #ff972f;
+  --e-orange-light: #feb165;
+  --e-black: #000000;
+  --e-white: #ffffff;
+  --e-gray: #333333;
+  --e-gray-100: #f5f5f5;
+  --e-gray-200: #f0f2f5;
+  --e-gray-300: #f5f7fa;
+  --e-gray-400: #f0f0f0;
+  --e-gray-500: #d9d9d9;
+  --e-gray-600: #cccccc;
+  --e-gray-700: #999999;
+  --e-gray-800: #212529;
+  --e-success: #13c2c2;
+  --e-warning: #ff972f;
+  --e-error: #f96868;
+  --e-info: #41a3fd;
+  --e-bg-success: #e7f9f9;
+  --e-bg-warning: #fffbe6;
+  --e-bg-error: #feefef;
+  --e-bg-info: #e6f7ff;
+  --e-line-height: 1.5715;
+  --e-basis-height: 1.5715em;
+  --e-font-size: 14px;
+  --e-font-sans-serif: Helvetica, Tahoma, Arial, 'PingFang SC', '苹方', 'Microsoft YaHei',
+    '微软雅黑', SimSun, '宋体', Heiti, '黑体', sans-serif;
+  --e-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+  --e-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+html {
+  font: normal normal normal var(--e-font-size) / var(--e-line-height) var(--e-font-sans-serif);
+  min-height: 100vh;
+}

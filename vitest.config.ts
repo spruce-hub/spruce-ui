@@ -6,6 +6,7 @@ import Vue from '@vitejs/plugin-vue'
 import VueJsx from '@vitejs/plugin-vue-jsx'
 
 const cuiRoot = resolve(cwd(), 'packages/cui')
+const euiRoot = resolve(cwd(), 'packages/eui')
 const muiRoot = resolve(cwd(), 'packages/mui')
 
 export default defineConfig({
@@ -17,6 +18,8 @@ export default defineConfig({
     alias: {
       '@cui': `${cuiRoot}`,
       '@cui/*': `${cuiRoot}/*`,
+      '@eui': `${euiRoot}`,
+      '@eui/*': `${euiRoot}/*`,
       '@mui': `${muiRoot}`,
       '@mui/*': `${muiRoot}/*`,
     },

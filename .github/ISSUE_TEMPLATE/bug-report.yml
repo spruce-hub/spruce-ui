@@ -9,6 +9,7 @@ body:
       description: 选择对应的库
       options:
         - label: '@spruce-hub/cui'
+        - label: '@spruce-hub/eui'
         - label: '@spruce-hub/mui'
         - label: '@spruce-hub/icons'
   - type: textarea

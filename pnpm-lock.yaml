@@ -22,6 +22,9 @@ importers:
       '@spruce-hub/cui':
         specifier: workspace:^0.0.0
         version: link:packages/cui
+      '@spruce-hub/eui':
+        specifier: workspace:^0.0.0
+        version: link:packages/eui
       '@spruce-hub/icons':
         specifier: workspace:^0.0.0
         version: link:packages/icons
@@ -245,6 +248,9 @@ importers:
       '@spruce-hub/cui':
         specifier: workspace:^0.0.0
         version: link:../packages/cui
+      '@spruce-hub/eui':
+        specifier: workspace:^0.0.0
+        version: link:../packages/eui
       '@spruce-hub/icons':
         specifier: workspace:^0.0.0
         version: link:../packages/icons
@@ -274,6 +280,19 @@ importers:
         version: 2.0.0-beta.203(react-dom@16.14.0)(react@16.14.0)(vuepress@2.0.0-beta.61)
 
   packages/cui:
+    dependencies:
+      '@spruce-hub/icons':
+        specifier: workspace:^0.0.0
+        version: link:../icons
+    devDependencies:
+      typescript:
+        specifier: ^5.0.4
+        version: 5.0.4
+      vue:
+        specifier: ^3.2.47
+        version: 3.2.47
+
+  packages/eui:
     dependencies:
       '@spruce-hub/icons':
         specifier: workspace:^0.0.0
@@ -316,6 +335,9 @@ importers:
       '@spruce-hub/cui':
         specifier: workspace:^0.0.0
         version: link:../packages/cui
+      '@spruce-hub/eui':
+        specifier: workspace:^0.0.0
+        version: link:../packages/eui
       '@spruce-hub/mui':
         specifier: workspace:^0.0.0
         version: link:../packages/mui

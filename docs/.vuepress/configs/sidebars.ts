@@ -26,6 +26,16 @@ export const sidebars = {
       children: children('cui', feedback),
     },
   ],
+  '/eui/': [
+    {
+      text: '基础组件',
+      children: children('eui', basic),
+    },
+    {
+      text: '反馈组件',
+      children: children('eui', feedback),
+    },
+  ],
   '/mui/': [
     {
       text: '基础组件',
