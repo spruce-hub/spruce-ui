@@ -26,4 +26,14 @@ export const navbars: NavbarConfig = [
     link: '/mui/icon/index.md',
     activeMatch: '^/mui/',
   },
+  {
+    text: '电商模板',
+    link: '/e-templates/headers/index.md',
+    activeMatch: '^/e-templates/',
+  },
+  {
+    text: 'Hooks',
+    link: '/hooks/index.md',
+    activeMatch: '^/hooks/',
+  },
 ]
