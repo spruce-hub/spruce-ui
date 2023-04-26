@@ -1,13 +1,26 @@
-code {
-  color: #d63384;
-}
-
-th,
-td {
-  font-size: 14px;
-  padding: 6px;
+.table {
+  display: table;
+  width: 100%;
 }
 
 .navbar .nav-links {
-  font-size: 14px;
+  font-size: 16px;
+
+  .nav-item {
+    margin: 0 10px;
+  }
+}
+
+.hint-container.details {
+  background-color: transparent;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: var(--border-color);
+  border-radius: 0 0 4px 4px;
+  margin-top: 0;
+
+  summary {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }

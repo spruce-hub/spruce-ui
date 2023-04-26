@@ -46,10 +46,12 @@ export default defineUserConfig({
       'MIT Licensed | Copyright © 2023-present Spruce FE <a href="https://beian.miit.gov.cn/">粤ICP备2022018468号-3</a>',
     copyright: false,
     plugins: {
+      copyCode: {},
       mdEnhance: {
         tabs: true,
         vuePlayground: true,
         chart: true,
+        attrs: true,
       },
     },
   }),
