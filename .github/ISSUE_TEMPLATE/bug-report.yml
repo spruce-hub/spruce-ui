@@ -11,6 +11,7 @@ body:
         - label: '@spruce-hub/cui'
         - label: '@spruce-hub/eui'
         - label: '@spruce-hub/mui'
+        - label: '@spruce-hub/ui-hooks'
         - label: '@spruce-hub/icons'
   - type: textarea
     id: bug-env

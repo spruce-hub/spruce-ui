@@ -8,6 +8,7 @@ import VueJsx from '@vitejs/plugin-vue-jsx'
 const cuiRoot = resolve(cwd(), 'packages/cui')
 const euiRoot = resolve(cwd(), 'packages/eui')
 const muiRoot = resolve(cwd(), 'packages/mui')
+const hooksRoot = resolve(cwd(), 'packages/hooks')
 
 export default defineConfig({
   plugins: [Vue(), VueJsx()],
@@ -22,9 +23,11 @@ export default defineConfig({
       '@eui/*': `${euiRoot}/*`,
       '@mui': `${muiRoot}`,
       '@mui/*': `${muiRoot}/*`,
+      '@hooks': `${hooksRoot}`,
+      '@hooks/*': `${hooksRoot}/*`,
     },
     // 匹配包含测试文件的 glob 规则
-    include: ['**/__tests__/unit/*.spec.tsx'],
+    include: ['**/__tests__/**/*.spec.tsx'],
     // 项目的根目录
     root: resolve(__dirname),
     // 每次测试前清除每一个对象模拟调用的所有信息

@@ -1,10 +1,9 @@
-const basic = ['icon']
-const feedback = ['alert']
-
 const children = (lib: string, componentName: string[]) => {
   const cn = componentName.sort()
   return cn.map((item) => `/${lib}/${item}/index.md`)
 }
+const basic = ['icon']
+const feedback = ['alert']
 
 export const sidebars = {
   '/guide/': [
@@ -44,6 +43,16 @@ export const sidebars = {
     {
       text: '反馈组件',
       children: children('mui', feedback),
+    },
+  ],
+  '/e-templates/': [
+    {
+      text: 'Headers',
+      link: '/e-templates/headers/index.md',
+    },
+    {
+      text: 'Products',
+      link: '/e-templates/products/index.md',
     },
   ],
 }

@@ -44,6 +44,7 @@ module.exports = {
   scopes: [
     { name: 'component' },
     { name: 'style' },
+    { name: 'hook' },
     { name: 'script' },
     { name: 'other' },
   ],

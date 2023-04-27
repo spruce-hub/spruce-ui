@@ -5,6 +5,7 @@
 - [ ] @spruce-hub/cui
 - [ ] @spruce-hub/eui
 - [ ] @spruce-hub/mui
+- [ ] @spruce-hub/ui-hooks
 - [ ] @spruce-hub/icons
 
 ### ❓ Type of change
