@@ -1,6 +1,8 @@
 # 贡献代码
 
-## 本地环境
+如果您热爱贡献，如果您乐于赋能，如果您有很多美妙的 idea 渴望与云杉的小伙伴们分享，那么请认真阅读以下内容，以下内容将告诉您如何舒适且标准的为 Spruce UI 做出贡献
+
+## 准备开发环境
 
 | tool   | version |
 | ------ | ------- |
@@ -8,31 +10,44 @@
 | pnpm   | >= 8    |
 | Git    | >= 2    |
 
-## 初始化项目
+## 克隆存储库
 
-1. 把项目 Fork 到您的账户
-2. 把您账户中的项目 clone 到您的开发环境
-3. 执行以下命令安装相关依赖
+1. 通过点击右上角的 `Fork` 按钮把存储库添加到您的 github
+2. 在您的 github 存储库中把项目 clone 到开发环境
+3. 执行以下命令初始化项目
 
 ```bash
+# 进入项目根目录
+cd $THE_PROJECT_PATH_YOU_CLONE
+
+# 安装依赖以及执行必要的准备工作
 pnpm install
 ```
 
-## 开发组件
+## 创建一个组件
 
-### 创建一个组件
+### 通过命令快速创建相关目录和文件
 
-执行以下命名自动创建一个组件所需的目录结构以及文件。
+我们目前共有三个组件库，分别是
+
+- `@spruce-hub/cui` 适用于 **S/CRM 系统** 的组件库
+- `@spruce-hub/eui` 适用于 **电商系统** 的组件库
+- `@spruce-hub/mui` 适用于 **管理系统** 的组件库
+
+请明确您需要创建的组件属于哪一类型，我们可以通过命令快速创建所需的目录以及文件，对应的初始化命令分别是：
+
+> `<componentName>` 替换成您的组件名称
 
 ```bash
-pnpm create:comp <lib-name> <component-name>
+# 创建一个适用于 S/CRM 系统 的组件
+pnpm create:comp cui <componentName>
+
+# 适用于 电商系统 的组件
+pnpm create:comp eui <componentName>
+
+# 适用于 管理系统 的组件
+pnpm create:comp mui <componentName>
 ```
-
-- `lib-name`: 组件库类型
-
-  - `cui | mui`
-
-- `component-name`: 组件名称
 
 ### 导出组件
 
@@ -78,6 +93,67 @@ pnpm dev
     margin: 5px 0;
   }
 </style>
+```
+
+## 开发规范
+
+通过以上步骤之后，您的项目中已有一个组件的雏形了，接下来将介绍统一的开发规范，我们统一开发规范的目的是为了让组件库代码的迭代有个良性的循环，帮助更多的人快速适应且能读懂代码。
+
+### class 命名规范
+
+#### `namespace-block__element--modifier`
+
+- `namespace` 统一的命名空间 `ys` 意为：云杉
+- `-block` 代表组件名称
+- `__element` 代表元素名称
+- `--modifier` 代表状态
+
+🌰 `<div class="ys-alert"></div>`
+
+🌰 `<div class="ys-alert__bottom"></div>`
+
+🌰 `<div class="ys-alert__bottom__icon--show"></div>`
+
+在组件中，我们通过 hook 声明 class
+
+```ts
+import { className } from '@spruce-hub/ui-hooks'
+
+const { bem } = className('alert')
+```
+
+```html
+<!-- .ys-alert -->
+<div :class="bem()"></div>
+
+<!-- .ys-alert__bottom -->
+<div :class="bem('bottom')"></div>
+
+<!-- .ys-alert__bottom__icon--show -->
+<div :class="bem('bottom__icon', 'show')"></div>
+```
+
+其中，`namespace` 和 `block` 是必须的，`element` 和 `modifier` 是可选的
+
+#### `namespace-is-modifier`
+
+- `namespace` 统一的命名空间 `ys` 意为：云杉
+- `-is` 系动词
+- `--modifier` 某种动作或某种动作之后得到的状态
+
+🌰 `<div class="ys-is-checked"></div>`
+
+在组件中，我们通过 hook 声明 class
+
+```ts
+import { className } from '@spruce-hub/ui-hooks'
+
+const { is } = className('alert')
+```
+
+```html
+<!-- .ys-is-fouce -->
+<div :class="is('focus')"></div>
 ```
 
 ### 单元测试
@@ -166,20 +242,6 @@ pnpm docs:dev
 效果如下
 
 ![alert](/public/alert.png)
-
-## Icon 图标
-
-> Icons：`packages/icons`
-
-图标库的组件代码打包时自动生成，无需自行开发。
-
-所有的 SVG 图片最终都会生成同名的 \*.vue 文件，并且拥有以大写字母开头的同名组件名称。
-
-`svg/success.svg => <Success />`
-
-### SVG 图片规格
-
-为了使所有 SVG 图片规格尽量保持相同，打包时会自动对 SVG 图片做一次处理，所以每次提交 SVG 图片之前需要打包并验证效果之后再提交。
 
 ## 提交代码
 
