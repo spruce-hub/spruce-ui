@@ -1,6 +1,6 @@
 # 贡献代码
 
-如果您热爱贡献，如果您乐于赋能，如果您有很多美妙的 idea 渴望与云杉的小伙伴们分享，那么请认真阅读以下内容，以下内容将告诉您如何舒适且标准的为 Spruce UI 做出贡献
+如果您热爱贡献，如果您乐于赋能，如果您有很多美妙的 idea 渴望与云杉的小伙伴们分享，那么请认真阅读以下内容，以下内容将告诉您如何舒适且标准地为 Spruce UI 做出贡献
 
 ## 准备开发环境
 
@@ -156,6 +156,10 @@ const { is } = className('alert')
 <div :class="is('focus')"></div>
 ```
 
+### 文件及文件夹 命名规范
+
+统一采用短横线命名法，例如`base-table`、`input-number`。
+
 ### 单元测试
 
 > 为保障组件稳定性，你应该确保组件通过了全面的、严谨的单元测试
@@ -202,9 +206,9 @@ pnpm build
 pnpm docs:dev
 ```
 
-在 `docs/components` 目录下创建示例组件，以大写字母开头，vuepress 会自动把组件注册到全局。
+在 `docs/components` 目录下创建示例组件，vuepress 会自动把组件注册到全局。
 
-例如：`components/alert/Basic.vue`
+例如：`components/alert/basic.vue`
 
 ```html
 <template>
