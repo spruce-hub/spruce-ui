@@ -78,11 +78,11 @@ const createSRC = async () => {
     `
     <script setup lang="ts">
       import { ${name}Props } from './${name}'
-      import { className } from '@${libName}/utils'
+      import { className } from '@spruce-hub/ui-hooks'
 
       const props = defineProps(${name}Props)
 
-      const { b, e, m, bem, s } = className('${name}')
+      const { bem, is } = className('${name}')
     </script>
 
     <template></template>`,

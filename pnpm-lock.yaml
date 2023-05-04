@@ -284,6 +284,9 @@ importers:
       '@spruce-hub/icons':
         specifier: workspace:^0.0.0
         version: link:../icons
+      '@spruce-hub/ui-hooks':
+        specifier: workspace:^0.0.0
+        version: link:../hooks
     devDependencies:
       typescript:
         specifier: ^5.0.4
@@ -297,6 +300,9 @@ importers:
       '@spruce-hub/icons':
         specifier: workspace:^0.0.0
         version: link:../icons
+      '@spruce-hub/ui-hooks':
+        specifier: workspace:^0.0.0
+        version: link:../hooks
     devDependencies:
       typescript:
         specifier: ^5.0.4
@@ -328,6 +334,9 @@ importers:
       '@spruce-hub/icons':
         specifier: workspace:^0.0.0
         version: link:../icons
+      '@spruce-hub/ui-hooks':
+        specifier: workspace:^0.0.0
+        version: link:../hooks
     devDependencies:
       typescript:
         specifier: ^5.0.4
