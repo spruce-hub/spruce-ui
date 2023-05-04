@@ -60,9 +60,14 @@ export default defineUserConfig({
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, '../components'),
       getComponentName: (filename) => {
-        // components/button/Basic.vue => <ButtonBasic />
-        const name = path.trimExt(filename.replace(/\/|\\/g, ''))
-        const componentName = name.slice(0, 1).toUpperCase() + name.slice(1)
+        // components/button/basic-a.vue => <ButtonBasicA />
+        const fullName = filename
+          .split(/\/|\\|-/)
+          .map((name) => {
+            return name.slice(0, 1).toUpperCase() + name.slice(1)
+          })
+          .join('')
+        const componentName = path.trimExt(fullName)
         return componentName
       },
     }),
