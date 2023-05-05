@@ -28,7 +28,7 @@ export const sidebars = {
   '/eui/': [
     {
       text: '基础组件',
-      children: children('eui', basic),
+      children: children('eui', [...basic, 'count-down']),
     },
     {
       text: '反馈组件',
