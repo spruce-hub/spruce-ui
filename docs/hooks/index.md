@@ -15,15 +15,3 @@ is({ primary: true }) // ['ys-is--primary']
 is('warning') // ['ys-is--warning']
 is({ primary: true }, 'warning') // ['ys-is--primary', 'ys-is--warning']
 ```
-
-- `useDefinePropType`
-  - 为 Props 提供完善的类型声明
-
-```ts
-export const props = {
-  type: {
-    type: definePropType<'success' | 'info' | 'warning' | 'error'>(String),
-    default: 'info',
-  },
-}
-```
