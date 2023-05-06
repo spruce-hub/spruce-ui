@@ -1,6 +1,7 @@
 import gulp from 'gulp'
 
 import {
+  buildHooks,
   buildIcons,
   buildCui,
   buildCuiStyle,
@@ -16,6 +17,7 @@ import {
 const { series } = gulp
 
 export default series(
+  buildHooks,
   buildIcons,
   buildCui,
   buildCuiStyle,

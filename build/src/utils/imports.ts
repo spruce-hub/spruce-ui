@@ -9,6 +9,7 @@ import rename from 'gulp-rename'
 import { rollup } from 'rollup'
 import nodeResolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
+import typescript from '@rollup/plugin-typescript'
 import esbuild from 'rollup-plugin-esbuild'
 
 import fse from 'fs-extra'
@@ -37,6 +38,7 @@ export {
   rollup,
   nodeResolve,
   commonjs,
+  typescript,
   esbuild,
   camelCase,
   parseJson,
