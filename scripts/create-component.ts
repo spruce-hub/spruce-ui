@@ -28,7 +28,10 @@ const namespace = libName?.[0].toUpperCase()
 
 const name = process.argv.at(-1)
 
-const componentName = name ? name.slice(0, 1).toUpperCase() + name.slice(1) : ''
+const CamelCaseName = (name || '')
+  .split('-')
+  .map((str) => str.slice(0, 1).toUpperCase() + str.slice(1))
+  .join('')
 
 const formatCode = (code: string, parser: BuiltInParserName = 'typescript') =>
   format(code, {
@@ -41,15 +44,15 @@ const create = async () => {
   const index = formatCode(
     `
     import type { App, Plugin } from 'vue'
-    import ${componentName} from './src/${name}.vue'
-    
-    export const ${componentName}Plugin: Plugin = {
+    import ${CamelCaseName} from './src/${name}.vue'
+
+    export const ${CamelCaseName}Plugin: Plugin = {
       install(app: App) {
-        app.component('${namespace}${componentName}', ${componentName})
+        app.component('${namespace}${CamelCaseName}', ${CamelCaseName})
       },
     }
-    
-    export const ${namespace}${componentName} = ${componentName}`,
+
+    export const ${namespace}${CamelCaseName} = ${CamelCaseName}`,
     'typescript'
   )
   writeFile(`packages/${libName}/components/${name}/index.ts`, index, 'utf-8')
@@ -61,10 +64,10 @@ const createTEST = async () => {
     `
       import { describe, expect, it } from 'vitest'
       import { mount } from '@vue/test-utils'
-  
-      import ${componentName} from '../../src/${name}.vue'
-  
-      describe('${componentName}', () => {})`,
+
+      import ${CamelCaseName} from '../../src/${name}.vue'
+
+      describe('${CamelCaseName}', () => {})`,
     'typescript'
   )
   writeFile(`packages/${libName}/components/${name}/__tests__/unit/${name}.spec.tsx`, test, 'utf-8')
@@ -77,10 +80,10 @@ const createSRC = async () => {
   const sfc = formatCode(
     `
     <script setup lang="ts">
-      import { ${name}Props } from './${name}'
+      import { ${CamelCaseName}Props } from './${name}'
       import { className } from '@spruce-hub/ui-hooks'
 
-      const props = defineProps(${name}Props)
+      const props = defineProps(${CamelCaseName}Props)
 
       const { bem, is } = className('${name}')
     </script>
@@ -91,7 +94,7 @@ const createSRC = async () => {
 
   const ts = formatCode(
     `
-    export const ${name}Props = {}`,
+    export const ${CamelCaseName}Props = {}`,
     'typescript'
   )
 
