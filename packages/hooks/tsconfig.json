@@ -15,7 +15,7 @@
     "outDir": "dist", // 指定输出目录
     "rootDir": ".", // 用来控制输出目录结构 --outDir.
     "newLine": "LF", // 控制生成文件的换行符
-    "removeComments": true, // 删除编译后的所有的注释
+    "removeComments": false, // 删除编译后的所有的注释
     // "noEmit": true, // 不生成输出文件
     "importHelpers": true, // 从 tslib 导入辅助工具函数
     "isolatedModules": true, // 将每个文件做为单独的模块 （与 'ts.transpileModule' 类似）.
@@ -61,7 +61,7 @@
   },
   /* 指定编译文件或排除指定编译文件 */
   // "include": ["index.ts"],
-  "exclude": ["dist", "node_modules"]
+  "exclude": ["dist", "node_modules", "__tests__"]
   // "files": ["index.ts", "test.ts"],
   // 从另一个配置文件里继承配置
   // "extends": "@tsconfig/recommended",
