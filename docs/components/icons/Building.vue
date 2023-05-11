@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import * as other from '@spruce-hub/icons/components/building'
+import * as groupIcon from '@spruce-hub/icons/components/building'
 </script>
 
 <template>
   <div class="icons">
-    <div v-for="icon in other" :key="icon.name" class="icon-list">
+    <div v-for="icon in groupIcon" :key="icon.name" class="icon-list">
       <div class="icon-item">
         <div class="icon">
           <component :is="icon" />
@@ -32,8 +32,10 @@ import * as other from '@spruce-hub/icons/components/building'
   border-bottom: 1px solid var(--border-color);
 }
 .icon {
-  margin: 0 auto;
-  width: 30px;
-  height: 30px;
+  text-align: center;
+  svg {
+    width: 30px;
+    height: 30px;
+  }
 }
 </style>

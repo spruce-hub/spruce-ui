@@ -32,8 +32,10 @@ import * as other from '@spruce-hub/icons/components/arrow'
   border-bottom: 1px solid var(--border-color);
 }
 .icon {
-  margin: 0 auto;
-  width: 30px;
-  height: 30px;
+  text-align: center;
+  svg {
+    width: 30px;
+    height: 30px;
+  }
 }
 </style>

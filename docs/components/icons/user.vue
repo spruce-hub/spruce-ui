@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import * as other from '@spruce-hub/icons/components/other'
+import * as other from '@spruce-hub/icons/components/user'
 </script>
 
 <template>
