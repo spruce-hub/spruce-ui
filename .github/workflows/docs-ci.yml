@@ -1,0 +1,39 @@
+name: Docs CI
+
+on:
+  push:
+    branches: ["docs"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build the package
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run build
+        run: pnpm docs:build
+
+      - name: Deploy
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          SOURCE: "docs/.vuepress/dist"
+          TARGET: "/data/spruce-ui/"
