@@ -6,12 +6,16 @@
 <script lang="ts" setup>
 import { ECountDown } from '@spruce-hub/eui'
 import { ref } from 'vue'
+import { ElMessage } from 'element-plus'
 
 function onFinish() {
-  alert('这是倒计时回调事件')
+  ElMessage({
+    message: '这是倒计时回调事件',
+    type: 'success',
+  })
 }
 
-const CountDownRef = ref('CountDownRef')
+const CountDownRef = ref()
 function reset() {
   CountDownRef.value.reset()
 }
