@@ -1,0 +1,103 @@
+@use './mixins/mixins' as *;
+
+$file: file-preview;
+
+.#{getBlock($file)} {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 6px 12px;
+}
+
+.#{getElement($file,'teleport__container')} {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overscroll-behavior: contain;
+  z-index: 2000;
+  .#{getElement($file,'teleport__overlay')} {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .#{getElement($file,'teleport__close')} {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    .#{getbem($file,'teleport__close','icon')} {
+      background: #fff;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .#{getElement($file,'teleport__wrapper')} {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    pointer-events: none;
+    .#{getElement($file,'teleport__content')} {
+      max-height: calc(100vh - 32px);
+      max-width: calc(100vw - 32px);
+    }
+    &.#{getbem($file,'teleport__wrapper','image')} {
+      .#{getbem($file,'teleport__content','image')} {
+        user-select: none;
+        -webkit-user-select: none;
+        pointer-events: all;
+        margin: auto;
+      }
+    }
+    &.#{getbem($file,'teleport__wrapper','office')},
+    &.#{getbem($file,'teleport__wrapper','other')} {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .#{getbem($file,'teleport__content','office')} {
+        width: 1000px;
+        height: calc(100vh - 32px);
+        pointer-events: all;
+      }
+    }
+  }
+  .#{getElement($file,'teleport__error')} {
+    .#{getElement($file,'teleport__error_container')} {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 350px;
+      height: 350px;
+      max-width: calc(100vw - 32px);
+      max-height: calc(100vh - 32px);
+      background: #{getCssVar($file, 'error', 'bgColor')};
+      .#{getbem($file,'teleport__error','icon')} {
+        width: 50px;
+        height: 50px;
+        color: #{getCssVar($file, 'error', 'iconColor')};
+      }
+      .#{getbem($file,'teleport__error','label')} {
+        display: block;
+        font-size: 18px;
+        padding-top: 10px;
+        filter: grayscale(1) contrast(999) invert(1);
+      }
+    }
+  }
+}
