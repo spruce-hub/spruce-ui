@@ -1,5 +1,6 @@
 import {
   resolve,
+  rimrafSync,
   rollup,
   nodeResolve,
   commonjs,
@@ -15,6 +16,7 @@ const pkgPath = resolve(hooksRoot, 'package.json')
 const pkg = parseJson(readFileSync(pkgPath, 'utf-8'))
 
 export const buildHooks = async () => {
+  rimrafSync(resolve(hooksRoot, 'dist'))
   const bundle = await rollup({
     input: `${hooksRoot}/index.ts`,
     plugins: [
