@@ -14,6 +14,10 @@ const createBEM = (separators: Separators): string => {
   return `${c}${separators.element ? e : ''}${separators.modifier ? m : ''}`
 }
 
+/**
+ * @deprecated
+ * 请使用由 `@spruce-hub/ui-hooks` 提供的 `useNamespace` 代替 `className`
+ */
 export const className = (common: string) => {
   const separators: Separators = {
     common,
