@@ -5,6 +5,7 @@ import {
   autoprefixer,
   cleanCSS,
   rename,
+  rimrafSync,
   rollup,
   nodeResolve,
   commonjs,
@@ -43,6 +44,7 @@ const excludeFiles = (files: string[]) => {
 }
 
 export const buildCui = async () => {
+  rimrafSync(resolve(cuiRoot, 'dist'))
   const input = excludeFiles(
     await glob('**/*.{ts,vue}', {
       cwd: cuiRoot,
