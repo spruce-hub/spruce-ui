@@ -40,6 +40,10 @@ export const filePreviewProps = {
     type: [Object, String] as PropType<CSSProperties | string>,
     default: {},
   },
+  toolbarStyle: {
+    type: [Object, String] as PropType<CSSProperties | string>,
+    default: {},
+  },
 }
 
 export const filePreviewEmits = {

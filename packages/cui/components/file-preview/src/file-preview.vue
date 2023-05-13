@@ -126,7 +126,11 @@ defineExpose({
             </div>
           </slot>
         </div>
-        <div v-if="$slots.toolbar" :class="e('teleport__toolbar')">
+        <div
+          v-if="$slots.toolbar"
+          :class="[e('teleport__toolbar'), bem('teleport_toolbar', file.viewType)]"
+          :style="toolbarStyle"
+        >
           <slot name="toolbar"></slot>
         </div>
         <div
