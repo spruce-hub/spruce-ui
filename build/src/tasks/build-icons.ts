@@ -2,6 +2,7 @@ import {
   resolve,
   basename,
   gulp,
+  rimrafSync,
   rollup,
   nodeResolve,
   commonjs,
@@ -68,6 +69,7 @@ const formatCode = (code: string, parser: BuiltInParserName = 'typescript') =>
   })
 
 const formatSVG = async () => {
+  rimrafSync(resolve(iconsRoot, 'dist'))
   const files = await getSvgFiles()
 
   files.forEach((file) => {
