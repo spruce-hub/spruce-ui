@@ -1,6 +1,6 @@
 @use 'config' as *;
 
-// joinVarName(('alert', 'text-color')) => '--e-alert-text-color'
+// joinVarName(('alert', 'text-color')) => '--ys-alert-text-color'
 @function joinVarName($list) {
   $name: '--' + $namespace;
   @each $item in $list {
@@ -11,7 +11,7 @@
   @return $name;
 }
 
-// getCssVar('alert', 'text-color') => var(--e-alert-text-color)
+// getCssVar('alert', 'text-color') => var(--ys-alert-text-color)
 @function getCssVar($args...) {
   @return var(#{joinVarName($args)});
 }

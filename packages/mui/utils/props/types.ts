@@ -9,5 +9,5 @@ export const colorPropType = (
   | `#${string}`
   | `rgb(${string},${string},${string})`
   | `rgba(${string},${string},${string},${string})`
-  | `--m-${string}`
+  | `--ys-${string}`
 > => val

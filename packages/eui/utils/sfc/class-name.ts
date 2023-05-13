@@ -4,8 +4,8 @@ interface Separators {
   modifier?: string
 }
 
-const namespace = 'e'
-const statePrefix = 'e-is'
+const namespace = 'ys'
+const statePrefix = 'ys-is'
 
 const createBEM = (separators: Separators): string => {
   const c = `${namespace}-${separators.common}`

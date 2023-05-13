@@ -115,7 +115,7 @@ export const buildCuiStyle = () => {
     .pipe(
       rename((path) => {
         if (!noPrefixFile.test(path.basename)) {
-          path.basename = `c-${path.basename}`
+          path.basename = `ys-${path.basename}`
         }
       })
     )

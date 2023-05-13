@@ -115,7 +115,7 @@ export const buildMuiStyle = () => {
     .pipe(
       rename((path) => {
         if (!noPrefixFile.test(path.basename)) {
-          path.basename = `m-${path.basename}`
+          path.basename = `ys-${path.basename}`
         }
       })
     )

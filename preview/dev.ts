@@ -37,7 +37,7 @@ const create = async () => {
       </template>
       
       <style lang="scss" scoped>
-      .c-alert {
+      .ys-alert {
         margin: 5px 0;
       }
       </style>`,

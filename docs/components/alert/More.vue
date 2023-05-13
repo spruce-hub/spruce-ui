@@ -25,10 +25,10 @@ const moreClose = (close: () => void) => {
 </template>
 
 <style lang="scss" scoped>
-.c-alert {
+.ys-alert {
   margin: 20px 0 0;
 }
-.c-alert:first-child {
+.ys-alert:first-child {
   margin: 0;
 }
 </style>

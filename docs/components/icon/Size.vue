@@ -13,7 +13,7 @@ import { CIcon } from '@spruce-hub/cui'
 </template>
 
 <style lang="scss" scoped>
-.c-icon {
+.ys-icon {
   font-size: 20px;
   margin: 0 20px;
 }

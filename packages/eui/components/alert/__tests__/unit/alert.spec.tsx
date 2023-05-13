@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { mount } from '@vue/test-utils'
 
-import { Success, Warning, Error, Info, Close, Loading } from '@spruce-hub/icons'
+import { Success, Warning, Error, Info, Close, Loading } from '@sprucys-hub/icons'
 
 import Alert from '../../src/alert.vue'
 
@@ -18,7 +18,7 @@ const more = { text: 'more text', align: 'center' }
 describe('Alert', () => {
   it('type test', () => {
     const wrapper = mount(() => <Alert type={'success'} />)
-    expect(wrapper.find('.e-alert').classes()).toContain('e-alert--success')
+    expect(wrapper.find('.ys-alert').classes()).toContain('ys-alert--success')
 
     expect(wrapper.findComponent(iconComponents.success).exists()).toBe(true)
   })
@@ -26,44 +26,44 @@ describe('Alert', () => {
   it('title test', () => {
     const wrapper = mount(() => <Alert type={'success'} title="title" center icon="start" />)
 
-    expect(wrapper.find('.e-alert .e-alert__title').classes()).toContain('e-alert__title')
+    expect(wrapper.find('.ys-alert .ys-alert__title').classes()).toContain('ys-alert__title')
 
-    expect(wrapper.find('.e-alert .e-is--center').exists()).toBe(false)
-    expect(wrapper.find('.e-alert .e-alert__icon--start').exists()).toBe(false)
+    expect(wrapper.find('.ys-alert .ys-is--center').exists()).toBe(false)
+    expect(wrapper.find('.ys-alert .ys-alert__icon--start').exists()).toBe(false)
   })
 
   it('description test', () => {
     const wrapper = mount(() => <Alert description={description} />)
-    expect(wrapper.find('.e-alert__content').text()).toEqual(description)
+    expect(wrapper.find('.ys-alert__content').text()).toEqual(description)
   })
 
   it('icon test', () => {
     const wrapper = mount(() => <Alert icon={'start'} />)
-    expect(wrapper.find('.e-icon').classes()).toContain('e-alert__icon--start')
+    expect(wrapper.find('.ys-icon').classes()).toContain('ys-alert__icon--start')
   })
 
   it('center test', () => {
     const wrapper = mount(() => <Alert center />)
-    expect(wrapper.find('.e-alert__content').classes()).toContain('e-is--center')
+    expect(wrapper.find('.ys-alert__content').classes()).toContain('ys-is--center')
   })
 
   it('loading test', () => {
     const wrapper = mount(() => <Alert loading />)
-    expect(wrapper.find('.e-icon').classes()).toContain('e-is--loading')
+    expect(wrapper.find('.ys-icon').classes()).toContain('ys-is--loading')
     expect(wrapper.findComponent(Loading).exists()).toBe(true)
   })
 
   it('more test', async () => {
     const wrapper = mount(() => <Alert more={more} />)
 
-    const moreBtn = wrapper.find('.e-alert__more')
+    const moreBtn = wrapper.find('.ys-alert__more')
 
-    expect(moreBtn.classes()).toContain('e-alert__more--center')
+    expect(moreBtn.classes()).toContain('ys-alert__morys--center')
 
     expect(moreBtn.exists()).toBe(true)
     expect(moreBtn.text()).toEqual(more.text)
 
-    expect(wrapper.find('.e-alert__close').exists()).toBe(false)
+    expect(wrapper.find('.ys-alert__close').exists()).toBe(false)
 
     await moreBtn.trigger('click')
     expect(wrapper.emitted()).toBeDefined()
@@ -71,15 +71,15 @@ describe('Alert', () => {
 
   it('closable test', async () => {
     const wrapper = mount(() => <Alert closable={'center'} />)
-    const closeBtn = wrapper.find('.e-icon.e-alert__close')
+    const closeBtn = wrapper.find('.ys-icon.ys-alert__close')
 
     expect(wrapper.findComponent(Close).exists()).toBe(true)
 
-    expect(closeBtn.classes()).toContain('e-alert__close--center')
+    expect(closeBtn.classes()).toContain('ys-alert__closys--center')
 
     expect(closeBtn.exists()).toBe(true)
 
-    expect(wrapper.find('.e-alert__more').exists()).toBe(false)
+    expect(wrapper.find('.ys-alert__more').exists()).toBe(false)
 
     await closeBtn.trigger('click')
     expect(wrapper.emitted()).toBeDefined()

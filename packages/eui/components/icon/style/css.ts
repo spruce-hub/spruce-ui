@@ -1,2 +1,2 @@
 import '@eui/styles/base.css'
-import '@eui/styles/e-icon.css'
+import '@eui/styles/ys-icon.css'

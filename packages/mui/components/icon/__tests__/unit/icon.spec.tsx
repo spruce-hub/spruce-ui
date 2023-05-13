@@ -10,14 +10,14 @@ describe('Icon', () => {
     const color = '#f00'
 
     const wrapper = mount(() => <Icon color={color} />)
-    expect(wrapper.find('.m-icon').attributes('style')).toBe(`--color: ${color};`)
+    expect(wrapper.find('.ys-icon').attributes('style')).toBe(`--color: ${color};`)
   })
 
   it('size test', () => {
     const size = 16
 
     const wrapper = mount(() => <Icon size={size} />)
-    expect(wrapper.find('.m-icon').attributes('style')).toBe(`font-size: ${size}px;`)
+    expect(wrapper.find('.ys-icon').attributes('style')).toBe(`font-size: ${size}px;`)
   })
 
   it('component test', () => {

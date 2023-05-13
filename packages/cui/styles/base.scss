@@ -1,48 +1,48 @@
 @use './transition/transition.scss';
 
 :root {
-  --c-turquoise-dark: #12b8b8;
-  --c-turquoise: #13c2c2;
-  --c-turquoise-light: #42cece;
-  --c-blue-dark: #3e9bf0;
-  --c-blue: #41a3fd;
-  --c-blue-light: #67b6fe;
-  --c-red-dark: #ec6363;
-  --c-red: #f96868;
-  --c-red-light: #fa8686;
-  --c-orange-dark: #e88420;
-  --c-orange: #ff972f;
-  --c-orange-light: #feb165;
-  --c-black: #000000;
-  --c-white: #ffffff;
-  --c-gray: #333333;
-  --c-gray-100: #f5f5f5;
-  --c-gray-200: #f0f2f5;
-  --c-gray-300: #f5f7fa;
-  --c-gray-400: #f0f0f0;
-  --c-gray-500: #d9d9d9;
-  --c-gray-600: #cccccc;
-  --c-gray-700: #999999;
-  --c-gray-800: #212529;
-  --c-success: #13c2c2;
-  --c-warning: #ff972f;
-  --c-error: #f96868;
-  --c-info: #41a3fd;
-  --c-bg-success: #e7f9f9;
-  --c-bg-warning: #fffbe6;
-  --c-bg-error: #feefef;
-  --c-bg-info: #e6f7ff;
-  --c-line-height: 1.5715;
-  --c-basis-height: 1.5715em;
-  --c-font-size: 14px;
-  --c-font-sans-serif: Helvetica, Tahoma, Arial, 'PingFang SC', '苹方', 'Microsoft YaHei',
+  --ys-turquoise-dark: #12b8b8;
+  --ys-turquoise: #13c2c2;
+  --ys-turquoise-light: #42cece;
+  --ys-blue-dark: #3e9bf0;
+  --ys-blue: #41a3fd;
+  --ys-blue-light: #67b6fe;
+  --ys-red-dark: #ec6363;
+  --ys-red: #f96868;
+  --ys-red-light: #fa8686;
+  --ys-orange-dark: #e88420;
+  --ys-orange: #ff972f;
+  --ys-orange-light: #feb165;
+  --ys-black: #000000;
+  --ys-white: #ffffff;
+  --ys-gray: #333333;
+  --ys-gray-100: #f5f5f5;
+  --ys-gray-200: #f0f2f5;
+  --ys-gray-300: #f5f7fa;
+  --ys-gray-400: #f0f0f0;
+  --ys-gray-500: #d9d9d9;
+  --ys-gray-600: #cccccc;
+  --ys-gray-700: #999999;
+  --ys-gray-800: #212529;
+  --ys-success: #13c2c2;
+  --ys-warning: #ff972f;
+  --ys-error: #f96868;
+  --ys-info: #41a3fd;
+  --ys-bg-success: #e7f9f9;
+  --ys-bg-warning: #fffbe6;
+  --ys-bg-error: #feefef;
+  --ys-bg-info: #e6f7ff;
+  --ys-line-height: 1.5715;
+  --ys-basis-height: 1.5715em;
+  --ys-font-size: 14px;
+  --ys-font-sans-serif: Helvetica, Tahoma, Arial, 'PingFang SC', '苹方', 'Microsoft YaHei',
     '微软雅黑', SimSun, '宋体', Heiti, '黑体', sans-serif;
-  --c-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+  --ys-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
     monospace;
-  --c-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --ys-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
 html {
-  font: normal normal normal var(--c-font-size) / var(--c-line-height) var(--c-font-sans-serif);
+  font: normal normal normal var(--ys-font-size) / var(--ys-line-height) var(--ys-font-sans-serif);
   min-height: 100vh;
 }

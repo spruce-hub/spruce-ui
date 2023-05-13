@@ -25,7 +25,7 @@ header {
 }
 .components {
   margin: 20px auto;
-  box-shadow: 0 0 4px 2px var(--c-gray-400);
+  box-shadow: 0 0 4px 2px var(--ys-gray-400);
   border: 1px solid #fff;
   padding: 0 20px 20px;
   width: 60vw;
@@ -35,7 +35,7 @@ header {
     border-bottom: 1px solid #eee;
     width: 100%;
     height: 40px;
-    color: var(--c-turquoise-dark);
+    color: var(--ys-turquoise-dark);
     line-height: 40px;
     text-align: center;
   }
