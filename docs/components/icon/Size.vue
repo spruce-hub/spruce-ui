@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { BooleanSuccess } from '@spruce-hub/icons'
+import { Success } from '@spruce-hub/icons'
 import { CIcon } from '@spruce-hub/cui'
 </script>
 
 <template>
   <CIcon>
-    <BooleanSuccess />
+    <Success />
   </CIcon>
   <CIcon color="#13c2c2" :size="30">
-    <BooleanSuccess />
+    <Success />
   </CIcon>
 </template>
 

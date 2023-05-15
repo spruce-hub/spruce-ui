@@ -1,13 +1,8 @@
 <script setup lang="ts">
 import IconList from '../icon-list.vue'
-import {
-  DocumentFinished,
-  DocumentInvoice,
-  DocumentOrdered,
-  DocumentToBeConfirmed,
-} from '@spruce-hub/icons'
+import { Finished, Invoice, Ordered, ToBeConfirmed } from '@spruce-hub/icons'
 
-const groupIcons = [DocumentFinished, DocumentInvoice, DocumentOrdered, DocumentToBeConfirmed]
+const groupIcons = [Finished, Invoice, Ordered, ToBeConfirmed]
 </script>
 
 <template>
