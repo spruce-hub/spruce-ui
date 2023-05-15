@@ -1,22 +1,8 @@
 <script setup lang="ts">
 import IconList from '../icon-list.vue'
-import {
-  BooleanCloseBold,
-  BooleanCloseCircleFilled,
-  BooleanClose,
-  BooleanSelect,
-  BooleanSuccess,
-  BooleanWarning,
-} from '@spruce-hub/icons'
+import { CloseBold, CloseCircleFilled, Close, Select, Success, Warning } from '@spruce-hub/icons'
 
-const groupIcons = [
-  BooleanCloseBold,
-  BooleanCloseCircleFilled,
-  BooleanClose,
-  BooleanSelect,
-  BooleanSuccess,
-  BooleanWarning,
-]
+const groupIcons = [CloseBold, CloseCircleFilled, Close, Select, Success, Warning]
 </script>
 
 <template>
