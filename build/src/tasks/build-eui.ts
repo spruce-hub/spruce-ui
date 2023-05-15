@@ -5,6 +5,7 @@ import {
   autoprefixer,
   cleanCSS,
   rename,
+  rimraf,
   rollup,
   nodeResolve,
   commonjs,
@@ -43,6 +44,7 @@ const excludeFiles = (files: string[]) => {
 }
 
 export const buildEui = async () => {
+  await rimraf(resolve(euiRoot, 'dist'))
   const input = excludeFiles(
     await glob('**/*.{ts,vue}', {
       cwd: euiRoot,
@@ -115,7 +117,7 @@ export const buildEuiStyle = () => {
     .pipe(
       rename((path) => {
         if (!noPrefixFile.test(path.basename)) {
-          path.basename = `e-${path.basename}`
+          path.basename = `ys-${path.basename}`
         }
       })
     )

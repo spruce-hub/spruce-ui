@@ -4,7 +4,7 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "dev": "pnpm -C preview dev",
-    "build": "pnpm -r exec rimraf dist && pnpm -r --parallel build && pnpm -C build start",
+    "build": "pnpm -F @spruce/ui-build exec rimraf dist && pnpm -F @spruce/ui-build build && pnpm -C build start",
     "docs:dev": "pnpm -C docs dev",
     "docs:build": "pnpm -C docs docs:build",
     "changelog": "conventional-changelog -n './changelog.config.js' -i CHANGELOG.md -s -r 0 -k './packages/cui'",

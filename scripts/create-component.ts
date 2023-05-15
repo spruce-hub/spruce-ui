@@ -81,11 +81,11 @@ const createSRC = async () => {
     `
     <script setup lang="ts">
       import { ${CamelCaseName}Props } from './${name}'
-      import { className } from '@spruce-hub/ui-hooks'
+      import { useNamespace } from '@spruce-hub/ui-hooks'
 
       const props = defineProps(${CamelCaseName}Props)
 
-      const { bem, is } = className('${name}')
+      const { bem, is } = useNamespace('${name}')
     </script>
 
     <template></template>`,
@@ -108,7 +108,7 @@ const createSTYLE = async () => {
   const css = formatCode(
     `
     import '@${libName}/styles/base.css'
-    import '@${libName}/styles/${libName?.[0]}-${name}.css'`,
+    import '@${libName}/styles/ys-${name}.css'`,
     'typescript'
   )
 

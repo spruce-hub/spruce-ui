@@ -1,15 +1,18 @@
 <script setup lang="ts">
-import * as other from '@spruce-hub/icons/components/other'
+import type { DefineComponent } from 'vue'
+defineProps<{
+  components: Array<DefineComponent>
+}>()
 </script>
 
 <template>
   <div class="icons">
-    <div v-for="icon in other" :key="icon.name" class="icon-list">
-      <div class="icon-item">
+    <div v-for="icon in components" :key="icon.name" class="icon-list">
+      <div class="icon-item" :title="icon.name">
         <div class="icon">
           <component :is="icon" />
         </div>
-        <span>{{ icon.name }}</span>
+        <p class="icon-name">{{ icon.name }}</p>
       </div>
     </div>
   </div>
@@ -37,5 +40,13 @@ import * as other from '@spruce-hub/icons/components/other'
     width: 30px;
     height: 30px;
   }
+}
+.icon-name {
+  width: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  margin: 6px 0 0;
 }
 </style>

@@ -89,7 +89,7 @@ pnpm dev
 </template>
 
 <style lang="scss" scoped>
-  .c-alert {
+  .ys-alert {
     margin: 5px 0;
   }
 </style>
@@ -219,11 +219,11 @@ pnpm docs:dev
 </template>
 
 <style lang="scss" scoped>
-  .c-alert {
+  .ys-alert {
     margin: 20px 0 0;
     font-size: 16px;
   }
-  .c-alert:first-child {
+  .ys-alert:first-child {
     margin: 0;
   }
 </style>

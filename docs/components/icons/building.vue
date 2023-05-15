@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import IconList from '../icon-list.vue'
-import { UserCircle, UserFilled, UserLeave, User } from '@spruce-hub/icons'
+import { BuildingOrganize } from '@spruce-hub/icons'
 
-const groupIcons = [UserCircle, UserFilled, UserLeave, User]
+const groupIcons = [BuildingOrganize]
 </script>
 
 <template>
