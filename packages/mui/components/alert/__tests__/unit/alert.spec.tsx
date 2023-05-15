@@ -13,7 +13,10 @@ const iconComponents = {
 }
 
 const description = 'Alert Component'
-const more = { text: 'more text', align: 'center' }
+const more: { text: string; align: 'center' | 'end' | 'start' } = {
+  text: 'more text',
+  align: 'center',
+}
 
 describe('Alert', () => {
   it('type test', () => {

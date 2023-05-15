@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { mount } from '@vue/test-utils'
 
-import { Success, Warning, Error, Info, Close, Loading } from '@sprucys-hub/icons'
+import { Success, Warning, Error, Info, Close, Loading } from '@spruce-hub/icons'
 
 import Alert from '../../src/alert.vue'
 
@@ -13,7 +13,10 @@ const iconComponents = {
 }
 
 const description = 'Alert Component'
-const more = { text: 'more text', align: 'center' }
+const more: { text: string; align: 'center' | 'end' | 'start' } = {
+  text: 'more text',
+  align: 'center',
+}
 
 describe('Alert', () => {
   it('type test', () => {
@@ -58,7 +61,7 @@ describe('Alert', () => {
 
     const moreBtn = wrapper.find('.ys-alert__more')
 
-    expect(moreBtn.classes()).toContain('ys-alert__morys--center')
+    expect(moreBtn.classes()).toContain('ys-alert__more--center')
 
     expect(moreBtn.exists()).toBe(true)
     expect(moreBtn.text()).toEqual(more.text)
@@ -75,7 +78,7 @@ describe('Alert', () => {
 
     expect(wrapper.findComponent(Close).exists()).toBe(true)
 
-    expect(closeBtn.classes()).toContain('ys-alert__closys--center')
+    expect(closeBtn.classes()).toContain('ys-alert__close--center')
 
     expect(closeBtn.exists()).toBe(true)
 
