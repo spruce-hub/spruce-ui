@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { CloseBold, Warning } from '@spruce-hub/icons'
 import { CIcon } from '@cui/components/icon'
-import { className } from '@cui/utils'
+import { useNamespace } from '@spruce-hub/ui-hooks'
 import { computed, onMounted, readonly, watch } from 'vue'
 import { reactive, ref } from 'vue'
 import { LazyTeleport } from 'vueuc'
@@ -9,8 +9,7 @@ import { filePreviewProps, filePreviewEmits, FileType, ViewType } from './file-p
 
 const props = defineProps(filePreviewProps)
 const emit = defineEmits(filePreviewEmits)
-
-const { b, e, m, bem } = className('file-preview')
+const { bem } = useNamespace('file-preview')
 
 interface PreviewFile {
   url: string
@@ -72,8 +71,8 @@ function close(e: MouseEvent) {
 
 const teleportStyle = computed(() => {
   return {
-    ['--c-file-preview-error-bgColor']: props.errorBgColor,
-    ['--c-file-preview-error-iconColor']: props.errorIconColor,
+    ['--ys-file-preview-error-bgColor']: props.errorBgColor,
+    ['--ys-file-preview-error-iconColor']: props.errorIconColor,
   }
 })
 
@@ -108,16 +107,16 @@ defineExpose({
 </script>
 
 <template>
-  <div :class="b()" role="preview">
+  <div :class="bem()" role="preview">
     <slot name="default"></slot>
     <LazyTeleport :show="visible" :disabled="teleportDisabled" :to="attachTo">
       <div
         v-if="visible"
-        :class="[e('teleport__container'), teleportDisabled ? m('teleport-disable') : '']"
+        :class="[bem('teleport__container'), teleportDisabled ? bem('', 'teleport-disable') : '']"
         :style="teleportStyle"
       >
-        <div :class="e('teleport__overlay')"></div>
-        <div :class="e('teleport__close')" @click="close">
+        <div :class="bem('teleport__overlay')"></div>
+        <div :class="bem('teleport__close')" @click="close">
           <slot name="close">
             <div :class="bem('teleport__close', 'icon')">
               <CIcon>
@@ -128,14 +127,14 @@ defineExpose({
         </div>
         <div
           v-if="$slots.toolbar"
-          :class="[e('teleport__toolbar'), bem('teleport_toolbar', file.viewType)]"
+          :class="[bem('teleport__toolbar'), bem('teleport_toolbar', file.viewType)]"
           :style="toolbarStyle"
         >
           <slot name="toolbar"></slot>
         </div>
         <div
           v-if="file.viewType !== 'error'"
-          :class="[e('teleport__wrapper'), bem('teleport__wrapper', file.viewType)]"
+          :class="[bem('teleport__wrapper'), bem('teleport__wrapper', file.viewType)]"
           :style="
             ['office', 'other'].includes(file.viewType) ? officeWrapperStyle : imageWrapperStyle
           "
@@ -143,7 +142,7 @@ defineExpose({
           <template v-if="file.viewType === 'image' && file.url">
             <img
               :class="[
-                e('teleport__content'),
+                bem('teleport__content'),
                 bem('teleport__content', 'image'),
                 bem('teleport__content', file.filetype),
               ]"
@@ -153,7 +152,7 @@ defineExpose({
           </template>
           <template v-else-if="file.viewType === 'office' && file.url">
             <div
-              :class="[e('teleport__content'), bem('teleport__content', 'office')]"
+              :class="[bem('teleport__content'), bem('teleport__content', 'office')]"
               :style="officeStyle"
             >
               <iframe
@@ -167,16 +166,16 @@ defineExpose({
           </template>
           <template v-else-if="file.viewType === 'other' && file.url">
             <div
-              :class="[e('teleport__content'), bem('teleport__content', 'office')]"
+              :class="[bem('teleport__content'), bem('teleport__content', 'office')]"
               :style="officeStyle"
             >
               <object width="100%" height="100%" frameBorder="0" :data="file.url"></object>
             </div>
           </template>
         </div>
-        <div v-else :class="e('teleport__error')">
+        <div v-else :class="bem('teleport__error')">
           <slot name="error">
-            <div :class="e('teleport__error_container')">
+            <div :class="bem('teleport__error_container')">
               <CIcon :class="bem('teleport__error', 'icon')">
                 <Warning />
               </CIcon>

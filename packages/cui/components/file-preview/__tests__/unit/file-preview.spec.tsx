@@ -1,11 +1,11 @@
-import { afterEach, beforeAll, describe, expect, it } from 'vitest'
+import { afterEach, describe, expect, it } from 'vitest'
 import FilePreview from '../../src/file-preview.vue'
 import { mount } from '@vue/test-utils'
 import { h } from '@vue/runtime-core'
 import { nextTick } from 'vue'
 import { LazyTeleport } from 'vueuc'
 
-const base = '.c-file-preview__teleport__'
+const base = '.ys-file-preview__teleport__'
 const findModuleEl = (suffix: string): Element | null => document.querySelector(base + suffix)
 const findContainerEl = () => findModuleEl('container')
 
@@ -160,11 +160,11 @@ describe('FilePreview', () => {
     })
 
     // The default value is 'rgba(0, 0, 0, 0.6)'
-    expect(wrapper.vm.teleportStyle['--c-file-preview-error-bgColor']).toBe('rgba(0, 0, 0, 0.6)')
+    expect(wrapper.vm.teleportStyle['--ys-file-preview-error-bgColor']).toBe('rgba(0, 0, 0, 0.6)')
     // set value is '#000'
     wrapper.setProps({ errorBgColor: '#000' })
     await nextTick()
-    expect(wrapper.vm.teleportStyle['--c-file-preview-error-bgColor']).toBe('#000')
+    expect(wrapper.vm.teleportStyle['--ys-file-preview-error-bgColor']).toBe('#000')
 
     wrapper.unmount()
   })
@@ -175,11 +175,11 @@ describe('FilePreview', () => {
     })
 
     // The default value is '#e88420'
-    expect(wrapper.vm.teleportStyle['--c-file-preview-error-iconColor']).toBe('#e88420')
+    expect(wrapper.vm.teleportStyle['--ys-file-preview-error-iconColor']).toBe('#e88420')
     // set value is '#000'
     wrapper.setProps({ errorIconColor: '#000' })
     await nextTick()
-    expect(wrapper.vm.teleportStyle['--c-file-preview-error-iconColor']).toBe('#000')
+    expect(wrapper.vm.teleportStyle['--ys-file-preview-error-iconColor']).toBe('#000')
 
     wrapper.unmount()
   })

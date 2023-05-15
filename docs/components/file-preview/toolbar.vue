@@ -18,7 +18,7 @@
 
 <script setup lang="ts">
 import { CSSProperties, ref } from 'vue'
-import { ArrowLeft, ArrowRight } from '@spruce-hub/icons/components/arrow'
+import { ArrowLeft, ArrowRight } from '@spruce-hub/icons'
 
 const show = ref(false)
 const cur = ref(0)
