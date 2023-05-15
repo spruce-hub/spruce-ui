@@ -3,7 +3,7 @@
   "commit": false,
   "access": "restricted",
   "baseBranch": "main",
-  "ignore": ["@spruce/ui-build", "@spruce/preview-ui"],
+  "ignore": ["@spruce/ui-build", "@spruce/ui-docs", "@spruce/ui-preview"],
   "fixed": [],
   "linked": [],
   "updateInternalDependencies": "patch",

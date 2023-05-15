@@ -1,5 +1,5 @@
 {
-  "name": "@spruce/preview-ui",
+  "name": "@spruce/ui-preview",
   "private": true,
   "description": "组件预览",
   "scripts": {

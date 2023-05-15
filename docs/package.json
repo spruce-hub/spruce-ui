@@ -1,7 +1,6 @@
 {
   "name": "@spruce/ui-docs",
   "private": true,
-  "version": "1.0.0",
   "description": "组件库使用指南",
   "scripts": {
     "dev": "vuepress dev",
