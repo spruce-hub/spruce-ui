@@ -26,10 +26,10 @@
     "access": "public"
   },
   "devDependencies": {
-    "@spruce-hub/cui": "workspace:^0.0.0",
-    "@spruce-hub/eui": "workspace:^0.0.0",
-    "@spruce-hub/icons": "workspace:^0.0.0",
-    "@spruce-hub/mui": "workspace:^0.0.0",
+    "@spruce-hub/cui": "workspace:*",
+    "@spruce-hub/eui": "workspace:*",
+    "@spruce-hub/icons": "workspace:*",
+    "@spruce-hub/mui": "workspace:*",
     "@vuepress/client": "2.0.0-beta.61",
     "@vuepress/plugin-register-components": "2.0.0-beta.61",
     "@vuepress/plugin-search": "2.0.0-beta.61",

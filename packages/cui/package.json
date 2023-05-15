@@ -1,6 +1,6 @@
 {
   "name": "@spruce-hub/cui",
-  "version": "0.0.0",
+  "version": "1.0.0-alpha.1",
   "description": "客户端组件库",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -41,8 +41,8 @@
     "naive-ui": ">=2.34.0"
   },
   "dependencies": {
-    "@spruce-hub/icons": "workspace:^0.0.0",
-    "@spruce-hub/ui-hooks": "workspace:^0.0.0",
+    "@spruce-hub/icons": "workspace:*",
+    "@spruce-hub/ui-hooks": "workspace:*",
     "naive-ui": "^2.34.3"
   },
   "devDependencies": {

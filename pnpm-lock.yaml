@@ -20,20 +20,17 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0(eslint@8.38.0)(prettier@2.8.7)(typescript@5.0.4)
       '@spruce-hub/cui':
-        specifier: workspace:^0.0.0
+        specifier: workspace:*
         version: link:packages/cui
       '@spruce-hub/eui':
-        specifier: workspace:^0.0.0
+        specifier: workspace:*
         version: link:packages/eui
       '@spruce-hub/icons':
-        specifier: workspace:^0.0.0
+        specifier: workspace:*
         version: link:packages/icons
       '@spruce-hub/mui':
-        specifier: workspace:^0.0.0
+        specifier: workspace:*
         version: link:packages/mui
-      '@spruce-hub/ui-hooks':
-        specifier: workspace:^0.0.0
-        version: link:packages/hooks
       '@types/node':
         specifier: 18.15.11
         version: 18.15.11
@@ -259,16 +256,16 @@ importers:
         version: 2.3.4(vue@3.2.47)
     devDependencies:
       '@spruce-hub/cui':
-        specifier: workspace:^0.0.0
+        specifier: workspace:*
         version: link:../packages/cui
       '@spruce-hub/eui':
-        specifier: workspace:^0.0.0
+        specifier: workspace:*
         version: link:../packages/eui
       '@spruce-hub/icons':
-        specifier: workspace:^0.0.0
+        specifier: workspace:*
         version: link:../packages/icons
       '@spruce-hub/mui':
-        specifier: workspace:^0.0.0
+        specifier: workspace:*
         version: link:../packages/mui
       '@vuepress/client':
         specifier: 2.0.0-beta.61
@@ -295,10 +292,10 @@ importers:
   packages/cui:
     dependencies:
       '@spruce-hub/icons':
-        specifier: workspace:^0.0.0
+        specifier: workspace:*
         version: link:../icons
       '@spruce-hub/ui-hooks':
-        specifier: workspace:^0.0.0
+        specifier: workspace:*
         version: link:../hooks
       naive-ui:
         specifier: ^2.34.3
@@ -314,10 +311,10 @@ importers:
   packages/eui:
     dependencies:
       '@spruce-hub/icons':
-        specifier: workspace:^0.0.0
+        specifier: workspace:*
         version: link:../icons
       '@spruce-hub/ui-hooks':
-        specifier: workspace:^0.0.0
+        specifier: workspace:*
         version: link:../hooks
     devDependencies:
       typescript:
@@ -348,10 +345,10 @@ importers:
   packages/mui:
     dependencies:
       '@spruce-hub/icons':
-        specifier: workspace:^0.0.0
+        specifier: workspace:*
         version: link:../icons
       '@spruce-hub/ui-hooks':
-        specifier: workspace:^0.0.0
+        specifier: workspace:*
         version: link:../hooks
     devDependencies:
       typescript:
@@ -367,13 +364,13 @@ importers:
         specifier: ^2.4.2
         version: 2.4.2
       '@spruce-hub/cui':
-        specifier: workspace:^0.0.0
+        specifier: workspace:*
         version: link:../packages/cui
       '@spruce-hub/eui':
-        specifier: workspace:^0.0.0
+        specifier: workspace:*
         version: link:../packages/eui
       '@spruce-hub/mui':
-        specifier: workspace:^0.0.0
+        specifier: workspace:*
         version: link:../packages/mui
       '@vitejs/plugin-vue':
         specifier: ^4.0.0
