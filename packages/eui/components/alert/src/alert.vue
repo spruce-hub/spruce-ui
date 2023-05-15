@@ -1,13 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import {
-  BooleanSuccess,
-  BooleanWarning,
-  Error,
-  Info,
-  BooleanClose,
-  Loading,
-} from '@spruce-hub/icons'
+import { Success, Warning, Error, Info, Close, Loading } from '@spruce-hub/icons'
 import { className } from '@eui/utils'
 import { EIcon } from '@eui/components/icon'
 import { alertProps, alertEmits } from './alert'
@@ -16,8 +9,8 @@ const props = defineProps(alertProps)
 const emit = defineEmits(alertEmits)
 
 const iconComponents: { [key: string]: unknown } = {
-  success: BooleanSuccess,
-  warning: BooleanWarning,
+  success: Success,
+  warning: Warning,
   error: Error,
   info: Info,
 }
@@ -71,7 +64,7 @@ const handleMore = () => {
       </template>
       <template v-else-if="closable">
         <EIcon :class="[e('close'), bem('close', closable)]" @click="close">
-          <BooleanClose />
+          <Close />
         </EIcon>
       </template>
     </div>

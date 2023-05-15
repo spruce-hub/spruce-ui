@@ -2,10 +2,10 @@
 import IconList from '../icon-list.vue'
 import {
   ArrowBack,
-  ArrowCaretBottom,
-  ArrowCaretTop,
+  CaretBottom,
+  CaretTop,
   ArrowDown,
-  ArrowGoBack,
+  GoBack,
   ArrowLeft,
   ArrowRadius,
   ArrowRight,
@@ -14,10 +14,10 @@ import {
 
 const groupIcons = [
   ArrowBack,
-  ArrowCaretBottom,
-  ArrowCaretTop,
+  CaretBottom,
+  CaretTop,
   ArrowDown,
-  ArrowGoBack,
+  GoBack,
   ArrowLeft,
   ArrowRadius,
   ArrowRight,
