@@ -7,8 +7,7 @@
   "scripts": {
     "build": "rollup -c",
     "build:w": "rollup -c -w",
-    "start": "gulp -f ./dist/gulpfile.js",
-    "changelog": "conventional-changelog -n '../changelog.config.js' -i CHANGELOG.md -s -r 0 -k ./package.json --commit-path ./"
+    "start": "gulp -f ./dist/gulpfile.js"
   },
   "keywords": [
     "飞讯云杉前端",

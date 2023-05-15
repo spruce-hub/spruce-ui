@@ -4,8 +4,7 @@
   "description": "组件库使用指南",
   "scripts": {
     "dev": "vuepress dev",
-    "docs:build": "vuepress build",
-    "changelog": "conventional-changelog -n '../changelog.config.js' -i CHANGELOG.md -s -r 0 -k ./package.json --commit-path ./"
+    "docs:build": "vuepress build"
   },
   "keywords": [
     "飞讯云杉前端",
