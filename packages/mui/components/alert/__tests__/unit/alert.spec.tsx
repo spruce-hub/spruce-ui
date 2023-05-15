@@ -1,13 +1,20 @@
 import { describe, expect, it } from 'vitest'
 import { mount } from '@vue/test-utils'
 
-import { Success, Warning, Error, Info, Close, Loading } from '@spruce-hub/icons'
+import {
+  BooleanSuccess,
+  BooleanWarning,
+  Error,
+  Info,
+  BooleanClose,
+  Loading,
+} from '@spruce-hub/icons'
 
 import Alert from '../../src/alert.vue'
 
 const iconComponents = {
-  success: Success,
-  warning: Warning,
+  success: BooleanSuccess,
+  warning: BooleanWarning,
   error: Error,
   info: Info,
 }
@@ -73,7 +80,7 @@ describe('Alert', () => {
     const wrapper = mount(() => <Alert closable={'center'} />)
     const closeBtn = wrapper.find('.ys-icon.ys-alert__close')
 
-    expect(wrapper.findComponent(Close).exists()).toBe(true)
+    expect(wrapper.findComponent(BooleanClose).exists()).toBe(true)
 
     expect(closeBtn.classes()).toContain('ys-alert__close--center')
 

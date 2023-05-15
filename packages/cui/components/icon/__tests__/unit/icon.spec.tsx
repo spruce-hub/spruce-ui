@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { mount } from '@vue/test-utils'
 
-import { Success } from '@spruce-hub/icons'
+import { BooleanSuccess } from '@spruce-hub/icons'
 
 import Icon from '../../src/icon.vue'
 
@@ -21,12 +21,12 @@ describe('Icon', () => {
   })
 
   it('component test', () => {
-    const wrapper = mount(() => <Icon component={Success} />)
-    expect(wrapper.findComponent(Success).exists()).toBe(true)
+    const wrapper = mount(() => <Icon component={BooleanSuccess} />)
+    expect(wrapper.findComponent(BooleanSuccess).exists()).toBe(true)
   })
 
   it('slot test', () => {
-    const wrapper = mount(Icon, { slots: { default: [Success] } })
-    expect(wrapper.findComponent(Success).exists()).toBe(true)
+    const wrapper = mount(Icon, { slots: { default: [BooleanSuccess] } })
+    expect(wrapper.findComponent(BooleanSuccess).exists()).toBe(true)
   })
 })
