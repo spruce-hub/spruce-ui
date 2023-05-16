@@ -18,7 +18,7 @@ export const sidebars = {
   '/cui/': [
     {
       text: '基础组件',
-      children: children('cui', basic),
+      children: children('cui', [...basic, 'file-preview']),
     },
     {
       text: '反馈组件',
