@@ -110,7 +110,7 @@ const buildSvgComponent = async () => {
       }),
       vueJsx(),
       nodeResolve({
-        modulePaths: [resolve(iconsRoot, 'node_modules')],
+        extensions: ['.mjs', '.js', '.json', '.ts'],
       }),
       commonjs(),
       esbuild({

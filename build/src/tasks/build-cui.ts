@@ -33,9 +33,9 @@ const pkgPath = resolve(cuiRoot, 'package.json')
 const pkg = parseJson(readFileSync(pkgPath, 'utf-8'))
 
 const paths = {
-  '@cui/components': '@spruce-hub/cui/dist/components',
-  '@cui/styles': '@spruce-hub/cui/dist/styles',
-  '@cui/utils': '@spruce-hub/cui/dist/utils',
+  '@cui/components': `${cuiRoot}/components`,
+  '@cui/styles': `${cuiRoot}/styles`,
+  '@cui/utils': `${cuiRoot}/utils`,
 }
 
 const excludeFiles = (files: string[]) => {
@@ -62,7 +62,7 @@ export const buildCui = async () => {
       }),
       vueJsx(),
       nodeResolve({
-        modulePaths: [resolve(cuiRoot, 'node_modules')],
+        extensions: ['.mjs', '.js', '.json', '.ts'],
       }),
       commonjs(),
       esbuild({

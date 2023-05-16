@@ -21,7 +21,7 @@ export const buildHooks = async () => {
     input: `${hooksRoot}/index.ts`,
     plugins: [
       nodeResolve({
-        modulePaths: [resolve(hooksRoot, 'node_modules')],
+        extensions: ['.mjs', '.js', '.json', '.ts'],
       }),
       commonjs(),
       esbuild({

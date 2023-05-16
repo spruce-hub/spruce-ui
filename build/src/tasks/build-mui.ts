@@ -33,9 +33,9 @@ const pkgPath = resolve(muiRoot, 'package.json')
 const pkg = parseJson(readFileSync(pkgPath, 'utf-8'))
 
 const paths = {
-  '@mui/components': '@spruce-hub/mui/dist/components',
-  '@mui/styles': '@spruce-hub/mui/dist/styles',
-  '@mui/utils': '@spruce-hub/mui/dist/utils',
+  '@mui/components': `${muiRoot}/components`,
+  '@mui/styles': `${muiRoot}/styles`,
+  '@mui/utils': `${muiRoot}/utils`,
 }
 
 const excludeFiles = (files: string[]) => {
@@ -62,7 +62,7 @@ export const buildMui = async () => {
       }),
       vueJsx(),
       nodeResolve({
-        modulePaths: [resolve(muiRoot, 'node_modules')],
+        extensions: ['.mjs', '.js', '.json', '.ts'],
       }),
       commonjs(),
       esbuild({

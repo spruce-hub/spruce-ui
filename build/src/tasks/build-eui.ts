@@ -33,9 +33,9 @@ const pkgPath = resolve(euiRoot, 'package.json')
 const pkg = parseJson(readFileSync(pkgPath, 'utf-8'))
 
 const paths = {
-  '@eui/components': '@spruce-hub/eui/dist/components',
-  '@eui/styles': '@spruce-hub/eui/dist/styles',
-  '@eui/utils': '@spruce-hub/eui/dist/utils',
+  '@eui/components': `${euiRoot}/components`,
+  '@eui/styles': `${euiRoot}/styles`,
+  '@eui/utils': `${euiRoot}/utils`,
 }
 
 const excludeFiles = (files: string[]) => {
@@ -62,7 +62,7 @@ export const buildEui = async () => {
       }),
       vueJsx(),
       nodeResolve({
-        modulePaths: [resolve(euiRoot, 'node_modules')],
+        extensions: ['.mjs', '.js', '.json', '.ts'],
       }),
       commonjs(),
       esbuild({
