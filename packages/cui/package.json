@@ -1,7 +1,7 @@
 {
   "name": "@spruce-hub/cui",
   "version": "1.0.0-alpha.1",
-  "description": "客户端组件库",
+  "description": "适用于 (S)CRM 平台的公共组件或模块",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -37,8 +37,8 @@
     "access": "public"
   },
   "peerDependencies": {
-    "vue": ">=3.2.0",
-    "naive-ui": ">=2.34.0"
+    "naive-ui": ">=2.34.0",
+    "vue": ">=3.2.0"
   },
   "dependencies": {
     "@spruce-hub/icons": "workspace:*",
