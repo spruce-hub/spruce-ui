@@ -1,4 +1,29 @@
-# 1.0.0-alpha.1 (2023-05-15)
+# [1.0.0-alpha.2](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2023-05-16)
+
+
+### ✨Features
+
+* **file-preview:** file-preview 增加toolbal 案例 ([53e1546](https://github.com/spruce-hub/spruce-ui/commit/53e15460dd28a9269b6de62930b4eeee39d2e447))
+* **components:** add filePreview Component ([55042e2](https://github.com/spruce-hub/spruce-ui/commit/55042e2de124869611279cb4ba701b511e850f7a))
+
+
+### 🐛Bug Fixes
+
+* **filePreview:** 样式前缀及icons引用路径修改 ([12efe59](https://github.com/spruce-hub/spruce-ui/commit/12efe599ab55c5a16379c31fb1776fc9998fa69e))
+
+
+### 🛠️Chore
+
+* update config ([e0787c2](https://github.com/spruce-hub/spruce-ui/commit/e0787c28173417c69715028fe1e06c6af2e45d6d))
+
+
+### 🏗️Build System
+
+* 重写插件 build-alias 以支持将别名替换为相对路径 ([bbbb31e](https://github.com/spruce-hub/spruce-ui/commit/bbbb31e0afe66d3fadaef24e5e97c5f0cf0c8571))
+
+
+
+# [1.0.0-alpha.1](https://github.com/spruce-hub/spruce-ui/compare/d1aacac4ed25e52c9fb025a64031e8ae7ef60581...v1.0.0-alpha.1) (2023-05-15)
 
 
 ### ✨Features

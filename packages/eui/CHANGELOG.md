@@ -1,4 +1,13 @@
-# 1.0.0-alpha.1 (2023-05-15)
+# [1.0.0-alpha.2](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2023-05-16)
+
+
+### 🛠️Chore
+
+* update config ([e0787c2](https://github.com/spruce-hub/spruce-ui/commit/e0787c28173417c69715028fe1e06c6af2e45d6d))
+
+
+
+# [1.0.0-alpha.1](https://github.com/spruce-hub/spruce-ui/compare/ca94030f0defcbe5ee726c53e42d3de637e91936...v1.0.0-alpha.1) (2023-05-15)
 
 
 ### ✨Features
