@@ -20,7 +20,6 @@ import glob from 'fast-glob'
 import { format } from 'prettier'
 import consola from 'consola'
 import chalk from 'chalk'
-import { JSDOM } from 'jsdom'
 import dartSass from 'sass'
 
 import vuePlugin from '@vitejs/plugin-vue'
@@ -48,7 +47,6 @@ export {
   format,
   consola,
   chalk,
-  JSDOM,
   dartSass,
   vuePlugin,
   vueJsx,
