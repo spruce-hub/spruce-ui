@@ -27,6 +27,10 @@ import {
   Telephone,
   Tips,
   Upload,
+  Happy,
+  Sad,
+  Ask,
+  Attachment,
 } from '@spruce-hub/icons'
 
 const groupIcons = [
@@ -56,6 +60,10 @@ const groupIcons = [
   Telephone,
   Tips,
   Upload,
+  Happy,
+  Sad,
+  Ask,
+  Attachment,
 ]
 </script>
 
