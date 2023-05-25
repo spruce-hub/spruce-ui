@@ -1,8 +1,11 @@
 import { defineClientConfig } from '@vuepress/client'
-import cui from '@spruce-hub/cui'
-import eui from '@spruce-hub/eui'
-import mui from '@spruce-hub/mui'
+
+import { cui } from './configs/cui'
+import { eui } from './configs/eui'
+import { mui } from './configs/mui'
+
 import ElementPlus from 'element-plus'
+
 import '@spruce-hub/cui/dist/styles/index.css'
 import '@spruce-hub/eui/dist/styles/index.css'
 import '@spruce-hub/mui/dist/styles/index.css'
