@@ -300,9 +300,6 @@ importers:
       naive-ui:
         specifier: ^2.34.4
         version: 2.34.4(vue@3.3.4)
-      vueuc:
-        specifier: ^0.4.51
-        version: 0.4.51(vue@3.3.4)
     devDependencies:
       typescript:
         specifier: ^5.0.4
