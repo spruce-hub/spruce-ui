@@ -4,7 +4,7 @@ import { CIcon } from '@cui/components/icon'
 import { useNamespace } from '@spruce-hub/ui-hooks'
 import { computed, onMounted, readonly, watch } from 'vue'
 import { reactive, ref } from 'vue'
-import { LazyTeleport } from 'vueuc'
+import LazyTeleport from '../src/lazy-teleport'
 import { filePreviewProps, filePreviewEmits, FileType, ViewType } from './file-preview'
 
 const props = defineProps(filePreviewProps)
