@@ -11,18 +11,18 @@
   },
   "devDependencies": {
     "@esbuild-kit/cjs-loader": "^2.4.2",
-    "@vitejs/plugin-vue": "^4.0.0",
+    "@vitejs/plugin-vue": "^4.2.3",
     "@spruce-hub/cui": "workspace:*",
     "@spruce-hub/eui": "workspace:*",
     "@spruce-hub/mui": "workspace:*",
     "cross-env": "^7.0.3",
     "rollup-plugin-visualizer": "^5.9.0",
-    "sass": "^1.58.3",
-    "tslib": "^2.5.0",
-    "typescript": "^4.9.5",
-    "vite": "^4.1.4",
-    "vue": "^3.2.47",
-    "vue-tsc": "^1.2.0"
+    "sass": "^1.62.1",
+    "tslib": "^2.5.2",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.8",
+    "vue": "^3.3.4",
+    "vue-tsc": "^1.6.5"
   },
   "browserslist": [
     "last 2 version",

@@ -43,6 +43,6 @@
   "dependencies": {},
   "devDependencies": {
     "typescript": "^5.0.4",
-    "vue": "^3.2.47"
+    "vue": "^3.3.4"
   }
 }

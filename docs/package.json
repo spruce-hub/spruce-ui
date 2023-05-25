@@ -30,15 +30,15 @@
     "@spruce-hub/eui": "workspace:*",
     "@spruce-hub/icons": "workspace:*",
     "@spruce-hub/mui": "workspace:*",
-    "@vuepress/client": "2.0.0-beta.61",
-    "@vuepress/plugin-register-components": "2.0.0-beta.61",
-    "@vuepress/plugin-search": "2.0.0-beta.61",
-    "vue": "^3.2.47",
-    "vuepress": "2.0.0-beta.61",
-    "vuepress-plugin-search-pro": "2.0.0-beta.203",
-    "vuepress-theme-hope": "2.0.0-beta.203"
+    "@vuepress/client": "2.0.0-beta.62",
+    "@vuepress/plugin-register-components": "2.0.0-beta.62",
+    "@vuepress/plugin-search": "2.0.0-beta.62",
+    "vue": "^3.3.4",
+    "vuepress": "2.0.0-beta.62",
+    "vuepress-plugin-search-pro": "2.0.0-beta.213",
+    "vuepress-theme-hope": "2.0.0-beta.213"
   },
   "dependencies": {
-    "element-plus": "^2.3.4"
+    "element-plus": "^2.3.5"
   }
 }
