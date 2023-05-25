@@ -1,3 +1,22 @@
+# [1.0.0-alpha.3](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2023-05-25)
+
+
+### ✨Features
+
+* add some icons ([d265690](https://github.com/spruce-hub/spruce-ui/commit/d265690f03b39e173dad957b2ced365d5426547e))
+
+
+### 🛠️Chore
+
+* update deps ([4a10d63](https://github.com/spruce-hub/spruce-ui/commit/4a10d63423108ef58362c58e056cd8dddf6825bf))
+
+
+### 🏗️Build System
+
+* 合并组件库的构建代码 ([31f2408](https://github.com/spruce-hub/spruce-ui/commit/31f2408289ca068acf8bd34062d99e98a75a7f62))
+
+
+
 # [1.0.0-alpha.2](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2023-05-16)
 
 

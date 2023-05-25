@@ -1,3 +1,12 @@
+# [1.0.0-alpha.3](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2023-05-25)
+
+
+### 🛠️Chore
+
+* update deps ([4a10d63](https://github.com/spruce-hub/spruce-ui/commit/4a10d63423108ef58362c58e056cd8dddf6825bf))
+
+
+
 # [1.0.0-alpha.2](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2023-05-16)
 
 
