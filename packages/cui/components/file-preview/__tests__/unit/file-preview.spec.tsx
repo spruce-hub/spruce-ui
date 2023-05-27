@@ -3,7 +3,7 @@ import FilePreview from '../../src/file-preview.vue'
 import { mount } from '@vue/test-utils'
 import { h } from '@vue/runtime-core'
 import { nextTick } from 'vue'
-import { LazyTeleport } from 'vueuc'
+import LazyTeleport from '../../src/lazy-teleport'
 
 const base = '.ys-file-preview__teleport__'
 const findModuleEl = (suffix: string): Element | null => document.querySelector(base + suffix)

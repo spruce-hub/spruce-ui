@@ -43,8 +43,7 @@
   "dependencies": {
     "@spruce-hub/icons": "workspace:*",
     "@spruce-hub/ui-hooks": "workspace:*",
-    "naive-ui": "^2.34.4",
-    "vueuc": "^0.4.51"
+    "naive-ui": "^2.34.4"
   },
   "devDependencies": {
     "typescript": "^5.0.4",
