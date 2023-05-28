@@ -1,3 +1,19 @@
+# [1.0.0-alpha.4](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2023-05-28)
+
+
+### ✨Features
+
+* **icon:** 添加默认导出 ([195fba2](https://github.com/spruce-hub/spruce-ui/commit/195fba21d75a583d7abd69c230925a4cf2ca9df3))
+
+
+### 🛠️Chore
+
+* **package:** update config ([97c4763](https://github.com/spruce-hub/spruce-ui/commit/97c47634eff53483f0515341c500c99c00c5b6b3))
+* **README:** update README.md ([5c9daa8](https://github.com/spruce-hub/spruce-ui/commit/5c9daa8d71f4f7f65b4352c35f4e2efdc9d0db5d))
+* **git:** 忽略自动创建的全局声明文件 ([b1c14d8](https://github.com/spruce-hub/spruce-ui/commit/b1c14d814fd82429899cf12cac51c93f953c9ff8))
+
+
+
 # [1.0.0-alpha.3](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2023-05-25)
 
 

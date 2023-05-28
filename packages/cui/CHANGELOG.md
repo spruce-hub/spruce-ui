@@ -1,3 +1,23 @@
+# [1.0.0-alpha.4](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2023-05-28)
+
+
+### ✨Features
+
+* **component:** add lazyTeleport ([7446757](https://github.com/spruce-hub/spruce-ui/commit/74467573d9f1ce8bf1d12cad8bf1bf29d6483e4c))
+
+
+### 🐛Bug Fixes
+
+* **component:** change the reference path of lazyTeleport ([74d4681](https://github.com/spruce-hub/spruce-ui/commit/74d468118437a3c57fc52737e85c73a251b8ce32))
+
+
+### 🛠️Chore
+
+* **README:** update README.md ([5c9daa8](https://github.com/spruce-hub/spruce-ui/commit/5c9daa8d71f4f7f65b4352c35f4e2efdc9d0db5d))
+* **cui:** remove `vueuc` ([bad9e50](https://github.com/spruce-hub/spruce-ui/commit/bad9e50d82a48b664f7f402890c66aad86a1ea5c))
+
+
+
 # [1.0.0-alpha.3](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2023-05-25)
 
 
