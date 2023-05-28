@@ -23,8 +23,6 @@ module.exports = {
     { value: 'docs', name: 'docs:     Documentation only changes' },
   ],
 
-  /** 提交消息
-   * -------------------------- */
   messages: {
     type: "Select the type of change that you're committing:",
     scope: 'Denote the SCOPE of this change (optional):',
@@ -37,37 +35,57 @@ module.exports = {
   },
 
   subjectLimit: 100,
-  // typePrefix: '[',
-  // typeSuffix: ']',
-  // subjectSeparator: '：',
 
-  scopes: [
-    { name: 'component' },
-    { name: 'style' },
-    { name: 'hook' },
-    { name: 'script' },
-    { name: 'other' },
-  ],
+  scopeOverrides: {
+    feat: [
+      { name: 'component' },
+      { name: 'icon' },
+      { name: 'hook' },
+      { name: 'util' },
+      { name: 'style' },
+    ],
+    fix: [
+      { name: 'component' },
+      { name: 'icon' },
+      { name: 'hook' },
+      { name: 'util' },
+      { name: 'style' },
+    ],
+    refactor: [
+      { name: 'component' },
+      { name: 'icon' },
+      { name: 'hook' },
+      { name: 'util' },
+      { name: 'style' },
+    ],
+    perf: [
+      { name: 'component' },
+      { name: 'icon' },
+      { name: 'hook' },
+      { name: 'util' },
+      { name: 'style' },
+    ],
+    revert: [
+      { name: 'component' },
+      { name: 'icon' },
+      { name: 'hook' },
+      { name: 'util' },
+      { name: 'style' },
+    ],
+    chore: [
+      { name: 'package' },
+      { name: 'eslint' },
+      { name: 'changelog' },
+      { name: 'cz' },
+      { name: 'prettier' },
+      { name: 'vitest' },
+      { name: 'script' },
+      { name: 'README' },
+      { name: 'git' },
+    ],
+  },
+  skipEmptyScopes:true,
 
-  // scopeOverrides: {
-  //   fix: [
-  //     {name: 'merge'},
-  //     {name: 'style'},
-  //     {name: 'e2eTest'},
-  //     {name: 'unitTest'}
-  //   ]
-  // },
-
-  allowCustomScopes: true,
   allowBreakingChanges: ['feat', 'fix', 'refactor'],
-  // skipQuestions: ['body', 'footer'],
-  appendBranchNameToCommitMessage: true,
-  allowTicketNumber: false,
   ticketNumberPrefix: 'TICKET-',
-  isTicketNumberRequired: false,
-  ticketNumberRegExp: '\\d{1,5}',
-  breaklineChar: '|',
-  // breakPrefix: 'BREAKING CHANGE:',
-  // footerPrefix : 'ISSUES CLOSED:',
-  // askForBreakingChangeFirst : true,
 }
