@@ -10,11 +10,7 @@ author: Noah Yu
 | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
 | Edge ≥ 79                                                                      | Firefox ≥ 78                                                                            | Chrome ≥ 64                                                                          | Safari ≥ 12                                                                          |
 
-由于 Spruce UI 基于 Vue 3 开发，所以不支持 IE 浏览器
-
 ## 使用包管理器
-
-[Spruce UI](https://github.com/spruce-hub/spruce-ui.git) 发布在私有[包管理仓库](https://npm.sprucefe.com/)，安装时请确保已设置正确的[源地址](https://npm.sprucefe.com/)
 
 ::: tabs#pm
 
@@ -39,23 +35,3 @@ npm install @spruce-hub/mui@next --save
 ```
 
 :::
-
-使用
-
-## 浏览器直接引入
-
-Spruce UI 不建议使用该方式引入，如果你因为项目的某些特殊原因需要使用浏览器直接引入，请到[包管理仓库](https://npm.sprucefe.com/)自行下载包资源，然后部署到 CDN 或其他静态资源服务器
-
-```html
-<head>
-  <link rel="stylesheet" href="${cdn_url}/@spruce-hub/cui/dist/styles/index.css" />
-  <script src="${cdn_url}/@spruce-hub/cui"></script>
-</head>
-
-<!-- or -->
-
-<head>
-  <link rel="stylesheet" href="${cdn_url}/@spruce-hub/mui/dist/styles/index.css" />
-  <script src="${cdn_url}/@spruce-hub/mui"></script>
-</head>
-```

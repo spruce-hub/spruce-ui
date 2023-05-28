@@ -6,7 +6,7 @@ author: Noah Yu
 
 ## 完整导入 <Badge type="tip" text="推荐" vertical="middle" />
 
-> 客户端/管理端组件库使用方式相同，以下仅展示 **客户端组件库** 的使用方式
+> 客户端/管理端组件库使用方式相同，以下仅展示 **(S)CRM 系统组件库** 的使用方式
 
 ```ts
 // main.ts
@@ -80,7 +80,3 @@ import { CAlert } from '@spruce-hub/cui'
   <CAlert type="success" description="success alert" closable="center" />
 </template>
 ```
-
-## 注意事项
-
-**Spruce UI** 基于自身实现的 _Normalize.css_ 环境下开发，如果你的项目存在其他 _Normalize.css_ 或类似的格式化样式，可能会导致组件产生样式差异。
