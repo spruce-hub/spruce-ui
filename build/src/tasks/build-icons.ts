@@ -18,6 +18,7 @@ import {
   readFileSync,
   writeFileSync,
   emptyDir,
+  ensureDirSync,
 } from '../utils'
 
 import { dts } from '../plugins/build-dts'
@@ -72,32 +73,59 @@ const transformToVueComponent = async () => {
     <template>
     ${content}
     </template>
-
-    <script lang="ts">
-    import type { DefineComponent } from 'vue'
-    export default ({
-      name: "${componentName}",
-    }) as DefineComponent
-    </script>`,
+    `,
       'vue'
     )
-    writeFileSync(resolve(`${iconsRoot}/components`, `${filename}.vue`), vue, 'utf-8')
-    consola.success(chalk.green(`SFC: ${chalk.bold(`/components/${filename}.vue`)}`))
+
+    const index = formatCode(
+      `
+      import ${componentName} from './${filename}.vue'
+      import type { App, Plugin } from 'vue'
+
+      export const ${componentName}Plugin: Plugin = {
+        install(app: App) {
+          app.component('${componentName}', ${componentName})
+        },
+      }
+      export { ${componentName} }
+      `,
+      'typescript'
+    )
+    ensureDirSync(`${iconsRoot}/components/${filename}`)
+    writeFileSync(resolve(`${iconsRoot}/components/${filename}`, `${filename}.vue`), vue, 'utf-8')
+    writeFileSync(resolve(`${iconsRoot}/components/${filename}`, 'index.ts'), index, 'utf-8')
+    consola.success(chalk.green(`SFC: ${chalk.bold(`/components/${filename}/${filename}.vue`)}`))
+    consola.success(chalk.green(`SFC: ${chalk.bold(`/components/${filename}/index.ts`)}`))
   })
 }
 
 const generateEntry = async () => {
   const files = await getSvgFiles()
+
+  const comp: string[] = []
+  const compPlugin: string[] = []
   const code = formatCode(
     files
       .map((file) => {
         const { filename, componentName } = getSvgName(file)
-        return `export { default as ${componentName} } from './${filename}.vue'`
+
+        comp.push(`${componentName}`)
+        compPlugin.push(`${componentName}Plugin`)
+
+        return `import { ${componentName}, ${componentName}Plugin } from './${filename}'`
       })
       .join('\n')
   )
 
-  writeFileSync(resolve(`${iconsRoot}/components`, 'index.ts'), code, 'utf-8')
+  const index = formatCode(
+    `
+    ${code}
+    export {${comp}}
+    export default [${compPlugin}]
+    `
+  )
+
+  writeFileSync(resolve(`${iconsRoot}/components`, 'index.ts'), index, 'utf-8')
   consola.success(chalk.green(`SVG: ${chalk.bold('/components/index.ts')}`))
 }
 
@@ -144,9 +172,4 @@ const buildSvgComponent = async () => {
   })
 }
 
-export const buildIcons = series(
-  // formatSVG,
-  transformToVueComponent,
-  generateEntry,
-  buildSvgComponent
-)
+export const buildIcons = series(transformToVueComponent, generateEntry, buildSvgComponent)
