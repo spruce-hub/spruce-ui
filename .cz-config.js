@@ -81,6 +81,7 @@ module.exports = {
       { name: 'vitest' },
       { name: 'script' },
       { name: 'README' },
+      { name: 'git' },
     ],
   },
   skipEmptyScopes:true,
