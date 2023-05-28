@@ -172,4 +172,39 @@ const buildSvgComponent = async () => {
   })
 }
 
-export const buildIcons = series(transformToVueComponent, generateEntry, buildSvgComponent)
+const generateGDTS = async () => {
+  const files = await getSvgFiles()
+
+  const code = formatCode(
+    files
+      .map((file) => {
+        const { componentName } = getSvgName(file)
+
+        return `${componentName}: typeof import('@spruce-hub/icons')['${componentName}']`
+      })
+      .join('\n')
+  )
+
+  const GDTS = formatCode(
+    `
+    declare module 'vue' {
+      export interface GlobalComponents {
+        ${code}
+      }
+    }
+    
+    export {}
+    `,
+    'typescript'
+  )
+
+  writeFileSync(resolve(`${iconsRoot}`, 'global.d.ts'), GDTS, 'utf-8')
+  consola.success(chalk.green(`GDTS: ${chalk.bold('global.d.ts')}`))
+}
+
+export const buildIcons = series(
+  transformToVueComponent,
+  generateEntry,
+  buildSvgComponent,
+  generateGDTS
+)
