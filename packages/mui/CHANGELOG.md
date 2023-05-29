@@ -1,3 +1,12 @@
+# [1.0.0-alpha.4](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2023-05-28)
+
+
+### 🛠️Chore
+
+* **README:** update README.md ([5c9daa8](https://github.com/spruce-hub/spruce-ui/commit/5c9daa8d71f4f7f65b4352c35f4e2efdc9d0db5d))
+
+
+
 # [1.0.0-alpha.3](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2023-05-25)
 
 

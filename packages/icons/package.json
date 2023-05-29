@@ -1,6 +1,6 @@
 {
   "name": "@spruce-hub/icons",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "description": "图标库",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -11,7 +11,8 @@
     "./*": "./*"
   },
   "files": [
-    "/dist"
+    "/dist",
+    "/global.d.ts"
   ],
   "scripts": {
     "changelog": "conventional-changelog -n '../../changelog.config.js' -i CHANGELOG.md -s -r 0 -k ./package.json --commit-path ./"
