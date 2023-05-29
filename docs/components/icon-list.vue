@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ElMessage } from 'element-plus'
 
+import { iconStore } from '../.vuepress/store'
+
 import type { DefineComponent } from 'vue'
 
 defineProps<{
@@ -8,8 +10,10 @@ defineProps<{
 }>()
 
 const copy = async (name: string) => {
+  const type = iconStore.libType[0]
+  const comp = `<${type}Icon><${name} /></${type}Icon>`
   try {
-    await navigator.clipboard.writeText(`<${name} />`)
+    await navigator.clipboard.writeText(comp)
 
     ElMessage({
       message: '已复制',
