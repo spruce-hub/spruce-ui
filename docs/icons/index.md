@@ -4,6 +4,8 @@ author: Noah Yu
 
 # 图标集
 
+<IconHeader />
+
 ### 应用
 
 <IconsApp />
