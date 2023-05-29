@@ -73,6 +73,13 @@ const transformToVueComponent = async () => {
     <template>
     ${content}
     </template>
+
+    <script lang="ts">
+    import type { DefineComponent } from 'vue'
+    export default ({
+      name: "${componentName}",
+    }) as DefineComponent
+    </script>
     `,
       'vue'
     )
@@ -192,7 +199,7 @@ const generateGDTS = async () => {
         ${code}
       }
     }
-    
+
     export {}
     `,
     'typescript'
