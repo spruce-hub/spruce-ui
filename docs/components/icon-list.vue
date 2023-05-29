@@ -1,14 +1,30 @@
 <script setup lang="ts">
+import { ElMessage } from 'element-plus'
+
 import type { DefineComponent } from 'vue'
+
 defineProps<{
   components: Array<DefineComponent>
 }>()
+
+const copy = async (name: string) => {
+  try {
+    await navigator.clipboard.writeText(`<${name} />`)
+
+    ElMessage({
+      message: '已复制',
+      type: 'success',
+    })
+  } catch (err) {
+    ElMessage.error('复制失败')
+  }
+}
 </script>
 
 <template>
   <div class="icons">
-    <div v-for="icon in components" :key="icon.name" class="icon-list">
-      <div class="icon-item" :title="icon.name">
+    <div v-for="icon in components" :key="icon.name" class="icon-list" @click="copy(icon.name)">
+      <div class="icon-item">
         <div class="icon">
           <component :is="icon" />
         </div>
@@ -33,6 +49,11 @@ defineProps<{
   font-size: 14px;
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--theme-color);
+  }
 }
 .icon {
   text-align: center;
