@@ -4,7 +4,7 @@ title: 首页
 heroImage: /logo.png
 ---
 
-::: chart 一个块状图案例
+::: chart
 
 ```json
 {
