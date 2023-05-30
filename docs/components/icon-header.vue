@@ -1,10 +1,15 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 
-import { iconStore } from '../.vuepress/store'
-const radio = ref(iconStore.libType)
+const radio = ref('CUI')
 
-watch(radio, () => {
+onMounted(async () => {
+  const { iconStore } = await import('../.vuepress/store')
+  radio.value = iconStore.libType
+})
+
+watch(radio, async () => {
+  const { iconStore } = await import('../.vuepress/store')
   iconStore.setLibType(radio.value)
 })
 </script>
