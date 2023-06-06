@@ -1,7 +1,7 @@
 ---
 home: true
 title: 首页
-heroImage: /logo.png
+heroImage: https://oss.sprucefe.com/spruce-ui/logo/logo.png
 ---
 
 ::: chart

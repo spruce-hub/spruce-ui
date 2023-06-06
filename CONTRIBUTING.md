@@ -245,7 +245,7 @@ pnpm docs:dev
 
 效果如下
 
-![alert](/public/alert.png)
+![alert](https://oss.sprucefe.com/spruce-ui/docs/alert.png)
 
 ## 提交代码
 

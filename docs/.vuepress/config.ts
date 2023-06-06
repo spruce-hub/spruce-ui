@@ -33,9 +33,9 @@ export default defineUserConfig({
   lang: 'zh-CN',
   title: 'Spruce UI',
   description: '飞讯云杉前端组件库',
-  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  head: [['link', { rel: 'icon', href: 'https://oss.sprucefe.com/spruce-ui/logo/favicon.ico' }]],
   theme: hopeTheme({
-    logo: '/logo.png',
+    logo: 'https://oss.sprucefe.com/spruce-ui/logo/logo.png',
     navbar: navbars,
     sidebar: sidebars,
     headerDepth: 3,

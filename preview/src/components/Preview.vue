@@ -1,6 +1,6 @@
 <template>
   <header>
-    <img src="@assets/logo.png" alt="logo" />
+    <img width="200" src="https://oss.sprucefe.com/spruce-ui/logo/logo.png" alt="logo" />
     <h1>Spruce UI</h1>
     <p>基于 Vue 3 的前端组件库</p>
   </header>

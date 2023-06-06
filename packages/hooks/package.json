@@ -18,7 +18,6 @@
     "changelog": "conventional-changelog -n '../../changelog.config.js' -i CHANGELOG.md -s -r 0 -k ./package.json --commit-path ./"
   },
   "keywords": [
-    "飞讯云杉前端",
     "Spruce Hub",
     "Spruce UI",
     "composables"
@@ -42,7 +41,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "typescript": "^5.0.4",
+    "typescript": "^5.1.3",
     "vue": "^3.3.4"
   }
 }

@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="public/logo.png" width="200px"/>
+<img src="https://oss.sprucefe.com/spruce-ui/logo/logo.png" width="200px"/>
 
 </div>
 
@@ -19,7 +19,7 @@
 
 - Composition API
 - TypeScript
-- SASS
+- SCSS
 
 ## 环境
 
