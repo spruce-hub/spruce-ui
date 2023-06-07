@@ -1,0 +1,37 @@
+@use 'config' as *;
+
+// joinVarName(('alert', 'text-color')) => '--ys-alert-text-color'
+@function joinVarName($list) {
+  $name: '--' + $namespace;
+  @each $item in $list {
+    @if $item != '' {
+      $name: $name + '-' + $item;
+    }
+  }
+  @return $name;
+}
+
+// getCssVar('alert', 'text-color') => var(--ys-alert-text-color)
+@function getCssVar($args...) {
+  @return var(#{joinVarName($args)});
+}
+
+@function getBlock($b) {
+  @return #{$namespace}#{$common-separator}#{$b};
+}
+
+@function getElement($b, $e) {
+  @return #{$namespace}#{$common-separator}#{$b}#{$element-separator}#{$e};
+}
+
+@function getModifier($b, $m) {
+  @return #{$namespace}#{$common-separator}#{$b}#{$modifier-separator}#{$m};
+}
+
+@function getbem($b, $e, $m) {
+  @return #{$namespace}#{$common-separator}#{$b}#{$element-separator}#{$e}#{$modifier-separator}#{$m};
+}
+
+@function getState($is) {
+  @return #{$state-prefix}#{$modifier-separator}#{$is};
+}

@@ -1,0 +1,87 @@
+$ef: 'enter-from'; // 进入动画的起始状态
+$ea: 'enter-active'; // 进入动画的生效状态
+$et: 'enter-to'; // 进入动画的结束状态
+$lf: 'leave-from'; // 离开动画的起始状态
+$la: 'leave-active'; // 离开动画的生效状态
+$lt: 'leave-to'; // 离开动画的结束状态
+
+$name: 'fade';
+$axisX: '#{$name}-toggle-x';
+$axisY: '#{$name}-toggle-y';
+$axisYB: '#{$name}-toggle-y-b';
+$axisEnd: '#{$name}-roll-end';
+
+/** 淡入淡出
+ * -------------------------- */
+.#{$name}-#{$ef},
+.#{$name}-#{$lt} {
+  opacity: 0;
+}
+
+.#{$name}-#{$ea},
+.#{$name}-#{$la} {
+  transition: all 0.3s ease-in-out;
+}
+
+/** 淡入淡出伴随横向位移
+ * -------------------------- */
+.#{$axisX}-#{$ef},
+.#{$axisX}-#{$lt} {
+  transform: translateX(30px);
+  opacity: 0;
+}
+
+.#{$axisX}-#{$ea},
+.#{$axisX}-#{$la} {
+  transition: all 0.3s ease-in-out;
+}
+
+/** 淡入淡出伴随由下至上的纵向位移
+ * -------------------------- */
+.#{$axisY}-#{$ef},
+.#{$axisY}-#{$lt} {
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.#{$axisY}-#{$ea},
+.#{$axisY}-#{$la} {
+  transition: all 0.3s ease-in-out;
+}
+
+/** 淡入淡出伴随由上至下的纵向位移
+ * -------------------------- */
+.#{$axisYB}-#{$ef},
+.#{$axisYB}-#{$lt} {
+  transform: translateY(-30px);
+  opacity: 0;
+}
+
+.#{$axisYB}-#{$ea},
+.#{$axisYB}-#{$la} {
+  transition: all 0.3s ease-in-out;
+}
+
+/** 淡入淡出伴随由上至下的纵向位移
+ * -------------------------- */
+.#{$axisEnd}-#{$ef} {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.#{$axisEnd}-#{$et} {
+  transform: translateY(0%);
+  opacity: 1;
+}
+.#{$axisEnd}-#{$lf} {
+  transform: translateY(0%);
+  opacity: 1;
+}
+.#{$axisEnd}-#{$lt} {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.#{$axisEnd}-#{$ea},
+.#{$axisEnd}-#{$la} {
+  transition: all 0.4s ease-in-out;
+}

@@ -1,0 +1,66 @@
+/** 文字品牌色
+ * -------------------------- */
+.hover--text-primary:hover {
+  color: var(--ys-primary) !important;
+}
+.hover--text-primary-dark:hover {
+  color: var(--ys-primary-dark) !important;
+}
+
+.hover--button-primary:hover {
+  transition: all 0.4s;
+  background-color: var(--ys-primary) !important;
+}
+.hover--button-primary-dark:hover {
+  transition: all 0.4s;
+  background-color: var(--ys-primary-dark) !important;
+}
+
+/** 下划线
+ * -------------------------- */
+.hover--underline-primary {
+  position: relative;
+  &::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: var(--ys-primary);
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    transition: width 0.3s;
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+/** 流光效果
+ * -------------------------- */
+.hover--logo-primary {
+  overflow: hidden;
+  position: relative;
+  &::before {
+    content: '';
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      hsla(0, 0%, 100%, 0) 0,
+      hsla(0, 0%, 100%, 0.3) 50%,
+      hsla(0, 0%, 100%, 0)
+    );
+    position: absolute;
+    left: -30%;
+    top: 0;
+    transform: skewX(-45deg);
+  }
+  &:hover {
+    &::before {
+      left: 100%;
+      transition: 1s ease;
+    }
+  }
+}
