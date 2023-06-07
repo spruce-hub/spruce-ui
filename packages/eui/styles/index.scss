@@ -1,2 +1,3 @@
-@use './base.scss';
-@use './component.scss';
+@use '@spruce-hub/chalk/dist/scss/index.scss';
+@use './transitions/transition.scss';
+@use './components.scss';

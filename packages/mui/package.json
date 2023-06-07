@@ -39,6 +39,7 @@
     "vue": ">=3.2.0"
   },
   "dependencies": {
+    "@spruce-hub/chalk": "workspace:*",
     "@spruce-hub/icons": "workspace:*",
     "@spruce-hub/ui-hooks": "workspace:*"
   },
