@@ -112,7 +112,7 @@ export const buildUI = async (lib: string) => {
     const noPrefixFile = /(index|base|component)/
 
     return src(resolve(uiRoot, 'styles/*.scss'))
-      .pipe(sass.sync())
+      .pipe(sass.sync({ includePaths: [resolve(uiRoot, './node_modules')] }))
       .pipe(autoprefixer({ cascade: false }))
       .pipe(
         cleanCSS({}, (details) => {

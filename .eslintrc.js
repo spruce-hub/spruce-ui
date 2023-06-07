@@ -47,7 +47,7 @@ module.exports = {
       },
     },
     {
-      files: ['preview/**/*.vue', 'preview/**/*.ts'],
+      files: ['playground/**/*.vue', 'playground/**/*.ts'],
       extends: ['@noahyu/vue'],
     },
   ],

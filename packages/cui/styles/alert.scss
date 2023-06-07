@@ -1,4 +1,4 @@
-@use './mixins/mixins' as *;
+@use './mixins/mixin' as *;
 
 $type: success warning error info;
 $align: start end center;
@@ -57,7 +57,7 @@ $align: start end center;
   .#{getModifier('alert',$t)} {
     color: getCssVar('#{$t}');
     border-color: getCssVar('#{$t}');
-    background-color: getCssVar('bg-#{$t}');
+    background-color: getCssVar('#{$t}-bg');
   }
 }
 
@@ -79,6 +79,5 @@ $align: start end center;
   .#{getBlock('alert')} .#{getbem('alert','more',$a)},
   .#{getBlock('alert')} .#{getbem('alert','close',$a)} {
     align-self: if($a == center, center, flex-#{$a});
-    height: getCssVar('basis', 'height');
   }
 }

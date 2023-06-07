@@ -1,5 +1,6 @@
 packages:
-  - 'packages/*'
   - 'build'
   - 'docs'
+  - 'packages/*'
+  - 'playground/*'
   - 'preview'
