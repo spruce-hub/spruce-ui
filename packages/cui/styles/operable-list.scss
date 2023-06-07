@@ -1,4 +1,4 @@
-@use './mixins/mixins' as *;
+@use './mixins/mixin' as *;
 
 $comp: operable-list;
 .#{getBlock($comp)} {
