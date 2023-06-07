@@ -17,6 +17,7 @@
     "@spruce-hub/mui": "workspace:*",
     "@vitejs/plugin-vue": "^4.2.3",
     "cross-env": "^7.0.3",
+    "naive-ui": "^2.34.3",
     "rollup-plugin-visualizer": "^5.9.0",
     "sass": "^1.62.1",
     "tslib": "^2.5.3",

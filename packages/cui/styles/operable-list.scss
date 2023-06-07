@@ -1,0 +1,81 @@
+@use './mixins/mixins' as *;
+
+$comp: operable-list;
+.#{getBlock($comp)} {
+  flex-direction: column;
+  padding: 20px;
+  width: 160px;
+}
+.#{getElement($comp, 'item')} {
+  display: flex;
+  height: 30px;
+  margin-top: 2px;
+  border-radius: 2px;
+  line-height: 30px;
+  border-radius: 2px;
+  color: var(--ys-gray);
+  cursor: pointer;
+  &:hover {
+    .#{getElement($comp, 'item__name')} {
+      color: var(--ys-primary);
+    }
+    .#{getElement($comp, 'item__btn')} {
+      display: block;
+      margin-right: 6px;
+      position: relative;
+      top: 1px;
+    }
+  }
+  &.#{getState('active')} {
+    background-color: var(--ys-gray-100);
+  }
+}
+.#{getElement($comp, 'item__name')} {
+  flex: 1;
+  padding: 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  .#{getElement($comp, 'item__name__status')} {
+    position: relative;
+    top: 2px;
+  }
+
+  &.#{getState('disabled')} {
+    color: var(--ys-gray-700);
+  }
+}
+.#{getElement($comp, 'item__btn')} {
+  display: none;
+  flex-shrink: 0;
+  white-space: nowrap;
+  #MOVE {
+    cursor: move;
+  }
+}
+.#{getElement($comp, 'item__btn__more')} {
+  display: inline-block;
+  width: 12px;
+  height: 22px;
+  margin-left: 4px;
+  position: relative;
+  top: 3px;
+  border-radius: 2px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    background-color: #dbdbe0;
+  }
+  svg {
+    width: 10px;
+    height: 18px;
+  }
+}
+.#{getBlock($comp)} .#{getElement($comp, 'input')} {
+  margin-top: 2px;
+  .n-input-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

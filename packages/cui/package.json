@@ -43,7 +43,9 @@
     "@spruce-hub/chalk": "workspace:*",
     "@spruce-hub/icons": "workspace:*",
     "@spruce-hub/ui-hooks": "workspace:*",
-    "naive-ui": "^2.34.4"
+    "@types/sortablejs": "^1.15.1",
+    "naive-ui": "^2.34.4",
+    "sortablejs": "^1.15.0"
   },
   "devDependencies": {
     "typescript": "^5.1.3",
