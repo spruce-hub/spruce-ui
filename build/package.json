@@ -55,7 +55,7 @@
     "parse-json": "^7.0.0",
     "prettier": "^2.8.8",
     "rimraf": "^5.0.1",
-    "rollup": "^3.23.1",
+    "rollup": "^3.24.0",
     "rollup-plugin-esbuild": "^5.0.0",
     "sass": "^1.62.1",
     "ts-morph": "^18.0.0",
