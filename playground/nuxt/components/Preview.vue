@@ -6,7 +6,7 @@
   </header>
   <div class="components">
     <p class="tips">演示你的组件</p>
-    <slot> 组件呢? </slot>
+    <slot> </slot>
   </div>
 </template>
 
@@ -35,7 +35,7 @@ header {
     border-bottom: 1px solid #eee;
     width: 100%;
     height: 40px;
-    color: var(--ys-turquoise-dark);
+    color: var(--ys-primary);
     line-height: 40px;
     text-align: center;
   }

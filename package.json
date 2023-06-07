@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "dev": "pnpm -C preview dev",
+    "dev": "pnpm --filter playground-vue dev",
+    "dev:nuxt": "pnpm --filter playground-nuxt dev",
     "build": "pnpm -F @spruce/ui-build exec rimraf dist && pnpm -F @spruce/ui-build build && pnpm -C build start",
     "docs:dev": "pnpm -C docs dev",
     "docs:build": "pnpm -C docs docs:build",

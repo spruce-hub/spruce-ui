@@ -9,7 +9,7 @@ import { format } from 'prettier'
 
 import type { BuiltInParserName } from 'prettier'
 
-const projectRoot = resolve(cwd(), '../preview')
+const projectRoot = resolve(cwd(), '../playground/vue')
 
 const formatCode = (code: string, parser: BuiltInParserName = 'typescript') =>
   format(code, {

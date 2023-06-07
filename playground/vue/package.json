@@ -1,7 +1,7 @@
 {
-  "name": "@spruce/ui-preview",
+  "name": "playground-vue",
   "private": true,
-  "description": "组件预览",
+  "description": "Spruce UI playground",
   "scripts": {
     "dev": "node -r @esbuild-kit/cjs-loader ./dev.ts && vite",
     "build:test": "vue-tsc --noEmit && cross-env VUE_APP_MODE=test vite build"
@@ -11,10 +11,11 @@
   },
   "devDependencies": {
     "@esbuild-kit/cjs-loader": "^2.4.2",
-    "@vitejs/plugin-vue": "^4.2.3",
+    "@spruce-hub/chalk": "workspace:*",
     "@spruce-hub/cui": "workspace:*",
     "@spruce-hub/eui": "workspace:*",
     "@spruce-hub/mui": "workspace:*",
+    "@vitejs/plugin-vue": "^4.2.3",
     "cross-env": "^7.0.3",
     "rollup-plugin-visualizer": "^5.9.0",
     "sass": "^1.62.1",
@@ -29,7 +30,7 @@
     "> 1%",
     "maintained node versions",
     "not dead",
-    "not ie",
+    "IE >11",
     "safari >=7"
   ]
 }
