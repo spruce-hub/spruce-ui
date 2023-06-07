@@ -5,6 +5,7 @@ import gulpSass from 'gulp-sass'
 import autoprefixer from 'gulp-autoprefixer'
 import cleanCSS from 'gulp-clean-css'
 import rename from 'gulp-rename'
+import gulpFilter from 'gulp-filter'
 import { rimraf } from 'rimraf'
 
 import { rollup } from 'rollup'
@@ -35,6 +36,7 @@ export {
   autoprefixer,
   cleanCSS,
   rename,
+  gulpFilter,
   rimraf,
   rollup,
   nodeResolve,
