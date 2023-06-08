@@ -65,7 +65,10 @@ export const buildUI = async (lib: string) => {
     const bundle = await rollup({
       input,
       plugins: [
-        alias(paths),
+        alias({
+          paths,
+          exclude: ['@spruce-hub/chalk'],
+        }),
         vuePlugin({
           isProduction: false,
         }),
@@ -94,9 +97,6 @@ export const buildUI = async (lib: string) => {
         }),
       ],
       external: [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.devDependencies || {})],
-      watch: {
-        exclude: ['./node_modules/**', './dist/**'],
-      },
       treeshake: false,
     })
     bundle.write({

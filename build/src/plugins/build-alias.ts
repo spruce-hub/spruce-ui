@@ -2,19 +2,30 @@ import { relative, dirname } from 'node:path'
 
 import type { Plugin } from 'rollup'
 
-export const alias = (paths: { [key: string]: string }): Plugin => {
+interface Options {
+  paths: Record<string, string>
+  exclude: string[]
+}
+
+export const alias = (options: Options): Plugin => {
   return {
     name: 'build-alias',
     resolveId(source, importer) {
-      const result = Object.keys(paths).filter((item) => source.startsWith(item))
+      let id = ''
+      const exclude = options.exclude.filter((item) => source.startsWith(item))
+      const result = Object.keys(options.paths).filter((item) => source.startsWith(item))
 
-      if (result.length !== 1) {
+      if (exclude.length > 0) {
+        id = source
+      } else if (result.length === 1) {
+        const toPath = source.replaceAll(`${result[0]}`, options.paths[`${result[0]}`])
+        id = relative(dirname(importer || ''), toPath).replace(/^[a-z]/, './$&')
+      } else {
         return undefined
       }
 
-      const toPath = source.replaceAll(`${result[0]}`, paths[`${result[0]}`])
       return {
-        id: relative(dirname(importer || ''), toPath).replace(/^[a-z]/, './$&'),
+        id,
         external: 'absolute',
       }
     },
