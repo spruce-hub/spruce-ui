@@ -1,3 +1,3 @@
-import '@mui/styles/scss/base.scss'
+import '@spruce-hub/chalk/dist/scss/index.scss'
 import '@mui/styles/scss/alert.scss'
 import '@mui/styles/scss/icon.scss'
