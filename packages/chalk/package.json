@@ -27,9 +27,9 @@
     "access": "public"
   },
   "peerDependencies": {
-    "sass": ">=1.62.1"
+    "sass": ">=1.62.2"
   },
   "devDependencies": {
-    "sass": "^1.62.1"
+    "sass": "^1.63.2"
   }
 }

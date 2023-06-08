@@ -107,14 +107,14 @@ const createSRC = async () => {
 const createSTYLE = async () => {
   const css = formatCode(
     `
-    import '@${libName}/styles/base.css'
+    import '@spruce-hub/chalk/dist/index.css'
     import '@${libName}/styles/ys-${name}.css'`,
     'typescript'
   )
 
   const index = formatCode(
     `
-    import '@${libName}/styles/scss/base.scss'
+    import '@spruce-hub/chalk/dist/scss/index.scss'
     import '@${libName}/styles/scss/${name}.scss'`,
     'typescript'
   )
