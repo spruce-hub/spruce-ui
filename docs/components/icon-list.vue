@@ -71,6 +71,6 @@ const copy = async (name: string) => {
   text-overflow: ellipsis;
   white-space: nowrap;
   text-align: center;
-  margin: 6px 0 0;
+  margin: 6px 0 0 !important;
 }
 </style>
