@@ -32,6 +32,11 @@ export const navbars: NavbarConfig = [
     activeMatch: '^/e-templates/',
   },
   {
+    text: '样式库',
+    link: '/chalk/index.md',
+    activeMatch: '^/chalk/',
+  },
+  {
     text: 'Hooks',
     link: '/hooks/index.md',
     activeMatch: '^/hooks/',

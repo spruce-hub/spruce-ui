@@ -55,4 +55,14 @@ export const sidebars = {
       link: '/e-templates/products/index.md',
     },
   ],
+  '/chalk/': [
+    {
+      text: '主题',
+      link: '/chalk/theme.md',
+    },
+    {
+      text: 'Mixin',
+      children: ['/chalk/mixin/bem.md'],
+    },
+  ],
 }
