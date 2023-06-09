@@ -30,6 +30,7 @@ header {
   padding: 0 20px 20px;
   width: 60vw;
   height: 60vh;
+  background-color: var(--ys-gray-600);
   .tips {
     margin-bottom: 10px;
     border-bottom: 1px solid #eee;
