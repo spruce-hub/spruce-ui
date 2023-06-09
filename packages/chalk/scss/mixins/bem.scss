@@ -1,0 +1,33 @@
+@use 'config' as *;
+
+$block: '';
+
+// create BEM
+@mixin b() {
+  $class: $namespace + $common-separator + $block;
+
+  .#{$class} {
+    @content;
+  }
+}
+@mixin e($element) {
+  $class: #{$namespace}#{$common-separator}#{$block}#{$element-separator}#{$element};
+
+  .#{$class} {
+    @content;
+  }
+}
+@mixin m($modifier) {
+  $class: #{$namespace}#{$common-separator}#{$block}#{$modifier-separator}#{$modifier};
+
+  .#{$class} {
+    @content;
+  }
+}
+@mixin bem($element, $modifier) {
+  $class: #{$namespace}#{$common-separator}#{$block}#{$element-separator}#{$element}#{$modifier-separator}#{$modifier};
+
+  .#{$class} {
+    @content;
+  }
+}
