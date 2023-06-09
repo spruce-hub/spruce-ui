@@ -1,0 +1,9 @@
+:root {
+  --ys-border-color: #dddddd;
+  --ys-border-color-light: #eeeeee;
+  --ys-border: 1px solid var(--ys-border-color);
+  --ys-border-light: 1px solid var(--ys-border-color-light);
+  --ys-box-shadow: 0 0 4px 2px var(--ys-border-color);
+  --ys-box-shadow-light: 0 0 4px 2px var(--ys-border-color-light);
+  --ys-box-shadow-dark: 0 0 4px 2px var(--ys-border-color-dark);
+}

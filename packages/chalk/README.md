@@ -40,7 +40,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@use "@spruce-hub/chalk/dist/scss/mixin.scss" as *;`,
+        additionalData: `@use "@spruce-hub/chalk/scss/mixin.scss" as *;`,
       },
     },
   },
@@ -72,7 +72,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "@spruce-hub/chalk/dist/scss/mixin.scss" as *;',
+          additionalData: '@use "@spruce-hub/chalk/scss/mixin.scss" as *;',
         },
       },
     },

@@ -11,6 +11,10 @@
   transition: all 0.4s;
   background-color: var(--ys-primary) !important;
 }
+.hover--button-primary-light:hover {
+  transition: all 0.4s;
+  background-color: var(--ys-primary-light) !important;
+}
 .hover--button-primary-dark:hover {
   transition: all 0.4s;
   background-color: var(--ys-primary-dark) !important;
