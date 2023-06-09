@@ -11,7 +11,7 @@ const libNameIndex = argv.indexOf('--lib') + 1
 
 switch (argv[libNameIndex]) {
   case 'chalk':
-    tasks = series(...(await buildChalk()))
+    tasks = series(buildChalk)
     break
   case 'cui':
     tasks = series(...(await buildUI('cui')))
@@ -30,7 +30,7 @@ switch (argv[libNameIndex]) {
     break
   default:
     tasks = series(
-      ...(await buildChalk()),
+      buildChalk,
       buildHooks,
       buildIcons,
       ...(await buildUI('cui')),
