@@ -114,7 +114,7 @@ const createSTYLE = async () => {
 
   const index = formatCode(
     `
-    import '@spruce-hub/chalk/dist/scss/index.scss'
+    import '@spruce-hub/chalk/scss/index.scss'
     import '@${libName}/styles/scss/${name}.scss'`,
     'typescript'
   )
