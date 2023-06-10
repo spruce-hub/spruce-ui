@@ -11,6 +11,14 @@ const colorBlock = [
   {
     title: '辅助色',
     color: [
+      { param: '--ys-secondary-light', value: '#f3fffc', textColor: '--ys-black' },
+      { param: '--ys-secondary', value: '#1fbf86', textColor: '--ys-white' },
+      { param: '--ys-secondary-dark', value: '#05a86b', textColor: '--ys-white' },
+    ],
+  },
+  {
+    title: '强调色',
+    color: [
       { param: '--ys-strong-light', value: '#fff8f1', textColor: '--ys-black' },
       { param: '--ys-strong', value: '#fb5800', textColor: '--ys-white' },
       { param: '--ys-strong-dark', value: '#ed6502', textColor: '--ys-white' },
