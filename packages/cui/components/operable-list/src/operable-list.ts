@@ -158,38 +158,3 @@ export function createEllipsisHandle(comps: Array<EllipsisHandleUnion>) {
     })
   }
 }
-
-export const DropdownMoreProps = {
-  options: {
-    type: Array as PropType<Array<{ label: string; key: string | number }>>,
-    required: false,
-    default: () => [],
-  },
-}
-export const DropdownMoreEmits = {
-  select: (key: HandleUnion) => key,
-}
-
-export const IconBtnProps = {
-  name: {
-    type: String,
-    required: true,
-  },
-}
-export const IconBtnEmits = {
-  click: () => null,
-}
-
-export const OperableListItemProps = {
-  value: {
-    type: String,
-    required: true,
-  },
-  disabled: {
-    type: Boolean,
-    required: true,
-  },
-}
-export const OperableListItemEmits = {
-  nameClick: () => null,
-}

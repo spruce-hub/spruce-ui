@@ -15,11 +15,17 @@
 import { NDropdown } from 'naive-ui'
 import { More } from '@spruce-hub/icons'
 import { useNamespace } from '@spruce-hub/ui-hooks'
-import { DropdownMoreEmits, DropdownMoreProps, HandleUnion } from './operable-list'
-defineProps(DropdownMoreProps)
-const emit = defineEmits(DropdownMoreEmits)
+import { PropType } from 'vue'
+defineProps({
+  options: {
+    type: Array as PropType<Array<{ label: string; key: string | number }>>,
+    required: false,
+    default: () => [],
+  },
+})
+const emit = defineEmits(['select'])
 const { bem } = useNamespace('operable-list')
-function handleSelect(key: HandleUnion) {
+function handleSelect(key: 'edit' | 'del' | 'status') {
   emit('select', key)
 }
 </script>

@@ -13,7 +13,11 @@
 <script lang="ts" setup>
 import { CIcon } from '@cui/components'
 import { NButton, NTooltip } from 'naive-ui'
-import { IconBtnEmits, IconBtnProps } from './operable-list'
-defineProps(IconBtnProps)
-const emit = defineEmits(IconBtnEmits)
+defineProps({
+  name: {
+    type: String,
+    required: true,
+  },
+})
+const emit = defineEmits(['click'])
 </script>

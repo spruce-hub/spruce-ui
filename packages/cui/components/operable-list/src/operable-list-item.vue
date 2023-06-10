@@ -15,9 +15,17 @@
 import { Disable } from '@spruce-hub/icons'
 import { useNamespace } from '@spruce-hub/ui-hooks'
 import { CIcon } from '@cui/components'
-import { OperableListItemEmits, OperableListItemProps } from './operable-list'
-defineProps(OperableListItemProps)
-const emit = defineEmits(OperableListItemEmits)
+defineProps({
+  value: {
+    type: String,
+    required: true,
+  },
+  disabled: {
+    type: Boolean,
+    required: true,
+  },
+})
+const emit = defineEmits(['nameClick'])
 
 const { bem, is } = useNamespace('operable-list')
 </script>
