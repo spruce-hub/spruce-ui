@@ -26,7 +26,7 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](../../components/icon/Basic.vue)
+@[code](../components/icon/Basic.vue)
 :::
 
 ### 图标尺寸
@@ -38,7 +38,7 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](../../components/icon/Size.vue)
+@[code](../components/icon/Size.vue)
 :::
 
 ### 通过 Props 接收组件
@@ -52,7 +52,7 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](../../components/icon/Component.vue)
+@[code](../components/icon/Component.vue)
 :::
 
 ## Icon API

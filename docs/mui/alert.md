@@ -17,7 +17,7 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](../../components/alert/Basic.vue)
+@[code](../components/alert/Basic.vue)
 :::
 
 ### 文本内容
@@ -31,7 +31,7 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](../../components/alert/Description.vue)
+@[code](../components/alert/Description.vue)
 :::
 
 ### 图标位置
@@ -43,7 +43,7 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](../../components/alert/Icon.vue)
+@[code](../components/alert/Icon.vue)
 :::
 
 ### 文本居中
@@ -55,7 +55,7 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](../../components/alert/Center.vue)
+@[code](../components/alert/Center.vue)
 :::
 
 ### Loading 状态
@@ -69,7 +69,7 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](../../components/alert/Loading.vue)
+@[code](../components/alert/Loading.vue)
 :::
 
 ### 可点击文案
@@ -87,7 +87,7 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](../../components/alert/More.vue)
+@[code](../components/alert/More.vue)
 :::
 
 ### 可关闭按钮
@@ -99,7 +99,7 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](../../components/alert/Closable.vue)
+@[code](../components/alert/Closable.vue)
 :::
 
 ### 标题 + 描述
@@ -111,7 +111,7 @@ author: Noah Yu
 </Preview>
 
 ::: details Code
-@[code](../../components/alert/Title.vue)
+@[code](../components/alert/Title.vue)
 :::
 
 ::: warning 注意

@@ -19,7 +19,7 @@ author: JayCC1
 </Preview>
 
 ::: details Code
-@[code](../../components/file-preview/base.vue)
+@[code](../components/file-preview/base.vue)
 :::
 
 ### 插槽
@@ -29,7 +29,7 @@ author: JayCC1
 </Preview>
 
 ::: details Code
-@[code](../../components/file-preview/slot.vue)
+@[code](../components/file-preview/slot.vue)
 :::
 
 ### toolbar
@@ -39,7 +39,7 @@ author: JayCC1
 </Preview>
 
 ::: details Code
-@[code](../../components/file-preview/toolbar.vue)
+@[code](../components/file-preview/toolbar.vue)
 :::
 
 ## API

@@ -19,7 +19,7 @@ author: 文正
 </Preview>
 
 ::: details Code
-@[code](../../components/count-down/duration.vue)
+@[code](../components/count-down/duration.vue)
 :::
 
 ### 控制倒计时开始和暂停，默认开始
@@ -31,7 +31,7 @@ author: 文正
 </Preview>
 
 ::: details Code
-@[code](../../components/count-down/active.vue)
+@[code](../components/count-down/active.vue)
 :::
 
 ### 倒计时结束时的回调事件
@@ -43,7 +43,7 @@ author: 文正
 </Preview>
 
 ::: details Code
-@[code](../../components/count-down/active.vue)
+@[code](../components/count-down/active.vue)
 :::
 
 ##  API
