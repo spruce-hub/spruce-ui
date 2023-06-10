@@ -42,7 +42,7 @@
     "camelcase": "^7.0.1",
     "chalk": "^5.2.0",
     "consola": "^3.1.0",
-    "esbuild": "^0.17.19",
+    "esbuild": "^0.18.0",
     "fast-glob": "^3.2.12",
     "fs-extra": "^11.1.1",
     "gulp": "^4.0.2",
@@ -57,7 +57,7 @@
     "rimraf": "^5.0.1",
     "rollup": "^3.24.0",
     "rollup-plugin-esbuild": "^5.0.0",
-    "sass": "1.62.1",
+    "sass": "^1.63.3",
     "ts-morph": "^18.0.0",
     "tslib": "^2.5.3"
   },

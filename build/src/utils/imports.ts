@@ -21,7 +21,7 @@ import glob from 'fast-glob'
 import { format } from 'prettier'
 import consola from 'consola'
 import chalk from 'chalk'
-import dartSass from 'sass'
+import * as dartSass from 'sass'
 
 import vuePlugin from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
