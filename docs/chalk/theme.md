@@ -1,1 +1,3 @@
 # 主题
+
+<ChalkColorBlock />
