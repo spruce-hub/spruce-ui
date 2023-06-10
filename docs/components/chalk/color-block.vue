@@ -21,7 +21,7 @@ const colorBlock = [
     color: [
       { param: '--ys-strong-light', value: '#fff8f1', textColor: '--ys-black' },
       { param: '--ys-strong', value: '#fb5800', textColor: '--ys-white' },
-      { param: '--ys-strong-dark', value: '#ed6502', textColor: '--ys-white' },
+      { param: '--ys-strong-dark', value: '#ee5501', textColor: '--ys-white' },
     ],
   },
   {
