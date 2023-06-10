@@ -3,7 +3,7 @@ import type { NavbarConfig } from '@vuepress/theme-default'
 export const navbars: NavbarConfig = [
   {
     text: '使用指南',
-    link: '/guide/design.md',
+    link: '/guide/',
     activeMatch: '^/guide/',
   },
   {
@@ -13,27 +13,22 @@ export const navbars: NavbarConfig = [
   },
   {
     text: '(S)CRM 系统',
-    link: '/cui/icon/index.md',
+    link: '/cui/',
     activeMatch: '^/cui/',
   },
   {
     text: '电商系统',
-    link: '/eui/icon/index.md',
+    link: '/eui/',
     activeMatch: '^/eui/',
   },
   {
     text: '管理系统',
-    link: '/mui/icon/index.md',
+    link: '/mui/',
     activeMatch: '^/mui/',
   },
   {
-    text: '电商模板',
-    link: '/e-templates/headers/index.md',
-    activeMatch: '^/e-templates/',
-  },
-  {
     text: '样式库',
-    link: '/chalk/index.md',
+    link: '/chalk/',
     activeMatch: '^/chalk/',
   },
   {
