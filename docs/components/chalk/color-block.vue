@@ -83,7 +83,9 @@ const colorBlock = [
           <p class="ys-chalk__color-param" @click="copy(`var(${color.param})`)">
             {{ color.param }}
           </p>
-          <p class="ys-chalk__color-value" @click="copy(color.value)">{{ color.value }}</p>
+          <p class="ys-chalk__color-value" @click="copy(color.value)">
+            {{ color.value.toUpperCase() }}
+          </p>
         </div>
       </div>
     </div>
@@ -139,6 +141,7 @@ const colorBlock = [
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   cursor: pointer;
+  transition: background-color 0.4s;
 
   &:hover {
     color: var(--ys-white) !important;
