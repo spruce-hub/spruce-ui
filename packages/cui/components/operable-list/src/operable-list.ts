@@ -3,6 +3,8 @@ import IconBtn from './icon-btn.vue'
 import { Move, PenEdit, Delete, SuccessCircle, Disable } from '@spruce-hub/icons'
 import { CIcon } from '@cui/components'
 import DropdownMore from './dropdown-more.vue'
+export { default as OperableListItem } from './operable-list-item.vue'
+// import { CIconBtn as IconBtn, CDropdownMore as DropdownMore, CIcon } from '@cui/components'
 
 export enum Status {
   enable = 1,

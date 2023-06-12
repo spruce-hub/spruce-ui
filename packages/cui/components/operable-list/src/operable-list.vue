@@ -7,9 +7,11 @@ import {
   createOperableHandle,
   Status,
   createEllipsisHandle,
+  OperableListItem,
 } from './operable-list'
 import { useNamespace } from '@spruce-hub/ui-hooks'
-import OperableListItem from './operable-list-item.vue'
+// import OperableListItem from './operable-list-item.vue'
+// import { COperableListItem as OperableListItem } from '..'
 import Sortable, { SortableEvent } from 'sortablejs'
 import { NInput, useMessage } from 'naive-ui'
 import { ref, nextTick, reactive, onMounted } from 'vue'
