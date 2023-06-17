@@ -1,6 +1,6 @@
 {
   "name": "@spruce-hub/mui",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-alpha.5",
   "description": "适用于管理平台的公共组件或模块",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

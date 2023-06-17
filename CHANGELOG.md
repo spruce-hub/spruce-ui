@@ -1,3 +1,50 @@
+# [1.0.0-alpha.5](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2023-06-17)
+
+
+### ✨Features
+
+* **style:** use `@spruce-hub/chalk` ([1896eee](https://github.com/spruce-hub/spruce-ui/commit/1896eee6424c35338562b03603e9c73cc759fd1f))
+* **style:** add chalk style library ([b4a7fde](https://github.com/spruce-hub/spruce-ui/commit/b4a7fded894a8ee8b512f88b2cc31331074e6b85))
+* **hook:** infer `bem` and `is` return based on the method ([ef576b6](https://github.com/spruce-hub/spruce-ui/commit/ef576b6db5c3d3b2a879907ef42e0131e44e8c59))
+
+
+### 🐛Bug Fixes
+
+* 修复user-leave的人物头像是实体的问题 ([ccbe1e1](https://github.com/spruce-hub/spruce-ui/commit/ccbe1e1fa21c48e7ba209bf128dedf20e8a2b5b7))
+* **style:** add `--ys-border-color-dark` ([93bab7b](https://github.com/spruce-hub/spruce-ui/commit/93bab7b129cd3e6e4b179e7a734c89754a454c3e))
+* **style:** update color ([eadedb2](https://github.com/spruce-hub/spruce-ui/commit/eadedb2344505fb43119b4f0f236ff11c474ae82))
+* **component:** use `@spruce-hub/chalk` ([bed51e9](https://github.com/spruce-hub/spruce-ui/commit/bed51e921bac1440e3f16c638475d9094e4e4651))
+
+
+### 🔨Code Refactoring
+
+* **style:** 导入 `@spruce-hub/chalk` ([14bbc27](https://github.com/spruce-hub/spruce-ui/commit/14bbc2795f26d1fdd4c05a0d009cc93bb08d66bd))
+* **style:** 更直观的目录结构 ([ee60914](https://github.com/spruce-hub/spruce-ui/commit/ee60914d2e6a6fad876c4505f239683288b231bf))
+* **component:** 简化组件的默认导出 ([6e14459](https://github.com/spruce-hub/spruce-ui/commit/6e14459b7dedaf80f2d74619fb2e00479a763563))
+
+
+### 🛠️Chore
+
+* **package:** update sass ([a15cf5a](https://github.com/spruce-hub/spruce-ui/commit/a15cf5a97b85ed8331e34f306dc51d12d0bfb7be))
+* **issue:** 降低 sass 版本，详情可查看(sass/dart-sass[#1995](https://github.com/spruce-hub/spruce-ui/issues/1995)) ([9cd3feb](https://github.com/spruce-hub/spruce-ui/commit/9cd3feb320bcbf92318545b739a91fe93881ab1f))
+* **playground:** update config ([f1a258f](https://github.com/spruce-hub/spruce-ui/commit/f1a258f824da268d5f03210869bf5d8f4df36ece))
+* **package:** update deps ([578527a](https://github.com/spruce-hub/spruce-ui/commit/578527a7e3d5e46868db269d2cdaaa9c00bd2508))
+* **package:** update deps ([530ae8e](https://github.com/spruce-hub/spruce-ui/commit/530ae8e6b6a1467b8185d5b865aee6f9b420ea29))
+* **playground:** update config ([e008ebd](https://github.com/spruce-hub/spruce-ui/commit/e008ebd9cac68c32b9a643fa179d9c7508f85974))
+* **monorepo:** update config ([3defe5f](https://github.com/spruce-hub/spruce-ui/commit/3defe5f965b40227f9efc1c6987d6907e346967b))
+* **playground:** add preview of the Nuxt framework ([237f787](https://github.com/spruce-hub/spruce-ui/commit/237f787c2bf4a7714ee387934e4e464652b2d054))
+* **other:** update config ([3204786](https://github.com/spruce-hub/spruce-ui/commit/3204786213a17fe6523ab4f3e7de3b035213bed2))
+
+
+### 🏗️Build System
+
+* update config ([88edc0b](https://github.com/spruce-hub/spruce-ui/commit/88edc0b8d7cd82850e5f810d01d99b6b202d5ba0))
+* alias 插件支持忽略外部包 ([1452a24](https://github.com/spruce-hub/spruce-ui/commit/1452a248c57afb86768c4b93bb51aa1c0a64b6fc))
+* add chalk task ([97571d1](https://github.com/spruce-hub/spruce-ui/commit/97571d1ad627dfcc543f4440d1cd0000c0ec7839))
+* 为 icon 创建的 SFC 应包含 `name` 字段 ([2c4219c](https://github.com/spruce-hub/spruce-ui/commit/2c4219cdf137b00a5a67b919817a8e2ad82e847b))
+
+
+
 # [1.0.0-alpha.4](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2023-05-28)
 
 

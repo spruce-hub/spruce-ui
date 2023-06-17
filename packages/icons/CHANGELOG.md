@@ -1,3 +1,17 @@
+# [1.0.0-alpha.5](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2023-06-17)
+
+
+### 🐛Bug Fixes
+
+* 修复user-leave的人物头像是实体的问题 ([ccbe1e1](https://github.com/spruce-hub/spruce-ui/commit/ccbe1e1fa21c48e7ba209bf128dedf20e8a2b5b7))
+
+
+### 🛠️Chore
+
+* **other:** update config ([3204786](https://github.com/spruce-hub/spruce-ui/commit/3204786213a17fe6523ab4f3e7de3b035213bed2))
+
+
+
 # [1.0.0-alpha.4](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2023-05-28)
 
 

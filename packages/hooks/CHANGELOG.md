@@ -1,3 +1,17 @@
+# [1.0.0-alpha.5](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2023-06-17)
+
+
+### ✨Features
+
+* **hook:** infer `bem` and `is` return based on the method ([ef576b6](https://github.com/spruce-hub/spruce-ui/commit/ef576b6db5c3d3b2a879907ef42e0131e44e8c59))
+
+
+### 🛠️Chore
+
+* **other:** update config ([3204786](https://github.com/spruce-hub/spruce-ui/commit/3204786213a17fe6523ab4f3e7de3b035213bed2))
+
+
+
 # [1.0.0-alpha.4](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2023-05-28)
 
 

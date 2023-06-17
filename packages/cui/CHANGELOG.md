@@ -1,3 +1,28 @@
+# [1.0.0-alpha.5](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2023-06-17)
+
+
+### ✨Features
+
+* **style:** use `@spruce-hub/chalk` ([1896eee](https://github.com/spruce-hub/spruce-ui/commit/1896eee6424c35338562b03603e9c73cc759fd1f))
+
+
+### 🐛Bug Fixes
+
+* **component:** use `@spruce-hub/chalk` ([bed51e9](https://github.com/spruce-hub/spruce-ui/commit/bed51e921bac1440e3f16c638475d9094e4e4651))
+
+
+### 🔨Code Refactoring
+
+* **style:** 导入 `@spruce-hub/chalk` ([14bbc27](https://github.com/spruce-hub/spruce-ui/commit/14bbc2795f26d1fdd4c05a0d009cc93bb08d66bd))
+* **component:** 简化组件的默认导出 ([6e14459](https://github.com/spruce-hub/spruce-ui/commit/6e14459b7dedaf80f2d74619fb2e00479a763563))
+
+
+### 🛠️Chore
+
+* **other:** update config ([3204786](https://github.com/spruce-hub/spruce-ui/commit/3204786213a17fe6523ab4f3e7de3b035213bed2))
+
+
+
 # [1.0.0-alpha.4](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2023-05-28)
 
 
