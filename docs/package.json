@@ -34,10 +34,10 @@
     "@vuepress/plugin-search": "2.0.0-beta.63",
     "vue": "^3.3.4",
     "vuepress": "2.0.0-beta.63",
-    "vuepress-plugin-search-pro": "2.0.0-beta.224",
-    "vuepress-theme-hope": "2.0.0-beta.224"
+    "vuepress-plugin-search-pro": "2.0.0-beta.228",
+    "vuepress-theme-hope": "2.0.0-beta.228"
   },
   "dependencies": {
-    "element-plus": "^2.3.6"
+    "element-plus": "^2.3.7"
   }
 }

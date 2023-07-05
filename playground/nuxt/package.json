@@ -9,8 +9,8 @@
   "devDependencies": {
     "@spruce-hub/chalk": "workspace:*",
     "@spruce-hub/eui": "workspace:*",
-    "nuxt": "^3.5.3",
-    "sass": "^1.63.3",
+    "nuxt": "^3.6.1",
+    "sass": "^1.63.6",
     "vue": "^3.3.4"
   },
   "browserslist": [
