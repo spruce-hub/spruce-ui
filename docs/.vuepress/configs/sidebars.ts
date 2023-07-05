@@ -42,6 +42,7 @@ export const sidebars = {
     {
       text: '主题',
       link: '/chalk/theme',
+      children: ['/chalk/theme/cover'],
     },
     {
       text: 'Mixin',

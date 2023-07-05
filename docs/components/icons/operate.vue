@@ -20,6 +20,7 @@ import {
   View,
   ZoomIn,
   ZoomOut,
+  Search,
 } from '@spruce-hub/icons'
 
 const groupIcons = [
@@ -42,6 +43,7 @@ const groupIcons = [
   View,
   ZoomIn,
   ZoomOut,
+  Search,
 ]
 </script>
 

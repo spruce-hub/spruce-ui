@@ -35,7 +35,7 @@ import { Loading } from '@spruce-hub/icons'
 
 <IconsBuilding />
 
-### boolean
+### 状态
 
 <IconsBoolean />
 
