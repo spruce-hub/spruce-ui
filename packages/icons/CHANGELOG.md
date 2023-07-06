@@ -1,3 +1,12 @@
+# [1.0.0-alpha.7](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.6...v1.0.0-alpha.7) (2023-07-06)
+
+
+### ✨Features
+
+* add icon go-to ([985e6ba](https://github.com/spruce-hub/spruce-ui/commit/985e6ba953cdf8c690aad986e89c93d8f365c8ae))
+
+
+
 # [1.0.0-alpha.6](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.5...v1.0.0-alpha.6) (2023-07-05)
 
 
