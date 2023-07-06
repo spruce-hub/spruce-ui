@@ -10,6 +10,7 @@ import {
   ArrowRadius,
   ArrowRight,
   ArrowUp,
+  GoTo,
 } from '@spruce-hub/icons'
 
 const groupIcons = [
@@ -22,6 +23,7 @@ const groupIcons = [
   ArrowRadius,
   ArrowRight,
   ArrowUp,
+  GoTo,
 ]
 </script>
 
