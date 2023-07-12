@@ -64,11 +64,11 @@ const transformToVueComponent = async () => {
 
   const files = await getSvgFiles()
 
-  files.forEach((file) => {
+  files.forEach(async (file) => {
     const content = readFileSync(file, 'utf-8')
     const { filename, componentName } = getSvgName(file)
 
-    const vue = formatCode(
+    const vue = await formatCode(
       `
     <template>
     ${content}
@@ -81,10 +81,10 @@ const transformToVueComponent = async () => {
     }) as DefineComponent
     </script>
     `,
-      'vue'
+      'vue',
     )
 
-    const index = formatCode(
+    const index = await formatCode(
       `
       import ${componentName} from './${filename}.vue'
       import type { App, Plugin } from 'vue'
@@ -96,7 +96,7 @@ const transformToVueComponent = async () => {
       }
       export { ${componentName} }
       `,
-      'typescript'
+      'typescript',
     )
     ensureDirSync(`${iconsRoot}/components/${filename}`)
     writeFileSync(resolve(`${iconsRoot}/components/${filename}`, `${filename}.vue`), vue, 'utf-8')
@@ -111,7 +111,7 @@ const generateEntry = async () => {
 
   const comp: string[] = []
   const compPlugin: string[] = []
-  const code = formatCode(
+  const code = await formatCode(
     files
       .map((file) => {
         const { filename, componentName } = getSvgName(file)
@@ -121,15 +121,15 @@ const generateEntry = async () => {
 
         return `import { ${componentName}, ${componentName}Plugin } from './${filename}'`
       })
-      .join('\n')
+      .join('\n'),
   )
 
-  const index = formatCode(
+  const index = await formatCode(
     `
     ${code}
     export {${comp}}
     export default [${compPlugin}]
-    `
+    `,
   )
 
   writeFileSync(resolve(`${iconsRoot}/components`, 'index.ts'), index, 'utf-8')
@@ -182,17 +182,17 @@ const buildSvgComponent = async () => {
 const generateGDTS = async () => {
   const files = await getSvgFiles()
 
-  const code = formatCode(
+  const code = await formatCode(
     files
       .map((file) => {
         const { componentName } = getSvgName(file)
 
         return `${componentName}: typeof import('@spruce-hub/icons')['${componentName}']`
       })
-      .join('\n')
+      .join('\n'),
   )
 
-  const GDTS = formatCode(
+  const GDTS = await formatCode(
     `
     declare module 'vue' {
       export interface GlobalComponents {
@@ -202,7 +202,7 @@ const generateGDTS = async () => {
     
     export {}
     `,
-    'typescript'
+    'typescript',
   )
 
   writeFileSync(resolve(`${iconsRoot}`, 'global.d.ts'), GDTS, 'utf-8')
@@ -213,5 +213,5 @@ export const buildIcons = series(
   transformToVueComponent,
   generateEntry,
   buildSvgComponent,
-  generateGDTS
+  generateGDTS,
 )
