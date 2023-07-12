@@ -1,3 +1,22 @@
+# [1.0.0-alpha.8](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.7...v1.0.0-alpha.8) (2023-07-12)
+
+
+### ✨Features
+
+* add icon order-cancel ([efa1418](https://github.com/spruce-hub/spruce-ui/commit/efa1418ec54998a311123df69b2ecfb206a89940))
+
+
+### 🐛Bug Fixes
+
+* **icon:** 饱满的 search icon ([ba6079c](https://github.com/spruce-hub/spruce-ui/commit/ba6079c2b30c7407f9cc650fd64303f48d3d7441))
+
+
+### 🛠️Chore
+
+* **package:** update deps ([d556dba](https://github.com/spruce-hub/spruce-ui/commit/d556dba4f4fa1a644fcdac89058e17082be68a4f))
+
+
+
 # [1.0.0-alpha.7](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.6...v1.0.0-alpha.7) (2023-07-06)
 
 
