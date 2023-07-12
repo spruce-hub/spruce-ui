@@ -7,9 +7,10 @@ import {
   ToBeConfirmed,
   WriteApplication,
   Audit,
+  OrderCancel,
 } from '@spruce-hub/icons'
 
-const groupIcons = [Finished, Invoice, Ordered, ToBeConfirmed, WriteApplication, Audit]
+const groupIcons = [Finished, Invoice, Ordered, ToBeConfirmed, WriteApplication, Audit, OrderCancel]
 </script>
 
 <template>
