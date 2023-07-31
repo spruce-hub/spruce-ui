@@ -17,7 +17,7 @@ export const countDownProps = {
 
 export function useCountDown(
   isActive: Ref<boolean> | boolean = true,
-  options?: { duration?: number; onFinish?: () => void }
+  options?: { duration?: number; onFinish?: () => void },
 ) {
   const { duration = 3, onFinish } = options || {}
   const time = ref(duration)
@@ -49,7 +49,7 @@ export function useCountDown(
     },
     {
       immediate: true,
-    }
+    },
   )
 
   return {

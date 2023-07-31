@@ -60,7 +60,7 @@ export const buildUI = async (lib: string) => {
         cwd: uiRoot,
         absolute: true,
         onlyFiles: true,
-      })
+      }),
     )
     const bundle = await rollup({
       input,
@@ -118,17 +118,17 @@ export const buildUI = async (lib: string) => {
         cleanCSS({}, (details) => {
           consola.success(
             `${green('CSS: ')}${cyan(details.name)} => ${yellow(
-              details.stats.originalSize / 1000
-            )} KB -> ${green(details.stats.minifiedSize / 1000)} KB`
+              details.stats.originalSize / 1000,
+            )} KB -> ${green(details.stats.minifiedSize / 1000)} KB`,
           )
-        })
+        }),
       )
       .pipe(
         rename((path) => {
           if (!noPrefixFile.test(path.basename)) {
             path.basename = `ys-${path.basename}`
           }
-        })
+        }),
       )
       .pipe(dest(resolve(uiRoot, 'dist/styles')))
   }

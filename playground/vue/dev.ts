@@ -40,7 +40,7 @@ const create = async () => {
         margin: 5px 0;
       }
       </style>`,
-      'vue'
+      'vue',
     )
     writeFile('src/App.vue', sfc, 'utf-8')
     consola.success(chalk.green('index: src/App.vue'))

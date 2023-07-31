@@ -56,7 +56,7 @@ export const className = (common: string) => {
               return ''
             }
             return `${statePrefix}--${key}`
-          })
+          }),
         )
       } else {
         map.push(`${statePrefix}--${item}`)

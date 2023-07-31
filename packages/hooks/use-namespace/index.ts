@@ -59,7 +59,7 @@ export const useNamespace = <B extends string>(b: B) => {
               return ''
             }
             return `${statePrefix}--${key}`
-          })
+          }),
         )
       } else {
         map.push(`${statePrefix}--${item}`)

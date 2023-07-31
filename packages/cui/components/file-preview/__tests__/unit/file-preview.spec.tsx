@@ -79,7 +79,7 @@ describe('FilePreview', () => {
             {
               class: 'error-slot__test',
             },
-            'error slot test'
+            'error slot test',
           ),
         close: () =>
           h(
@@ -87,7 +87,7 @@ describe('FilePreview', () => {
             {
               class: 'close-slot__test',
             },
-            'close slot test'
+            'close slot test',
           ),
         default: () => [
           h(
@@ -95,7 +95,7 @@ describe('FilePreview', () => {
             {
               class: 'default-slot-test',
             },
-            'default slot test'
+            'default slot test',
           ),
         ],
       },
@@ -147,7 +147,7 @@ describe('FilePreview', () => {
     expect(findModuleEl('wrapper')).not.toBeNull()
     expect(findModuleEl('content--office')).not.toBeNull()
     expect(findModuleEl('content--office')?.children[0].getAttribute('src')).toBe(
-      'https://view.officeapps.live.com/op/view.aspx?src=' + url
+      'https://view.officeapps.live.com/op/view.aspx?src=' + url,
     )
     expect(findModuleEl('content--image')).toBeNull()
     expect(findModuleEl('error')).toBeNull()

@@ -53,7 +53,7 @@ const create = async () => {
     }
 
     export const ${namespace}${CamelCaseName} = ${CamelCaseName}`,
-    'typescript'
+    'typescript',
   )
   writeFile(`packages/${libName}/components/${name}/index.ts`, index, 'utf-8')
   consola.success(chalk.green(`index: packages/${libName}/components/${name}/index.ts`))
@@ -68,11 +68,11 @@ const createTEST = async () => {
       import ${CamelCaseName} from '../../src/${name}.vue'
 
       describe('${CamelCaseName}', () => {})`,
-    'typescript'
+    'typescript',
   )
   writeFile(`packages/${libName}/components/${name}/__tests__/unit/${name}.spec.tsx`, test, 'utf-8')
   consola.success(
-    chalk.green(`test: packages/${libName}/components/${name}/__tests__/unit/${name}.spec.tsx`)
+    chalk.green(`test: packages/${libName}/components/${name}/__tests__/unit/${name}.spec.tsx`),
   )
 }
 
@@ -89,13 +89,13 @@ const createSRC = async () => {
     </script>
 
     <template></template>`,
-    'vue'
+    'vue',
   )
 
   const ts = formatCode(
     `
     export const ${CamelCaseName}Props = {}`,
-    'typescript'
+    'typescript',
   )
 
   writeFile(`packages/${libName}/components/${name}/src/${name}.vue`, sfc, 'utf-8')
@@ -109,14 +109,14 @@ const createSTYLE = async () => {
     `
     import '@spruce-hub/chalk/dist/index.css'
     import '@${libName}/styles/ys-${name}.css'`,
-    'typescript'
+    'typescript',
   )
 
   const index = formatCode(
     `
     import '@spruce-hub/chalk/scss/index.scss'
     import '@${libName}/styles/scss/${name}.scss'`,
-    'typescript'
+    'typescript',
   )
 
   const scss = formatCode(
@@ -124,7 +124,7 @@ const createSTYLE = async () => {
     @use './mixins/mixins' as *;
 
     .#{$namespace}-${name} {}`,
-    'scss'
+    'scss',
   )
 
   writeFile(`packages/${libName}/components/${name}/style/css.ts`, css, 'utf-8')

@@ -35,7 +35,7 @@ switch (argv[libNameIndex]) {
       buildIcons,
       ...(await buildUI('cui')),
       ...(await buildUI('eui')),
-      ...(await buildUI('mui'))
+      ...(await buildUI('mui')),
     )
 }
 

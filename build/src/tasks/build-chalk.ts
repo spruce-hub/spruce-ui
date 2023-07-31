@@ -34,10 +34,10 @@ export const buildChalk = async () => {
       cleanCSS({}, (details) => {
         consola.success(
           `${green('CHALK: ')}${cyan(details.name)} => ${yellow(
-            details.stats.originalSize / 1000
-          )} KB -> ${green(details.stats.minifiedSize / 1000)} KB`
+            details.stats.originalSize / 1000,
+          )} KB -> ${green(details.stats.minifiedSize / 1000)} KB`,
         )
-      })
+      }),
     )
     .pipe(dest(resolve(chalkRoot, 'dist')))
 }

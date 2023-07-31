@@ -43,7 +43,7 @@ export default defineComponent({
               disabled: this.disabled,
               to: this.mergedTo,
             },
-            getSlot('lazy-teleport', this.$slots)
+            getSlot('lazy-teleport', this.$slots),
           )
       : null
   },

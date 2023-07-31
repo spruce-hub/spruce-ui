@@ -85,7 +85,7 @@ watch(
   },
   {
     immediate: true,
-  }
+  },
 )
 
 watch(
@@ -93,7 +93,7 @@ watch(
   () => {
     file.url = ''
     getFileInformation(props.fileUrl)
-  }
+  },
 )
 
 onMounted(() => {
