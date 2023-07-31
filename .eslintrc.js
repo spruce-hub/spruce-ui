@@ -37,7 +37,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['packages/*/components/**/*.vue', 'docs/**/*.vue'],
+      files: ['packages/*/components/**/*.vue', 'packages/icons/**/*.vue', 'docs/**/*.vue'],
       extends: ['@noahyu/vue'],
     },
     {

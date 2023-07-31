@@ -1,0 +1,24 @@
+.ys-icon {
+  --color: inherit;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  fill: currentColor;
+  height: 1em;
+  width: 1em;
+  color: var(--color);
+  font-size: inherit;
+  &.ys-is--loading {
+    animation: ys-icon-rotating 2s linear infinite;
+  }
+}
+
+@keyframes ys-icon-rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
