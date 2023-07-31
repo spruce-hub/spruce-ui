@@ -2,6 +2,10 @@ import {
   resolve,
   basename,
   gulp,
+  gulpSass,
+  autoprefixer,
+  cleanCSS,
+  rename,
   rimraf,
   rollup,
   nodeResolve,
@@ -13,6 +17,7 @@ import {
   format,
   consola,
   chalk,
+  dartSass,
   vuePlugin,
   vueJsx,
   readFileSync,
@@ -26,8 +31,10 @@ import { dts } from '../plugins/build-dts'
 import { iconsRoot } from '../utils'
 
 import type { BuiltInParserName } from 'prettier'
+import type { Plugin } from 'rollup'
 
-const { series } = gulp
+const { src, dest, series } = gulp
+const { cyan, yellow, green } = chalk
 
 const pkgPath = resolve(iconsRoot, 'package.json')
 const pkg = parseJson(readFileSync(pkgPath, 'utf-8'))
@@ -136,10 +143,29 @@ const generateEntry = async () => {
   consola.success(chalk.green(`SVG: ${chalk.bold('/components/index.ts')}`))
 }
 
-const buildSvgComponent = async () => {
+const buildComponent = async () => {
   const bundle = await rollup({
     input: resolve(iconsRoot, 'index.ts'),
     plugins: [
+      ((): Plugin => {
+        return {
+          name: 'alias',
+          resolveId(source) {
+            let id = ''
+            const result = source.startsWith('@icons/styles')
+            if (result) {
+              id = source.replaceAll('@icons/styles', '@spruce-hub/icons/dist/styles')
+            } else {
+              return undefined
+            }
+
+            return {
+              id,
+              external: 'absolute',
+            }
+          },
+        }
+      })(),
       vuePlugin({
         isProduction: false,
       }),
@@ -209,9 +235,41 @@ const generateGDTS = async () => {
   consola.success(chalk.green(`GDTS: ${chalk.bold('global.d.ts')}`))
 }
 
+const buildStyle = () => {
+  const sass = gulpSass(dartSass)
+  const noPrefixFile = /(index|base|component)/
+
+  return src(resolve(iconsRoot, 'styles/*.scss'))
+    .pipe(sass.sync({ includePaths: [resolve(iconsRoot, './node_modules')] }))
+    .pipe(autoprefixer({ cascade: false }))
+    .pipe(
+      cleanCSS({}, (details) => {
+        consola.success(
+          `${green('CSS: ')}${cyan(details.name)} => ${yellow(
+            details.stats.originalSize / 1000,
+          )} KB -> ${green(details.stats.minifiedSize / 1000)} KB`,
+        )
+      }),
+    )
+    .pipe(
+      rename((path) => {
+        if (!noPrefixFile.test(path.basename)) {
+          path.basename = `ys-${path.basename}`
+        }
+      }),
+    )
+    .pipe(dest(resolve(iconsRoot, 'dist/styles')))
+}
+
+const copyScss = () => {
+  return src(resolve(iconsRoot, 'styles/**')).pipe(dest(resolve(iconsRoot, 'dist/styles/scss')))
+}
+
 export const buildIcons = series(
   transformToVueComponent,
   generateEntry,
-  buildSvgComponent,
+  buildComponent,
   generateGDTS,
+  buildStyle,
+  copyScss,
 )
