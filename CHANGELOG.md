@@ -1,15 +1,24 @@
-# [1.0.0-alpha.9](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.8...v1.0.0-alpha.9) (2023-07-28)
+# [1.0.0-alpha.10](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.8...v1.0.0-alpha.10) (2023-07-31)
 
 
 ### ✨Features
 
+* **icon:** add `YIcon` component ([04b2468](https://github.com/spruce-hub/spruce-ui/commit/04b24680977fd6269012b5cab12f6c0caa2e0820))
+* **icon:** add FollowFilled icon ([40cf15a](https://github.com/spruce-hub/spruce-ui/commit/40cf15ad185ba280e6631dad4acf9de252beb3e6))
+* **icon:** add email icon ([117a229](https://github.com/spruce-hub/spruce-ui/commit/117a2298017b67a723cf901107a74ed20eacb440))
 * **icon:** add follow icon ([3661b0e](https://github.com/spruce-hub/spruce-ui/commit/3661b0eb520703bb1f3168fd44b5dbc471a9c59a))
 
 
 ### 🛠️Chore
 
+* **package:** update deps ([cc376fa](https://github.com/spruce-hub/spruce-ui/commit/cc376fa6ce59e38592bebe239d85659313c0ee50))
 * **package:** update deps ([3e06422](https://github.com/spruce-hub/spruce-ui/commit/3e064227614ee5ec647a1e56c6c1f65f8de14fe8))
 * **package:** update deps ([37f9828](https://github.com/spruce-hub/spruce-ui/commit/37f9828a98020ec11674caf83ec846fb7d181a6f))
+
+
+### 🏗️Build System
+
+* 支持对图标库的样式处理 ([3917acb](https://github.com/spruce-hub/spruce-ui/commit/3917acbd24448881386beee39539b3b54bb57a39))
 
 
 
