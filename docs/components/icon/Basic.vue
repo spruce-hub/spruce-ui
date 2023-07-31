@@ -1,15 +1,14 @@
 <script setup lang="ts">
-import { Success } from '@spruce-hub/icons'
-import { CIcon } from '@spruce-hub/cui'
+import { YIcon, Success } from '@spruce-hub/icons'
 </script>
 
 <template>
-  <CIcon>
+  <YIcon>
     <Success />
-  </CIcon>
-  <CIcon color="#13c2c2">
+  </YIcon>
+  <YIcon color="#13c2c2">
     <Success />
-  </CIcon>
+  </YIcon>
 </template>
 
 <style lang="scss" scoped>

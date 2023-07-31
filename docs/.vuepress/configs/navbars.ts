@@ -8,7 +8,7 @@ export const navbars: NavbarConfig = [
   },
   {
     text: '图标库',
-    link: '/icons/index.md',
+    link: '/icons/',
     activeMatch: '^/icons/',
   },
   {

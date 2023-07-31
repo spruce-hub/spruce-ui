@@ -8,9 +8,19 @@ import {
   Success,
   Warning,
   Follow,
+  FollowFilled,
 } from '@spruce-hub/icons'
 
-const groupIcons = [CloseBold, CloseCircleFilled, Close, Select, Success, Warning, Follow]
+const groupIcons = [
+  CloseBold,
+  CloseCircleFilled,
+  Close,
+  Select,
+  Success,
+  Warning,
+  Follow,
+  FollowFilled,
+]
 </script>
 
 <template>

@@ -2,59 +2,71 @@
 author: Noah Yu
 ---
 
-# 图标库
+# Icon
 
-## 基础用法
+为 [SVG 图标](/icons/) 提供一个规范的宿主环境
 
-```vue
-<script setup lang="ts">
-import { CIcon } from '@spruce-hub/cui'
-import { Loading } from '@spruce-hub/icons'
-</script>
+## Icon Docs
 
-<template>
-  <CIcon>
-    <Loading />
-  </CIcon>
-</template>
+### 图标颜色
+
+`color` 属性指定图标的色彩值，默认继承父元素
+
+`color` 的值需符合以下格式
+
+```ts
+  | `#${string}`
+  | `rgb(${string},${string},${string})`
+  | `rgba(${string},${string},${string},${string}`
+  | `--ys-${string}`
 ```
 
-## 图标集
+<Preview>
+  <IconBasic />
+</Preview>
 
-<IconHeader />
+::: details Code
+@[code](../components/icon/Basic.vue)
+:::
 
-### 应用
+### 图标尺寸
 
-<IconsApp />
+`size` 属性设置图标像素值，默认继承父元素
 
-### 箭头
+<Preview>
+  <IconSize />
+</Preview>
 
-<IconsArrow />
+::: details Code
+@[code](../components/icon/Size.vue)
+:::
 
-### 建筑
+### 通过 Props 接收组件
 
-<IconsBuilding />
+`component` 属性接收一个组件
 
-### 状态
+该属性接收的组件优先级比 `slot` 低
 
-<IconsBoolean />
+<Preview>
+  <IconComponent />
+</Preview>
 
-### 文档工作流
+::: details Code
+@[code](../components/icon/Component.vue)
+:::
 
-<IconsDocument />
+## Icon API
 
-### 操作
+### Icon Attributes
 
-<IconsOperate />
+| Attributes | Type        | Default | Required | Description  |
+| ---------- | ----------- | ------- | -------- | ------------ |
+| color      | `string`    | -       | 否       | 图标颜色     |
+| size       | `number`    | -       | 否       | 图标尺寸     |
+| component  | `Component` | `null`  | 否       | 接收一个组件 |
 
-### 购物发货
+### Icon Slot
 
-<IconsOrder />
-
-### 用户
-
-<IconsUser />
-
-### 其他
-
-<IconsOther />
+| Name    | Description  |
+| ------- | ------------ |
+| default | SVG 图标组件 |

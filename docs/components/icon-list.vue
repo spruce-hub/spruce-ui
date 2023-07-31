@@ -8,9 +8,7 @@ defineProps<{
 }>()
 
 const copy = async (name: string) => {
-  const { iconStore } = await import('../.vuepress/store')
-  const type = iconStore.libType[0]
-  const comp = `<${type}Icon><${name} /></${type}Icon>`
+  const comp = `<YIcon><${name} /></YIcon>`
   try {
     await navigator.clipboard.writeText(comp)
 

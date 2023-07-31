@@ -4,6 +4,10 @@ export const sidebars = {
     { text: '安装', link: '/guide/install' },
     { text: '快速开始', link: '/guide/quickstart' },
   ],
+  '/icons/': [
+    { text: '使用指南', link: '/icons/' },
+    { text: '图标集', link: '/icons/list' },
+  ],
   '/cui/': [
     {
       text: '基础组件',
