@@ -6,6 +6,51 @@ author: Noah Yu
 
 为 [SVG 图标](/icons/) 提供一个规范的宿主环境
 
+## Install
+
+### 使用包管理器
+
+::: tabs#pm
+
+@tab pnpm
+
+```bash
+pnpm add @spruce-hub/icons@next -P
+
+# or
+
+pnpm add @spruce-hub/icons@next -P
+```
+
+@tab npm
+
+```bash
+npm install @spruce-hub/icons@next --save
+
+# or
+
+npm install @spruce-hub/icons@next --save
+```
+
+:::
+
+### 导入 CSS
+
+```ts
+// main.ts
+import '@spruce-hub/icons/dist/styles/index.css'
+```
+
+如果您使用 Nuxt
+
+```ts
+// nuxt.config.ts
+export default defineNuxtConfig({
+  // ···
+  css: ['@spruce-hub/icons/dist/styles/index.css'],
+})
+```
+
 ## Icon Docs
 
 ### 图标颜色
