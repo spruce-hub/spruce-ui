@@ -1,17 +1,30 @@
 .ys-icon {
   --color: inherit;
+  --text-color: var(--color);
+
   display: inline-flex;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  fill: currentColor;
-  height: 1em;
-  width: 1em;
   color: var(--color);
   font-size: inherit;
-  &.ys-is--loading {
+  &.ys-is--loading .ys-icon__svg {
     animation: ys-icon-rotating 2s linear infinite;
   }
+}
+.ys-icon__svg {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+}
+.ys-icon__text {
+  height: 1em;
+  line-height: 1em;
+  color: var(--text-color);
+  margin-left: 4px;
 }
 
 @keyframes ys-icon-rotating {

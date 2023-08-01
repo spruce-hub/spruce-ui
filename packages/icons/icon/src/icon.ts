@@ -24,4 +24,12 @@ export const iconProps = {
     type: definePropType<Component>(Object),
     default: null,
   },
+  text: {
+    type: String,
+    default: '',
+  },
+  textColor: {
+    type: colorPropType(String),
+    default: '',
+  },
 }
