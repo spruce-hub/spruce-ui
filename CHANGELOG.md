@@ -1,3 +1,17 @@
+# [1.0.0-alpha.13](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.12...v1.0.0-alpha.13) (2023-08-01)
+
+
+### 🐛Bug Fixes
+
+* **icon:** css 应该手动导入 ([0627d50](https://github.com/spruce-hub/spruce-ui/commit/0627d50b850bbc6c1f304cc1e9558dac3ae93796))
+
+
+### 🛠️Chore
+
+* **other:** update config ([77e5cfa](https://github.com/spruce-hub/spruce-ui/commit/77e5cfa0192941e8cdef03a07fad136b790a2aba))
+
+
+
 # [1.0.0-alpha.12](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.11...v1.0.0-alpha.12) (2023-08-01)
 
 
