@@ -16,7 +16,11 @@ export default defineNuxtConfig({
       ],
     },
   },
-  css: ['@spruce-hub/chalk/dist/index.css', '@spruce-hub/eui/dist/styles/index.css'],
+  css: [
+    '@spruce-hub/chalk/dist/index.css',
+    '@spruce-hub/eui/dist/styles/index.css',
+    '@spruce-hub/icons/dist/styles/index.css',
+  ],
   vite: {
     css: {
       preprocessorOptions: {
