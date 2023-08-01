@@ -1,8 +1,8 @@
-import { AlertPlugin, IconPlugin, FilePreviewPlugin } from '@spruce-hub/cui'
+import { AlertPlugin, FilePreviewPlugin } from '@spruce-hub/cui'
 
 import type { App, Plugin } from 'vue'
 
-const components = [AlertPlugin, IconPlugin, FilePreviewPlugin]
+const components = [AlertPlugin, FilePreviewPlugin]
 
 export const cui: Plugin = {
   install(app: App) {

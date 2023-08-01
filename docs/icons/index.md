@@ -41,6 +41,20 @@ author: Noah Yu
 @[code](../components/icon/Size.vue)
 :::
 
+### 文案
+
+`text` 属性在图标右侧添加文案
+
+`textColor` 属性设置右侧文案的颜色
+
+<Preview>
+  <IconText />
+</Preview>
+
+::: details Code
+@[code](../components/icon/Text.vue)
+:::
+
 ### 通过 Props 接收组件
 
 `component` 属性接收一个组件
@@ -59,14 +73,16 @@ author: Noah Yu
 
 ### Icon Attributes
 
-| Attributes | Type        | Default | Required | Description  |
-| ---------- | ----------- | ------- | -------- | ------------ |
-| color      | `string`    | -       | 否       | 图标颜色     |
-| size       | `number`    | -       | 否       | 图标尺寸     |
-| component  | `Component` | `null`  | 否       | 接收一个组件 |
+| Attributes | Type        | Default | Required | Description |
+| ---------- | ----------- | ------- | -------- | ----------- |
+| color      | `string`    | -       | 否       | 图标颜色    |
+| size       | `number`    | -       | 否       | 图标尺寸    |
+| component  | `Component` | `null`  | 否       | icon 组件   |
+| text       | `string`    | `null`  | 否       | 文案        |
+| textColor  | `string`    | `null`  | 否       | 文案颜色    |
 
 ### Icon Slot
 
-| Name    | Description  |
-| ------- | ------------ |
-| default | SVG 图标组件 |
+| Name    | Description                      |
+| ------- | -------------------------------- |
+| default | [SVG 图标组件](/icons/list.html) |

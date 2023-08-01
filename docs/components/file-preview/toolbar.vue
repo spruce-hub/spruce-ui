@@ -3,14 +3,14 @@
   <CFilePreview v-model:visible="show" :file-url="fileUrlArr[cur]" :toolbar-style="toolbarStyle">
     <template #toolbar>
       <el-button text :disabled="cur === 0" @click="cur--">
-        <CIcon>
+        <YIcon>
           <ArrowLeft />
-        </CIcon>
+        </YIcon>
       </el-button>
       <el-button text :disabled="cur === fileUrlArr.length - 1" @click="cur++">
-        <CIcon>
+        <YIcon>
           <ArrowRight />
-        </CIcon>
+        </YIcon>
       </el-button>
     </template>
   </CFilePreview>
@@ -18,7 +18,7 @@
 
 <script setup lang="ts">
 import { CSSProperties, ref } from 'vue'
-import { ArrowLeft, ArrowRight } from '@spruce-hub/icons'
+import { YIcon, ArrowLeft, ArrowRight } from '@spruce-hub/icons'
 
 const show = ref(false)
 const cur = ref(0)

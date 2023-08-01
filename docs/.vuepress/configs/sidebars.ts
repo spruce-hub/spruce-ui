@@ -11,7 +11,7 @@ export const sidebars = {
   '/cui/': [
     {
       text: '基础组件',
-      children: ['/cui/file-preview', '/cui/icon'],
+      children: ['/cui/file-preview'],
     },
     {
       text: '反馈组件',
@@ -20,19 +20,11 @@ export const sidebars = {
   ],
   '/eui/': [
     {
-      text: '基础组件',
-      children: ['/eui/icon'],
-    },
-    {
       text: '反馈组件',
       children: ['/eui/alert', '/eui/count-down'],
     },
   ],
   '/mui/': [
-    {
-      text: '基础组件',
-      children: ['/mui/icon'],
-    },
     {
       text: '反馈组件',
       children: ['/mui/alert'],

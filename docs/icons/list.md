@@ -32,6 +32,10 @@ author: Noah Yu
 
 <IconsOrder />
 
+### 媒体
+
+<IconsMedia />
+
 ### 建筑
 
 <IconsBuilding />
