@@ -1,3 +1,12 @@
+# [1.0.0-alpha.12](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.11...v1.0.0-alpha.12) (2023-08-01)
+
+
+### 🐛Bug Fixes
+
+* **component:** delete `icon` component ([8ced544](https://github.com/spruce-hub/spruce-ui/commit/8ced544be1107c41af67272e10b6495bc04f171e))
+
+
+
 # [1.0.0-alpha.11](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.10...v1.0.0-alpha.11) (2023-08-01)
 
 

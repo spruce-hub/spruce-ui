@@ -1,3 +1,12 @@
+# [1.0.0-alpha.12](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.11...v1.0.0-alpha.12) (2023-08-01)
+
+
+### ✨Features
+
+* **icon:** `YIcon` 新增自定义文案功能 ([0821336](https://github.com/spruce-hub/spruce-ui/commit/0821336cf3ce84ec70223464a3eac1da44e84c77))
+
+
+
 # [1.0.0-alpha.11](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.10...v1.0.0-alpha.11) (2023-08-01)
 
 
