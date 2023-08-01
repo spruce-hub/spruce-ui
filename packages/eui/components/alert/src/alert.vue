@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { Success, Warning, Error, Info, Close, Loading } from '@spruce-hub/icons'
+import { YIcon, Success, Warning, Error, Info, Close, Loading } from '@spruce-hub/icons'
 import { className } from '@eui/utils'
-import { EIcon } from '@eui/components/icon'
 import { alertProps, alertEmits } from './alert'
 
 const props = defineProps(alertProps)
@@ -38,17 +37,17 @@ const handleMore = () => {
     <div v-show="visible" :class="[b(), m(type)]" role="alert">
       <div :class="[e('content'), !title ? s({ center }) : bem('content', 'grid')]">
         <template v-if="!title">
-          <EIcon :class="[bem('icon', icon), ...s({ loading })]">
+          <YIcon :class="[bem('icon', icon), ...s({ loading })]">
             <component :is="loading ? Loading : iconComponent" />
-          </EIcon>
+          </YIcon>
           <span :class="[e('text')]">
             <slot> {{ description || type }} </slot>
           </span>
         </template>
         <template v-else>
-          <EIcon :class="[...s({ loading })]">
+          <YIcon :class="[...s({ loading })]">
             <component :is="loading ? Loading : iconComponent" />
-          </EIcon>
+          </YIcon>
           <span :class="[e('title')]">
             {{ title }}
           </span>
@@ -63,9 +62,9 @@ const handleMore = () => {
         </label>
       </template>
       <template v-else-if="closable">
-        <EIcon :class="[e('close'), bem('close', closable)]" @click="close">
+        <YIcon :class="[e('close'), bem('close', closable)]" @click="close">
           <Close />
-        </EIcon>
+        </YIcon>
       </template>
     </div>
   </transition>

@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { CloseBold, Warning } from '@spruce-hub/icons'
-import { CIcon } from '@cui/components/icon'
+import { YIcon, CloseBold, Warning } from '@spruce-hub/icons'
 import { useNamespace } from '@spruce-hub/ui-hooks'
 import { computed, onMounted, readonly, watch } from 'vue'
 import { reactive, ref } from 'vue'
@@ -119,9 +118,9 @@ defineExpose({
         <div :class="bem('teleport__close')" @click="close">
           <slot name="close">
             <div :class="bem('teleport__close', 'icon')">
-              <CIcon>
+              <YIcon>
                 <CloseBold />
-              </CIcon>
+              </YIcon>
             </div>
           </slot>
         </div>
@@ -176,9 +175,9 @@ defineExpose({
         <div v-else :class="bem('teleport__error')">
           <slot name="error">
             <div :class="bem('teleport__error_container')">
-              <CIcon :class="bem('teleport__error', 'icon')">
+              <YIcon :class="bem('teleport__error', 'icon')">
                 <Warning />
-              </CIcon>
+              </YIcon>
               <span :class="bem('teleport__error', 'label')">该格式无法预览</span>
             </div>
           </slot>

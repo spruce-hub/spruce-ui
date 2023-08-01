@@ -1,9 +1,8 @@
 import type { App, Plugin } from 'vue'
 
 import { AlertPlugin } from '@mui/components/alert'
-import { IconPlugin } from '@mui/components/icon'
 
-const components = [AlertPlugin, IconPlugin]
+const components = [AlertPlugin]
 
 const mui: Plugin = {
   install(app: App) {
