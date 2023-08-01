@@ -41,6 +41,7 @@ const copy = async (name: string) => {
   grid-template-columns: repeat(7, 1fr);
   border-top: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
+  margin-bottom: 20px;
 }
 .icon-list {
   display: flex;
@@ -64,8 +65,9 @@ const copy = async (name: string) => {
   }
 }
 .icon-name {
-  width: 110px;
   overflow: hidden;
+  width: 110px;
+  font-size: 12px !important;
   text-overflow: ellipsis;
   white-space: nowrap;
   text-align: center;

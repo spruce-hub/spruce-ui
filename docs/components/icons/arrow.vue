@@ -1,29 +1,35 @@
 <script setup lang="ts">
 import IconList from '../icon-list.vue'
 import {
+  Top,
+  Right,
+  Bottom,
   ArrowBack,
-  CaretBottom,
-  CaretTop,
-  ArrowDown,
   GoBack,
-  ArrowLeft,
-  ArrowRadius,
-  ArrowRight,
-  ArrowUp,
   GoTo,
+  ArrowUp,
+  ArrowRight,
+  ArrowDown,
+  ArrowLeft,
+  CaretTop,
+  CaretBottom,
+  ArrowRadius,
 } from '@spruce-hub/icons'
 
 const groupIcons = [
+  Top,
+  Right,
+  Bottom,
   ArrowBack,
-  CaretBottom,
-  CaretTop,
-  ArrowDown,
   GoBack,
-  ArrowLeft,
-  ArrowRadius,
-  ArrowRight,
-  ArrowUp,
   GoTo,
+  ArrowUp,
+  ArrowRight,
+  ArrowDown,
+  ArrowLeft,
+  CaretTop,
+  CaretBottom,
+  ArrowRadius,
 ]
 </script>
 

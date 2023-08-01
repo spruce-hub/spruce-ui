@@ -9,6 +9,8 @@ import {
   Basket,
   ShoppingBag,
   Integral,
+  Location,
+  LocationInformation,
 } from '@spruce-hub/icons'
 
 const groupIcons = [
@@ -20,6 +22,8 @@ const groupIcons = [
   Receiving,
   WaitDeliver,
   Integral,
+  Location,
+  LocationInformation,
 ]
 </script>
 

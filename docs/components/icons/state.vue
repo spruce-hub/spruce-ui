@@ -1,25 +1,43 @@
 <script setup lang="ts">
 import IconList from '../icon-list.vue'
 import {
+  Close,
   CloseBold,
   CloseCircleFilled,
-  Close,
+  Check,
   Select,
   Success,
   Warning,
+  Tips,
+  Info,
+  Error,
+  InProgress,
   Follow,
   FollowFilled,
+  Loading,
+  Happy,
+  Sad,
+  Sunny,
 } from '@spruce-hub/icons'
 
 const groupIcons = [
+  Close,
   CloseBold,
   CloseCircleFilled,
-  Close,
+  Check,
   Select,
   Success,
   Warning,
+  Tips,
+  Info,
+  Error,
+  InProgress,
   Follow,
   FollowFilled,
+  Loading,
+  Happy,
+  Sad,
+  Sunny,
 ]
 </script>
 

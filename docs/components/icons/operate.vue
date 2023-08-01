@@ -5,8 +5,8 @@ import {
   Delete,
   FullscreenExit,
   Fullscreen,
-  Good,
   Move,
+  Good,
   PenEditDash,
   PenEdit,
   PlusCircle,
@@ -21,6 +21,14 @@ import {
   ZoomIn,
   ZoomOut,
   Search,
+  SendBackward,
+  BringForward,
+  SendBack,
+  BringFront,
+  Custom,
+  FontBold,
+  FontItalic,
+  FontUnberline,
 } from '@spruce-hub/icons'
 
 const groupIcons = [
@@ -28,8 +36,8 @@ const groupIcons = [
   Delete,
   FullscreenExit,
   Fullscreen,
-  Good,
   Move,
+  Good,
   PenEditDash,
   PenEdit,
   PlusCircle,
@@ -44,6 +52,14 @@ const groupIcons = [
   ZoomIn,
   ZoomOut,
   Search,
+  SendBackward,
+  BringForward,
+  SendBack,
+  BringFront,
+  Custom,
+  FontBold,
+  FontItalic,
+  FontUnberline,
 ]
 </script>
 
