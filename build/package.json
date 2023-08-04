@@ -53,11 +53,11 @@
     "gulp-sass": "^5.1.0",
     "jsdom": "^22.1.0",
     "parse-json": "^7.0.0",
-    "prettier": "^3.0.0",
+    "prettier": "^3.0.1",
     "rimraf": "^5.0.1",
-    "rollup": "^3.27.0",
+    "rollup": "^3.27.1",
     "rollup-plugin-esbuild": "^5.0.0",
-    "sass": "^1.64.1",
+    "sass": "^1.64.2",
     "ts-morph": "^19.0.0",
     "tslib": "^2.6.1"
   },
@@ -75,7 +75,7 @@
     "@types/prettier": "^2.7.3",
     "@types/rimraf": "^3.0.2",
     "typescript": "^5.1.6",
-    "vite": "^4.4.7",
+    "vite": "^4.4.8",
     "vue": "^3.3.4"
   }
 }
