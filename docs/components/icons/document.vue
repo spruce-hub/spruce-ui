@@ -5,10 +5,12 @@ import {
   Invoice,
   Ordered,
   ToBeConfirmed,
-  WriteApplication,
-  Audit,
   OrderCancel,
+  WriteApplication,
+  Inquiry,
+  PendingPay,
   Date,
+  Audit,
 } from '@spruce-hub/icons'
 
 const groupIcons = [
@@ -16,10 +18,12 @@ const groupIcons = [
   Invoice,
   Ordered,
   ToBeConfirmed,
-  WriteApplication,
-  Audit,
   OrderCancel,
+  WriteApplication,
+  Inquiry,
+  PendingPay,
   Date,
+  Audit,
 ]
 </script>
 

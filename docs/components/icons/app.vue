@@ -1,8 +1,30 @@
 <script setup lang="ts">
 import IconList from '../icon-list.vue'
-import { AliPay, Moment, Qq, WechatPay, Wechat, Weibo, Zhihu, Email } from '@spruce-hub/icons'
+import {
+  AliPay,
+  AliPayText,
+  Wechat,
+  WechatPay,
+  WechatPayText,
+  Moment,
+  Qq,
+  Weibo,
+  Zhihu,
+  Ask,
+} from '@spruce-hub/icons'
 
-const groupIcons = [AliPay, Moment, Qq, WechatPay, Wechat, Weibo, Zhihu, Email]
+const groupIcons = [
+  AliPay,
+  AliPayText,
+  Wechat,
+  WechatPay,
+  WechatPayText,
+  Moment,
+  Qq,
+  Weibo,
+  Zhihu,
+  Ask,
+]
 </script>
 
 <template>

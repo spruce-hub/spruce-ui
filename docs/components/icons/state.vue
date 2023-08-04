@@ -18,6 +18,9 @@ import {
   Happy,
   Sad,
   Sunny,
+  Moon,
+  Star,
+  Setp,
 } from '@spruce-hub/icons'
 
 const groupIcons = [
@@ -38,6 +41,9 @@ const groupIcons = [
   Happy,
   Sad,
   Sunny,
+  Moon,
+  Star,
+  Setp,
 ]
 </script>
 

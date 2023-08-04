@@ -20,7 +20,7 @@ author: Noah Yu
 
 <IconsUser />
 
-### 文档工作流
+### 文档
 
 <IconsDocument />
 
@@ -28,9 +28,13 @@ author: Noah Yu
 
 <IconsOperate />
 
-### 购物发货
+### 购物
 
 <IconsOrder />
+
+### 工具
+
+<IconsTool />
 
 ### 媒体
 
