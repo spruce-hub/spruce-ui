@@ -1,3 +1,17 @@
+# [1.0.0-alpha.14](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.13...v1.0.0-alpha.14) (2023-08-04)
+
+
+### ✨Features
+
+* **icon:** add icons ([9f3c604](https://github.com/spruce-hub/spruce-ui/commit/9f3c604a6bf2984187decbf61d6c184c608ecc90))
+
+
+### 🛠️Chore
+
+* **package:** update deps ([2914aa4](https://github.com/spruce-hub/spruce-ui/commit/2914aa4988115282644b8afe91ef884d0964df31))
+
+
+
 # [1.0.0-alpha.13](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.12...v1.0.0-alpha.13) (2023-08-01)
 
 
