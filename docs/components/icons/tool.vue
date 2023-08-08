@@ -13,6 +13,8 @@ import {
   FontBold,
   FontItalic,
   FontUnberline,
+  LeftRightStructure,
+  UpDownStructure,
 } from '@spruce-hub/icons'
 
 const groupIcons = [
@@ -28,6 +30,8 @@ const groupIcons = [
   FontBold,
   FontItalic,
   FontUnberline,
+  LeftRightStructure,
+  UpDownStructure,
 ]
 </script>
 

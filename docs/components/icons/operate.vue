@@ -3,6 +3,7 @@ import IconList from '../icon-list.vue'
 import {
   List,
   Copy,
+  CopySimple,
   Delete,
   Good,
   Pen,
@@ -29,6 +30,7 @@ import {
 const groupIcons = [
   List,
   Copy,
+  CopySimple,
   Delete,
   Good,
   Pen,
