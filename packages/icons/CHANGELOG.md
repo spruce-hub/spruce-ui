@@ -1,3 +1,12 @@
+# [1.0.0-alpha.16](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.15...v1.0.0-alpha.16) (2023-08-09)
+
+
+### 🐛Bug Fixes
+
+* **icon:** 正方形的 icon ([678c5a8](https://github.com/spruce-hub/spruce-ui/commit/678c5a88f3b553adcab9e6a13ed152ee6739948f))
+
+
+
 # [1.0.0-alpha.15](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.14...v1.0.0-alpha.15) (2023-08-08)
 
 

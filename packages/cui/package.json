@@ -1,6 +1,6 @@
 {
   "name": "@spruce-hub/cui",
-  "version": "1.0.0-alpha.15",
+  "version": "1.0.0-alpha.16",
   "description": "适用于 (S)CRM 平台的公共组件或模块",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
