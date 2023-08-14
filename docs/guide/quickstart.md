@@ -51,7 +51,7 @@ app.mount('#app')
 ```vue
 <script setup lang="ts">
 import { CAlert } from '@spruce-hub/cui'
-import '@spruce-hub/cui/dist/styles/ys-alert.css'
+import '@spruce-hub/cui/dist/components/alert/style/css'
 </script>
 
 <template>

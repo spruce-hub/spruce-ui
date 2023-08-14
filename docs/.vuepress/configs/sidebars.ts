@@ -23,6 +23,10 @@ export const sidebars = {
       text: '反馈组件',
       children: ['/eui/alert', '/eui/count-down'],
     },
+    {
+      text: 'Header',
+      children: ['/eui/header-menu'],
+    },
   ],
   '/chalk/': [
     {

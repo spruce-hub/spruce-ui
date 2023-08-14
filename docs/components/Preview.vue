@@ -14,5 +14,11 @@
   padding: 20px;
   border: 1px solid var(--border-color);
   border-radius: 4px 4px 0 0;
+
+  :deep(ul) {
+    li::marker {
+      content: none !important;
+    }
+  }
 }
 </style>
