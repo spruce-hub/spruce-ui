@@ -22,7 +22,7 @@ export function useCountDown(
   const { duration = 3, onFinish } = options || {}
   const time = ref(duration)
 
-  let timer: undefined | NodeJS.Timer = undefined
+  let timer: undefined | NodeJS.Timeout = undefined
   function doCountDown() {
     timer = setInterval(() => {
       time.value--
