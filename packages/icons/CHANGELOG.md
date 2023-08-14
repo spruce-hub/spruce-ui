@@ -1,3 +1,12 @@
+# [1.0.0-alpha.17](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.16...v1.0.0-alpha.17) (2023-08-14)
+
+
+### 🐛Bug Fixes
+
+* **icon:** 优化 icon 规格 ([41e6d3f](https://github.com/spruce-hub/spruce-ui/commit/41e6d3f72ca2908c5da7c7037c1e01b9b655b849))
+
+
+
 # [1.0.0-alpha.16](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.15...v1.0.0-alpha.16) (2023-08-09)
 
 

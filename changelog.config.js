@@ -1,5 +1,4 @@
 'use strict'
-const Q = require('q')
 const compareFunc = require('compare-func')
 
 const conventionalChangelog = require('conventional-changelog-angular/conventional-changelog')
@@ -76,7 +75,7 @@ function getWriterOpts() {
               }
 
               return `[@${username}](${context.host}/${username})`
-            }
+            },
           )
         }
       }
@@ -130,14 +129,17 @@ function getWriterOpts() {
   }
 }
 
-module.exports = Q.all([conventionalChangelog, parserOpts, recommendedBumpOpts, writerOpts]).spread(
-  (conventionalChangelog, parserOpts, recommendedBumpOpts, writerOpts) => {
-    writerOpts.transform = getWriterOpts().transform
-    writerOpts.groupBy = getWriterOpts().groupBy
-    writerOpts.commitGroupsSort = getWriterOpts().commitGroupsSort
-    writerOpts.commitsSort = getWriterOpts().commitsSort
-    writerOpts.noteGroupsSort = getWriterOpts().noteGroupsSort
-    writerOpts.notesSort = getWriterOpts().notesSort
-    return { conventionalChangelog, parserOpts, recommendedBumpOpts, writerOpts }
-  }
-)
+module.exports = Promise.all([
+  conventionalChangelog,
+  parserOpts,
+  recommendedBumpOpts,
+  writerOpts,
+]).then(([conventionalChangelog, parserOpts, recommendedBumpOpts, writerOpts]) => {
+  writerOpts.transform = getWriterOpts().transform
+  writerOpts.groupBy = getWriterOpts().groupBy
+  writerOpts.commitGroupsSort = getWriterOpts().commitGroupsSort
+  writerOpts.commitsSort = getWriterOpts().commitsSort
+  writerOpts.noteGroupsSort = getWriterOpts().noteGroupsSort
+  writerOpts.notesSort = getWriterOpts().notesSort
+  return { conventionalChangelog, parserOpts, recommendedBumpOpts, writerOpts }
+})

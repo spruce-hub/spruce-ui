@@ -1,3 +1,24 @@
+# [1.0.0-alpha.17](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.16...v1.0.0-alpha.17) (2023-08-14)
+
+
+### ✨Features
+
+* **component:** add `EHeaderMenu` component ([2739adc](https://github.com/spruce-hub/spruce-ui/commit/2739adc32101a3ddf68a5b9c8424f6c3a97dbd6d))
+
+
+### 🐛Bug Fixes
+
+* **component:** 修复类型错误 ([25177e8](https://github.com/spruce-hub/spruce-ui/commit/25177e81d881af36e49c6bf85c1c26fb5601f9b8))
+* **icon:** 优化 icon 规格 ([41e6d3f](https://github.com/spruce-hub/spruce-ui/commit/41e6d3f72ca2908c5da7c7037c1e01b9b655b849))
+
+
+### 🛠️Chore
+
+* update config ([91f54f6](https://github.com/spruce-hub/spruce-ui/commit/91f54f6f86bb0a19ff6ea6ce73141536338200f7))
+* 移除 `@spruce-hub/mui` ([53a6002](https://github.com/spruce-hub/spruce-ui/commit/53a6002a3c25384ddabdc113904779bb9187d339))
+
+
+
 # [1.0.0-alpha.16](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.15...v1.0.0-alpha.16) (2023-08-09)
 
 
