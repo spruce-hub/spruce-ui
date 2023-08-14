@@ -15,7 +15,6 @@
     "@spruce-hub/cui": "workspace:*",
     "@spruce-hub/eui": "workspace:*",
     "@spruce-hub/icons": "workspace:*",
-    "@spruce-hub/mui": "workspace:*",
     "@vitejs/plugin-vue": "^4.2.3",
     "cross-env": "^7.0.3",
     "rollup-plugin-visualizer": "^5.9.2",

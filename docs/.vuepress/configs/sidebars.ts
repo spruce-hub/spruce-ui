@@ -24,12 +24,6 @@ export const sidebars = {
       children: ['/eui/alert', '/eui/count-down'],
     },
   ],
-  '/mui/': [
-    {
-      text: '反馈组件',
-      children: ['/mui/alert'],
-    },
-  ],
   '/chalk/': [
     {
       text: '快速开始',

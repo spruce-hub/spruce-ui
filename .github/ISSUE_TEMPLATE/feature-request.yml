@@ -10,9 +10,9 @@ body:
       options:
         - label: '@spruce-hub/cui'
         - label: '@spruce-hub/eui'
-        - label: '@spruce-hub/mui'
         - label: '@spruce-hub/ui-hooks'
         - label: '@spruce-hub/icons'
+        - label: '@spruce-hub/chalk'
   - type: textarea
     id: feature
     attributes:

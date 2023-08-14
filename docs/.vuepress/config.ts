@@ -13,7 +13,6 @@ import { navbars, sidebars } from './configs'
 
 const cuiRoot = resolve(cwd(), '../packages/cui')
 const euiRoot = resolve(cwd(), '../packages/eui')
-const muiRoot = resolve(cwd(), '../packages/mui')
 const iconsRoot = resolve(cwd(), '../packages/icons')
 
 const __dirname = getDirname(import.meta.url)
@@ -23,8 +22,6 @@ const alias = {
   '@spruce-hub/cui/*': `${cuiRoot}/*`,
   '@spruce-hub/eui': `${euiRoot}`,
   '@spruce-hub/eui/*': `${euiRoot}/*`,
-  '@spruce-hub/mui': `${muiRoot}`,
-  '@spruce-hub/mui/*': `${muiRoot}/*`,
   '@spruce-hub/icons': `${iconsRoot}`,
   '@spruce-hub/icons/*': `${iconsRoot}/*`,
 }

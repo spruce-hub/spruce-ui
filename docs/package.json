@@ -28,7 +28,6 @@
     "@spruce-hub/cui": "workspace:*",
     "@spruce-hub/eui": "workspace:*",
     "@spruce-hub/icons": "workspace:*",
-    "@spruce-hub/mui": "workspace:*",
     "@vuepress/client": "2.0.0-beta.66",
     "@vuepress/plugin-register-components": "2.0.0-beta.66",
     "@vuepress/plugin-search": "2.0.0-beta.66",

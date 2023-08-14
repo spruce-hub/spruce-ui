@@ -23,7 +23,7 @@ import {
 import { dts } from '../plugins/build-dts'
 import { alias } from '../plugins/build-alias'
 
-import { cuiRoot, euiRoot, muiRoot } from '../utils/paths'
+import { cuiRoot, euiRoot } from '../utils/paths'
 
 const { src, dest } = gulp
 
@@ -37,7 +37,6 @@ const excludeFiles = (files: string[]) => {
 const uiRoots: Record<string, string> = {
   cui: cuiRoot,
   eui: euiRoot,
-  mui: muiRoot,
 }
 
 export const buildUI = async (lib: string) => {

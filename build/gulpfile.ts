@@ -19,9 +19,6 @@ switch (argv[libNameIndex]) {
   case 'eui':
     tasks = series(...(await buildUI('eui')))
     break
-  case 'mui':
-    tasks = series(...(await buildUI('mui')))
-    break
   case 'hooks':
     tasks = series(buildHooks)
     break
@@ -35,7 +32,6 @@ switch (argv[libNameIndex]) {
       buildIcons,
       ...(await buildUI('cui')),
       ...(await buildUI('eui')),
-      ...(await buildUI('mui')),
     )
 }
 

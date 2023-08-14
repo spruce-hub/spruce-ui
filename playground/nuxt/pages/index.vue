@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { EAlert } from '@spruce-hub/eui'
+import '@spruce-hub/eui/dist/style/index.css'
 </script>
 
 <template>

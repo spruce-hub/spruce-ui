@@ -1,8 +1,5 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import '@spruce-hub/cui/styles/index.scss'
-import '@spruce-hub/eui/styles/index.scss'
-import '@spruce-hub/mui/styles/index.scss'
-import '@spruce-hub/chalk/scss/index.scss'
+import '@spruce-hub/chalk/dist/index.css'
 
 createApp(App).mount('#app')

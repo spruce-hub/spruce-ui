@@ -43,7 +43,6 @@
     "@spruce-hub/cui": "workspace:*",
     "@spruce-hub/eui": "workspace:*",
     "@spruce-hub/icons": "workspace:*",
-    "@spruce-hub/mui": "workspace:*",
     "@types/node": "20.4.7",
     "@types/rimraf": "^3.0.2",
     "@typescript-eslint/eslint-plugin": "^6.2.1",

@@ -4,9 +4,9 @@
 
 - [ ] @spruce-hub/cui
 - [ ] @spruce-hub/eui
-- [ ] @spruce-hub/mui
 - [ ] @spruce-hub/ui-hooks
 - [ ] @spruce-hub/icons
+- [ ] @spruce-hub/chalk
 
 ### ❓ Type of change
 

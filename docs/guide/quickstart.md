@@ -4,9 +4,11 @@ author: Noah Yu
 
 # 快速开始
 
-## 完整导入 <Badge type="tip" text="推荐" vertical="middle" />
+## 完整导入
 
-> 客户端/管理端组件库使用方式相同，以下仅展示 **(S)CRM 系统组件库** 的使用方式
+> 客户端/管理端组件库使用方式相同，以下仅展示 **内控系统** 的使用方式
+
+不建议您完整导入，除非您确定需要使用绝大多数组件
 
 ```ts
 // main.ts
@@ -42,14 +44,14 @@ app.mount('#app')
 }
 ```
 
-## 手动导入
+## 手动导入 <Badge type="tip" text="推荐" vertical="middle" />
 
 手动导入的方式需要单独引入样式文件
 
 ```vue
 <script setup lang="ts">
-import '@spruce-hub/cui/dist/components/alert/style/css'
 import { CAlert } from '@spruce-hub/cui'
+import '@spruce-hub/cui/dist/styles/ys-alert.css'
 </script>
 
 <template>
@@ -57,7 +59,7 @@ import { CAlert } from '@spruce-hub/cui'
 </template>
 ```
 
-也可以引入完整的样式文件
+如果您使用了绝大多数组件，也可以引入完整的样式文件
 
 ```ts
 // main.ts

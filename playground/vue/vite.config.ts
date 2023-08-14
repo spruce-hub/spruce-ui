@@ -7,7 +7,6 @@ import { visualizer } from 'rollup-plugin-visualizer'
 
 const cui = resolve(cwd(), '../../packages/cui')
 const eui = resolve(cwd(), '../../packages/eui')
-const mui = resolve(cwd(), '../../packages/mui')
 const icons = resolve(cwd(), '../../packages/icons')
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -21,8 +20,6 @@ export default defineConfig({
       '@cui/*': `${cui}/*`,
       '@eui': `${eui}`,
       '@eui/*': `${eui}/*`,
-      '@mui': `${mui}`,
-      '@mui/*': `${mui}/*`,
       '@icons': `${icons}`,
       '@icons/*': `${icons}/*`,
     },

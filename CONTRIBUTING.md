@@ -32,7 +32,6 @@ pnpm install
 
 - `@spruce-hub/cui` 适用于 **S/CRM 系统** 的组件库
 - `@spruce-hub/eui` 适用于 **电商系统** 的组件库
-- `@spruce-hub/mui` 适用于 **管理系统** 的组件库
 
 请明确您需要创建的组件属于哪一类型，我们可以通过命令快速创建所需的目录以及文件，对应的初始化命令分别是：
 
@@ -44,9 +43,6 @@ pnpm create:comp cui <componentName>
 
 # 适用于 电商系统 的组件
 pnpm create:comp eui <componentName>
-
-# 适用于 管理系统 的组件
-pnpm create:comp mui <componentName>
 ```
 
 ### 导出组件

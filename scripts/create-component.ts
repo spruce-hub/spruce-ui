@@ -8,7 +8,7 @@ import { format } from 'prettier'
 
 import type { BuiltInParserName } from 'prettier'
 
-const libs = ['cui', 'eui', 'mui']
+const libs = ['cui', 'eui']
 
 if (process.argv.length < 4) {
   console.log('输入你要创建的组件所属的库以及组件名称')
@@ -41,7 +41,7 @@ const formatCode = (code: string, parser: BuiltInParserName = 'typescript') =>
   })
 
 const create = async () => {
-  const index = formatCode(
+  const index = await formatCode(
     `
     import type { App, Plugin } from 'vue'
     import ${CamelCaseName} from './src/${name}.vue'
@@ -60,7 +60,7 @@ const create = async () => {
 }
 
 const createTEST = async () => {
-  const test = formatCode(
+  const test = await formatCode(
     `
       import { describe, expect, it } from 'vitest'
       import { mount } from '@vue/test-utils'
@@ -77,7 +77,7 @@ const createTEST = async () => {
 }
 
 const createSRC = async () => {
-  const sfc = formatCode(
+  const sfc = await formatCode(
     `
     <script setup lang="ts">
       import { ${CamelCaseName}Props } from './${name}'
@@ -92,7 +92,7 @@ const createSRC = async () => {
     'vue',
   )
 
-  const ts = formatCode(
+  const ts = await formatCode(
     `
     export const ${CamelCaseName}Props = {}`,
     'typescript',
@@ -105,25 +105,27 @@ const createSRC = async () => {
 }
 
 const createSTYLE = async () => {
-  const css = formatCode(
+  const css = await formatCode(
     `
     import '@spruce-hub/chalk/dist/index.css'
     import '@${libName}/styles/ys-${name}.css'`,
     'typescript',
   )
 
-  const index = formatCode(
+  const index = await formatCode(
     `
     import '@spruce-hub/chalk/scss/index.scss'
     import '@${libName}/styles/scss/${name}.scss'`,
     'typescript',
   )
 
-  const scss = formatCode(
+  const scss = await formatCode(
     `
     @use './mixins/mixins' as *;
 
-    .#{$namespace}-${name} {}`,
+    $block: '${name}'
+
+    @include b(){}`,
     'scss',
   )
 

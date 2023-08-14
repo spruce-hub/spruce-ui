@@ -21,7 +21,7 @@ pnpm add @spruce-hub/cui@next -P
 
 # or
 
-pnpm add @spruce-hub/mui@next -P
+pnpm add @spruce-hub/eui@next -P
 ```
 
 @tab npm
@@ -31,7 +31,7 @@ npm install @spruce-hub/cui@next --save
 
 # or
 
-npm install @spruce-hub/mui@next --save
+npm install @spruce-hub/eui@next --save
 ```
 
 :::

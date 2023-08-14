@@ -12,7 +12,7 @@ export const navbars: NavbarConfig = [
     activeMatch: '^/icons/',
   },
   {
-    text: '(S)CRM 系统',
+    text: '内控系统',
     link: '/cui/',
     activeMatch: '^/cui/',
   },
@@ -20,11 +20,6 @@ export const navbars: NavbarConfig = [
     text: '电商系统',
     link: '/eui/',
     activeMatch: '^/eui/',
-  },
-  {
-    text: '管理系统',
-    link: '/mui/',
-    activeMatch: '^/mui/',
   },
   {
     text: '样式库',

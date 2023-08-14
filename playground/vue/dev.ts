@@ -19,7 +19,7 @@ const formatCode = (code: string, parser: BuiltInParserName = 'typescript') =>
 
 const create = async () => {
   if (!existsSync(`${projectRoot}/src/App.vue`)) {
-    const sfc = formatCode(
+    const sfc = await formatCode(
       `
       <script setup lang="ts">
         import { CAlert } from '@cui/index'
