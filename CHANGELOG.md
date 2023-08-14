@@ -1,3 +1,12 @@
+# [1.0.0-alpha.18](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.17...v1.0.0-alpha.18) (2023-08-14)
+
+
+### 🐛Bug Fixes
+
+* **component:** 修复高度只有 `100px` 的问题 ([3c7343e](https://github.com/spruce-hub/spruce-ui/commit/3c7343e7306d2a0f0812219fa377b0a204d83547))
+
+
+
 # [1.0.0-alpha.17](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.16...v1.0.0-alpha.17) (2023-08-14)
 
 
