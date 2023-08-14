@@ -1,5 +1,11 @@
 /* global defineNuxtConfig */
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { resolve } from 'node:path'
+import { cwd } from 'node:process'
+
+const cui = resolve(cwd(), '../../packages/cui')
+const eui = resolve(cwd(), '../../packages/eui')
+const icons = resolve(cwd(), '../../packages/icons')
 export default defineNuxtConfig({
   app: {
     head: {
@@ -21,8 +27,22 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "@spruce-hub/chalk/scss/mixin.scss" as *;',
+          additionalData: `
+          @use "@spruce-hub/chalk/scss/mixin.scss" as *;
+          `,
         },
+      },
+    },
+    resolve: {
+      alias: {
+        '@': '/src',
+        '@assets': '/src/assets',
+        '@cui': `${cui}`,
+        '@cui/*': `${cui}/*`,
+        '@eui': `${eui}`,
+        '@eui/*': `${eui}/*`,
+        '@icons': `${icons}`,
+        '@icons/*': `${icons}/*`,
       },
     },
   },

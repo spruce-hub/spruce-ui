@@ -41,7 +41,8 @@
   "dependencies": {
     "@spruce-hub/chalk": "workspace:*",
     "@spruce-hub/icons": "workspace:*",
-    "@spruce-hub/ui-hooks": "workspace:*"
+    "@spruce-hub/ui-hooks": "workspace:*",
+    "@vueuse/core": "^10.3.0"
   },
   "devDependencies": {
     "typescript": "^5.1.6",

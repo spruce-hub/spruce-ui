@@ -28,7 +28,7 @@ header {
   box-shadow: 0 0 4px 2px var(--ys-gray-400);
   border: 1px solid #fff;
   padding: 0 20px 20px;
-  width: 60vw;
+  width: 70vw;
   height: 60vh;
   .tips {
     margin-bottom: 10px;

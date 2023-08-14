@@ -92,7 +92,10 @@ export const buildUI = async (lib: string) => {
           },
           tsConfigFilePath: resolve(uiRoot, './tsconfig.json'),
           injectFiles: [resolve(uiRoot, 'components/env.d.ts')],
-          paths,
+          paths: {
+            '@cui': '@spruce-hub/cui/dist',
+            '@eui': '@spruce-hub/eui/dist',
+          },
         }),
       ],
       external: [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.devDependencies || {})],
