@@ -120,6 +120,7 @@ module.exports = {
       feat: [
         { name: 'component' },
         { name: 'icon' },
+        { name: 'chalk' },
         { name: 'hook' },
         { name: 'util' },
         { name: 'style' },
@@ -127,6 +128,7 @@ module.exports = {
       fix: [
         { name: 'component' },
         { name: 'icon' },
+        { name: 'chalk' },
         { name: 'hook' },
         { name: 'util' },
         { name: 'style' },
@@ -134,6 +136,7 @@ module.exports = {
       refactor: [
         { name: 'component' },
         { name: 'icon' },
+        { name: 'chalk' },
         { name: 'hook' },
         { name: 'util' },
         { name: 'style' },
@@ -141,6 +144,7 @@ module.exports = {
       perf: [
         { name: 'component' },
         { name: 'icon' },
+        { name: 'chalk' },
         { name: 'hook' },
         { name: 'util' },
         { name: 'style' },
@@ -148,6 +152,7 @@ module.exports = {
       revert: [
         { name: 'component' },
         { name: 'icon' },
+        { name: 'chalk' },
         { name: 'hook' },
         { name: 'util' },
         { name: 'style' },
