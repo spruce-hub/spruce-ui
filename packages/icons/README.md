@@ -23,14 +23,10 @@ createApp(App).use(icons).mount('#app')
 ```
 
 ```html
-<script setup lang="ts">
-  import { EIcon } from '@spruce-hub/eui'
-</script>
-
 <template>
-  <EIcon>
+  <YIcon>
     <AliPay />
-  </EIcon>
+  </YIcon>
 </template>
 ```
 
@@ -50,13 +46,12 @@ createApp(App).use(icons).mount('#app')
 
 ```html
 <script setup lang="ts">
-  import { EIcon } from '@spruce-hub/eui'
-  import { AliPay } from '@spruce-hub/icons'
+  import { YIcon, AliPay } from '@spruce-hub/icons'
 </script>
 
 <template>
-  <EIcon>
+  <YIcon>
     <AliPay />
-  </EIcon>
+  </YIcon>
 </template>
 ```

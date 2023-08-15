@@ -14,21 +14,13 @@ pnpm add @spruce-hub/chalk -P
 
 ## Quick start
 
-### Vue
-
-导入 css
-
 ```ts
-// main.ts
-import { createApp } from 'vue'
-import App from './App.vue'
-
-import '@spruce-hub/chalk/dist/index.css'
-
-createApp(App).mount('#app')
+import '@spruce-hub/chalk'
 ```
 
-您还可以导入内置的全局变量、mixin 等
+### 您还可以导入内置的 SCSS 变量、mixin 等
+
+> Vue
 
 ```ts
 // vite.config.ts
@@ -47,22 +39,7 @@ export default defineConfig({
 })
 ```
 
-### Nuxt
-
-导入 css
-
-```ts
-// nuxt.config.ts
-export default defineNuxtConfig({
-  // ···
-  css: [
-    //···
-    '@spruce-hub/chalk/dist/index.css',
-  ],
-})
-```
-
-您还可以导入内置的全局变量、mixin 等
+> Nuxt
 
 ```ts
 // nuxt.config.ts

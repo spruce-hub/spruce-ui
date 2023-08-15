@@ -10,9 +10,11 @@ pnpm add @spruce-hub/eui -P
 
 ## Quick start
 
+样式都是默认导入的
+
 ```html
 <script setup lang="ts">
-  import { EHeaderMenu } from '@spruce-hub/eui'
+import { EHeaderMenu } from '@spruce-hub/eui'
 </script>
 
 <template>

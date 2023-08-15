@@ -16,19 +16,11 @@ author: Noah Yu
 
 ```bash
 pnpm add @spruce-hub/icons@next -P
-
-# or
-
-pnpm add @spruce-hub/icons@next -P
 ```
 
 @tab npm
 
 ```bash
-npm install @spruce-hub/icons@next --save
-
-# or
-
 npm install @spruce-hub/icons@next --save
 ```
 
