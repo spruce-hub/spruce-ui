@@ -8,7 +8,6 @@ body:
       label: Select the package
       description: 选择对应的库
       options:
-        - label: '@spruce-hub/cui'
         - label: '@spruce-hub/eui'
         - label: '@spruce-hub/ui-hooks'
         - label: '@spruce-hub/icons'

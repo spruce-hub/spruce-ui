@@ -18,22 +18,21 @@ const formatCode = (code: string, parser: BuiltInParserName = 'typescript') =>
   })
 
 const create = async () => {
-  if (!existsSync(`${projectRoot}/src/App.vue`)) {
+  if (!existsSync(`${projectRoot}/pages/index.vue`)) {
     const sfc = await formatCode(
       `
       <script setup lang="ts">
-        import { EHeaderMenu } from '@eui/index'
-        import Preview from './components/Preview.vue'
-        const navs = [
-          { value: '首页', linkTo: '/' },
-          { value: '使用指南', linkTo: '/guide' },
-          { value: '电商系统', linkTo: '/eui' },
-          { value: '图标库', linkTo: '/icons' },
-          { value: '样式库', linkTo: '/chalk' },
-          { value: '不是路由', linkTo: '' },
-        ]
+      import { EHeaderMenu } from '@spruce-hub/eui'
+      const navs = [
+        { value: '首页', linkTo: '' },
+        { value: '使用指南', linkTo: 'guide' },
+        { value: '电商系统', linkTo: 'eui' },
+        { value: '图标库', linkTo: 'icons' },
+        { value: '样式库', linkTo: 'chalk' },
+        { value: '不是路由', linkTo: '' },
+      ]
       </script>
-      
+
       <template>
         <Preview>
           <EHeaderMenu :navs="navs">
@@ -50,7 +49,7 @@ const create = async () => {
           </EHeaderMenu>
         </Preview>
       </template>
-      
+
       <style lang="scss" scoped>
       .ys-logo {
         height: 58px;
@@ -62,8 +61,8 @@ const create = async () => {
       </style>`,
       'vue',
     )
-    writeFile('src/App.vue', sfc, 'utf-8')
-    consola.success(chalk.green('index: src/App.vue'))
+    writeFile('pages/index.vue', sfc, 'utf-8')
+    consola.success(chalk.green('index: pages/index.vue'))
   }
 }
 

@@ -17,20 +17,12 @@ author: Noah Yu
 @tab pnpm
 
 ```bash
-pnpm add @spruce-hub/cui@next -P
-
-# or
-
 pnpm add @spruce-hub/eui@next -P
 ```
 
 @tab npm
 
 ```bash
-npm install @spruce-hub/cui@next --save
-
-# or
-
 npm install @spruce-hub/eui@next --save
 ```
 

@@ -11,15 +11,12 @@ import { searchProPlugin } from 'vuepress-plugin-search-pro'
 
 import { navbars, sidebars } from './configs'
 
-const cuiRoot = resolve(cwd(), '../packages/cui')
 const euiRoot = resolve(cwd(), '../packages/eui')
 const iconsRoot = resolve(cwd(), '../packages/icons')
 
 const __dirname = getDirname(import.meta.url)
 
 const alias = {
-  '@spruce-hub/cui': `${cuiRoot}`,
-  '@spruce-hub/cui/*': `${cuiRoot}/*`,
   '@spruce-hub/eui': `${euiRoot}`,
   '@spruce-hub/eui/*': `${euiRoot}/*`,
   '@spruce-hub/icons': `${iconsRoot}`,

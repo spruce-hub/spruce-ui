@@ -3,7 +3,6 @@
 import { resolve } from 'node:path'
 import { cwd } from 'node:process'
 
-const cui = resolve(cwd(), '../../packages/cui')
 const eui = resolve(cwd(), '../../packages/eui')
 const icons = resolve(cwd(), '../../packages/icons')
 export default defineNuxtConfig({
@@ -22,7 +21,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  css: ['@spruce-hub/chalk/dist/index.css', '@spruce-hub/icons/dist/styles/index.css'],
+  css: ['@spruce-hub/icons/dist/styles/index.css'],
   vite: {
     css: {
       preprocessorOptions: {
@@ -37,8 +36,6 @@ export default defineNuxtConfig({
       alias: {
         '@': '/src',
         '@assets': '/src/assets',
-        '@cui': `${cui}`,
-        '@cui/*': `${cui}/*`,
         '@eui': `${eui}`,
         '@eui/*': `${eui}/*`,
         '@icons': `${icons}`,

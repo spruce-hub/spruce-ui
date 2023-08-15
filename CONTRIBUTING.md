@@ -28,19 +28,13 @@ pnpm install
 
 ### 通过命令快速创建相关目录和文件
 
-我们目前共有三个组件库，分别是
-
-- `@spruce-hub/cui` 适用于 **S/CRM 系统** 的组件库
 - `@spruce-hub/eui` 适用于 **电商系统** 的组件库
 
-请明确您需要创建的组件属于哪一类型，我们可以通过命令快速创建所需的目录以及文件，对应的初始化命令分别是：
+初始化命令：
 
 > `<componentName>` 替换成您的组件名称
 
 ```bash
-# 创建一个适用于 S/CRM 系统 的组件
-pnpm create:comp cui <componentName>
-
 # 适用于 电商系统 的组件
 pnpm create:comp eui <componentName>
 ```
@@ -71,24 +65,15 @@ pnpm dev
 
 ```html
 <script setup lang="ts">
-  import { CAlert } from '@spruce-hub/cui/index'
+  import { EHeaderMenu } from '@spruce-hub/eui'
   import Preview from './components/Preview.vue'
 </script>
 
 <template>
   <Preview>
-    <CAlert type="success" description="success alert" closable="center" />
-    <CAlert type="warning" description="warning alert" closable="center" />
-    <CAlert type="error" description="error alert" closable="center" />
-    <CAlert type="info" description="info alert" closable="center" />
+    <EHeaderMenu :navs=[{value:'菜单1', linkTo: '/menu-1'}, {value:'菜单2', linkTo: '/menu-2'}] />
   </Preview>
 </template>
-
-<style lang="scss" scoped>
-  .ys-alert {
-    margin: 5px 0;
-  }
-</style>
 ```
 
 ## 开发规范
@@ -204,44 +189,60 @@ pnpm docs:dev
 
 在 `docs/components` 目录下创建示例组件，vuepress 会自动把组件注册到全局。
 
-例如：`components/alert/basic.vue`
+例如：`components/header-menu/Slot.vue`
 
 ```html
+<script setup lang="ts">
+  import { EHeaderMenu } from '@spruce-hub/eui'
+
+  const navs = [
+    { value: '首页', linkTo: '/' },
+    { value: '使用指南', linkTo: '/guide' },
+    { value: '电商系统', linkTo: '/eui' },
+    { value: '图标库', linkTo: '/icons' },
+    { value: '样式库', linkTo: '/chalk' },
+  ]
+</script>
+
 <template>
-  <CAlert type="success" description="success alert" />
-  <CAlert type="warning" description="warning alert" />
-  <CAlert type="error" description="error alert" />
-  <CAlert type="info" description="info alert" />
+  <EHeaderMenu :navs="navs">
+    <template #header-left>
+      <div class="ys-logo">
+        <img src="https://oss.sprucefe.com/spruce-ui/logo/logo.png" alt="logo" />
+      </div>
+    </template>
+    <template #header-right>
+      <div class="ys-logo">
+        <img src="https://oss.sprucefe.com/spruce-ui/logo/logo.png" alt="logo" />
+      </div>
+    </template>
+  </EHeaderMenu>
 </template>
 
 <style lang="scss" scoped>
-  .ys-alert {
-    margin: 20px 0 0;
-    font-size: 16px;
-  }
-  .ys-alert:first-child {
-    margin: 0;
+  .ys-logo {
+    height: 58px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 </style>
 ```
 
-将会得到组件 `<AlertBasic />`
+将会得到组件 `<HeaderMenuSlot />`
 
 在 markdown 文件中，把该示例组件传入 `<Preview />` 即可展示渲染效果以及相关代码。
 
 ```Markdown
 <Preview>
-  <AlertBasic />
+  <HeaderMenuSlot />
 </Preview>
 
 ::: details Code
-@[code](./Basic.vue)
+@[code](../components/header-menu/Slot.vue)
 :::
 ```
-
-效果如下
-
-![alert](https://oss.sprucefe.com/spruce-ui/docs/alert.png)
 
 ## 提交代码
 

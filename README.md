@@ -29,12 +29,6 @@
 
 ## 库
 
-### CUI
-
-> @spruce-hub/cui
-
-适用于 **内控系统** 的 **公共组件** 或 **完整模块**
-
 ### EUI
 
 > @spruce-hub/eui

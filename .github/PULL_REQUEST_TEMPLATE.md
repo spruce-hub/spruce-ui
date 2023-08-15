@@ -2,7 +2,6 @@
 
 ### 📦 Package of change
 
-- [ ] @spruce-hub/cui
 - [ ] @spruce-hub/eui
 - [ ] @spruce-hub/ui-hooks
 - [ ] @spruce-hub/icons

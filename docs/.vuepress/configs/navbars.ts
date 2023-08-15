@@ -12,11 +12,6 @@ export const navbars: NavbarConfig = [
     activeMatch: '^/icons/',
   },
   {
-    text: '内控系统',
-    link: '/cui/',
-    activeMatch: '^/cui/',
-  },
-  {
     text: '电商系统',
     link: '/eui/',
     activeMatch: '^/eui/',

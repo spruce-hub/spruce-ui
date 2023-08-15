@@ -13,9 +13,6 @@ switch (argv[libNameIndex]) {
   case 'chalk':
     tasks = series(buildChalk)
     break
-  case 'cui':
-    tasks = series(...(await buildUI('cui')))
-    break
   case 'eui':
     tasks = series(...(await buildUI('eui')))
     break
@@ -26,13 +23,7 @@ switch (argv[libNameIndex]) {
     tasks = series(buildIcons)
     break
   default:
-    tasks = series(
-      buildChalk,
-      buildHooks,
-      buildIcons,
-      ...(await buildUI('cui')),
-      ...(await buildUI('eui')),
-    )
+    tasks = series(buildChalk, buildHooks, buildIcons, ...(await buildUI('eui')))
 }
 
 export default tasks

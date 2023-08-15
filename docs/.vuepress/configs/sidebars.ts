@@ -8,21 +8,7 @@ export const sidebars = {
     { text: '使用指南', link: '/icons/' },
     { text: '图标集', link: '/icons/list' },
   ],
-  '/cui/': [
-    {
-      text: '基础组件',
-      children: ['/cui/file-preview'],
-    },
-    {
-      text: '反馈组件',
-      children: ['/cui/alert'],
-    },
-  ],
   '/eui/': [
-    {
-      text: '反馈组件',
-      children: ['/eui/alert', '/eui/count-down'],
-    },
     {
       text: 'Header',
       children: ['/eui/header-menu'],

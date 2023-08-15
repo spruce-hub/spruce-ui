@@ -8,7 +8,7 @@ import { format } from 'prettier'
 
 import type { BuiltInParserName } from 'prettier'
 
-const libs = ['cui', 'eui']
+const libs = ['eui']
 
 if (process.argv.length < 4) {
   console.log('输入你要创建的组件所属的库以及组件名称')
@@ -45,6 +45,7 @@ const create = async () => {
     `
     import type { App, Plugin } from 'vue'
     import ${CamelCaseName} from './src/${name}.vue'
+    import '@eui/components/${name}/style/css'
 
     export const ${CamelCaseName}Plugin: Plugin = {
       install(app: App) {

@@ -23,7 +23,7 @@ import {
 import { dts } from '../plugins/build-dts'
 import { alias } from '../plugins/build-alias'
 
-import { cuiRoot, euiRoot } from '../utils/paths'
+import { euiRoot } from '../utils/paths'
 
 const { src, dest } = gulp
 
@@ -35,7 +35,6 @@ const excludeFiles = (files: string[]) => {
 }
 
 const uiRoots: Record<string, string> = {
-  cui: cuiRoot,
   eui: euiRoot,
 }
 
@@ -93,7 +92,6 @@ export const buildUI = async (lib: string) => {
           tsConfigFilePath: resolve(uiRoot, './tsconfig.json'),
           injectFiles: [resolve(uiRoot, 'components/env.d.ts')],
           paths: {
-            '@cui': '@spruce-hub/cui/dist',
             '@eui': '@spruce-hub/eui/dist',
           },
         }),

@@ -1,8 +1,8 @@
-import { AlertPlugin, CountDownPlugin, HeaderMenuPlugin } from '@spruce-hub/eui'
+import { HeaderMenuPlugin } from '@spruce-hub/eui'
 
 import type { App, Plugin } from 'vue'
 
-const components = [AlertPlugin, CountDownPlugin, HeaderMenuPlugin]
+const components = [HeaderMenuPlugin]
 
 export const eui: Plugin = {
   install(app: App) {
