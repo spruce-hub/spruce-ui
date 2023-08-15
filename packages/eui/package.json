@@ -1,6 +1,6 @@
 {
   "name": "@spruce-hub/eui",
-  "version": "1.0.0-alpha.18",
+  "version": "1.0.0",
   "description": "适用于电商平台的公共组件或模块",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

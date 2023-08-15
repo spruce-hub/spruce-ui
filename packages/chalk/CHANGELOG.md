@@ -1,3 +1,12 @@
+# [1.0.0](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.18...v1.0.0) (2023-08-15)
+
+
+### ✨Features
+
+* **chalk:** 通过 import 导入 css ([e4ede2e](https://github.com/spruce-hub/spruce-ui/commit/e4ede2e09ebe291003b2162846b3c4404221d5df))
+
+
+
 # [1.0.0-alpha.18](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.17...v1.0.0-alpha.18) (2023-08-14)
 
 

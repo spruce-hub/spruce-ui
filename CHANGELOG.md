@@ -1,3 +1,19 @@
+# [1.0.0](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.18...v1.0.0) (2023-08-15)
+
+
+### ✨Features
+
+* 去其糟粕 ([3fed117](https://github.com/spruce-hub/spruce-ui/commit/3fed1173d9c48e2b4f88c7225f4c6a907e1f6014))
+* **component:** 默认导入 css，无需手动导入 ([8b490e9](https://github.com/spruce-hub/spruce-ui/commit/8b490e9cd66e8fe36201b4d6fc3a35e2b2342bf4))
+* **chalk:** 通过 import 导入 css ([e4ede2e](https://github.com/spruce-hub/spruce-ui/commit/e4ede2e09ebe291003b2162846b3c4404221d5df))
+
+
+### 🏗️Build System
+
+* 支持构建 chalk 中的 ts ([8fa8917](https://github.com/spruce-hub/spruce-ui/commit/8fa89177068ed40dde64f6500cfc99c201f469f4))
+
+
+
 # [1.0.0-alpha.18](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.17...v1.0.0-alpha.18) (2023-08-14)
 
 
