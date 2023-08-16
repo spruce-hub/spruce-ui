@@ -104,6 +104,7 @@ export const buildUI = async (lib: string) => {
       dir: resolve(uiRoot, 'dist'),
       preserveModules: true,
       sourcemap: true,
+      entryFileNames: '[name].mjs',
     })
   }
 
