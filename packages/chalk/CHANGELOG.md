@@ -1,4 +1,13 @@
-## [1.0.2](https://github.com/spruce-hub/spruce-ui/compare/1.0.1...1.0.2) (2023-08-16)
+## [1.0.3](https://github.com/spruce-hub/spruce-ui/compare/v1.0.2...v1.0.3) (2023-08-16)
+
+
+### 🐛Bug Fixes
+
+* **component:** 样式需手动导入，删除 cjs 包 ([f744313](https://github.com/spruce-hub/spruce-ui/commit/f7443130ab4a1091701ee36259501af8c15ee7d0))
+
+
+
+## [1.0.2](https://github.com/spruce-hub/spruce-ui/compare/1.0.1...v1.0.2) (2023-08-16)
 
 
 ### ✨Features
