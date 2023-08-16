@@ -6,11 +6,10 @@ author: Noah Yu
 
 ## 手动导入 <Badge type="tip" text="推荐" vertical="middle" />
 
-样式是默认导入的
-
 ```vue
 <script setup lang="ts">
 import { EHeaderMenu } from '@spruce-hub/eui'
+import '@spruce-hub/eui/dist/components/header-menu/style/css'
 
 const navs = [
   { value: '首页', linkTo: '/' },
@@ -49,7 +48,7 @@ const navs = [
 
 ## 完整导入
 
-样式是默认导入的，不建议您完整导入，除非您确定需要使用绝大多数组件
+不建议您完整导入，除非您确定需要使用绝大多数组件
 
 ```ts
 // main.ts
@@ -57,6 +56,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 import eui from '@spruce-hub/eui'
+import '@spruce-hub/eui/dist/styles/index.css'
 
 const app = createApp(App)
 
