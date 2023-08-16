@@ -1,4 +1,13 @@
-## [1.0.1](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0...v1.0.1) (2023-08-16)
+## [1.0.2](https://github.com/spruce-hub/spruce-ui/compare/1.0.1...1.0.2) (2023-08-16)
+
+
+### ✨Features
+
+* **component:** 构建 `cjs` 模块 ([6e9e8f8](https://github.com/spruce-hub/spruce-ui/commit/6e9e8f8d68a6a6d4f1aff6473bf6cc43f81dc129))
+
+
+
+## [1.0.1](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0...1.0.1) (2023-08-16)
 
 
 ### 🐛Bug Fixes
