@@ -108,7 +108,7 @@ const createSRC = async () => {
 const createSTYLE = async () => {
   const css = await formatCode(
     `
-    import '@spruce-hub/chalk/dist/index.css'
+    import '@spruce-hub/chalk'
     import '@${libName}/styles/ys-${name}.css'`,
     'typescript',
   )
