@@ -2,18 +2,20 @@
   "name": "@spruce-hub/eui",
   "version": "1.0.1",
   "description": "适用于电商平台的公共组件或模块",
-  "main": "dist/index.mjs",
+  "main": "lib/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "require": "./lib/index.js"
     },
     "./*": "./*"
   },
   "files": [
     "/dist",
+    "/lib",
     "/global.d.ts"
   ],
   "scripts": {
