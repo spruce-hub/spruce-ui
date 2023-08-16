@@ -1,3 +1,22 @@
+## [1.0.1](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0...v1.0.1) (2023-08-16)
+
+
+### 🐛Bug Fixes
+
+* **component:** 使用 `esm` 模块 ([44d6075](https://github.com/spruce-hub/spruce-ui/commit/44d6075a9119cf5bba684a70236b7212940832a5))
+
+
+### 🛠️Chore
+
+* **script:** update config ([4cee293](https://github.com/spruce-hub/spruce-ui/commit/4cee29304cd7e239a55f5f6e5f54c0396c202242))
+
+
+### 🏗️Build System
+
+* 构建到 `.mjs` ([efa17ec](https://github.com/spruce-hub/spruce-ui/commit/efa17eccbfcd869fb919e2f4f2941c91026c99fd))
+
+
+
 # [1.0.0](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.18...v1.0.0) (2023-08-15)
 
 

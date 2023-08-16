@@ -1,3 +1,12 @@
+## [1.0.1](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0...v1.0.1) (2023-08-16)
+
+
+### 🐛Bug Fixes
+
+* **component:** 使用 `esm` 模块 ([44d6075](https://github.com/spruce-hub/spruce-ui/commit/44d6075a9119cf5bba684a70236b7212940832a5))
+
+
+
 # [1.0.0](https://github.com/spruce-hub/spruce-ui/compare/v1.0.0-alpha.18...v1.0.0) (2023-08-15)
 
 

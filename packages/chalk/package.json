@@ -1,6 +1,6 @@
 {
   "name": "@spruce-hub/chalk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Spruce UI chalk theme",
   "main": "dist/index.mjs",
   "module": "dist/index.mjs",
