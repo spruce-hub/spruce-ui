@@ -1,2 +1,2 @@
-import '@spruce-hub/chalk/dist/index.css'
+import '@spruce-hub/chalk'
 import '@eui/styles/ys-header-menu.css'

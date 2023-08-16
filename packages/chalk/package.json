@@ -2,11 +2,13 @@
   "name": "@spruce-hub/chalk",
   "version": "1.0.0",
   "description": "Spruce UI chalk theme",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs"
     },
     "./*": "./*"
   },
