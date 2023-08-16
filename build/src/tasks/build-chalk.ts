@@ -73,14 +73,6 @@ export const buildChalk = async () => {
     dir: resolve(chalkRoot, 'dist'),
     preserveModules: true,
     sourcemap: true,
-    entryFileNames: '[name].mjs',
-  })
-  bundle.write({
-    format: 'cjs',
-    dir: resolve(chalkRoot, 'dist'),
-    preserveModules: true,
-    sourcemap: true,
-    entryFileNames: '[name].js',
   })
 
   const sass = gulpSass(dartSass)

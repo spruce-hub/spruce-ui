@@ -104,14 +104,6 @@ export const buildUI = async (lib: string) => {
       dir: resolve(uiRoot, 'dist'),
       preserveModules: true,
       sourcemap: true,
-      entryFileNames: '[name].mjs',
-    })
-    bundle.write({
-      format: 'cjs',
-      dir: resolve(uiRoot, 'lib'),
-      preserveModules: true,
-      sourcemap: true,
-      entryFileNames: '[name].js',
     })
   }
 
@@ -139,13 +131,10 @@ export const buildUI = async (lib: string) => {
         }),
       )
       .pipe(dest(resolve(uiRoot, 'dist/styles')))
-      .pipe(dest(resolve(uiRoot, 'lib/styles')))
   }
 
   const copyScss = () => {
-    return src(resolve(uiRoot, 'styles/**'))
-      .pipe(dest(resolve(uiRoot, 'dist/styles/scss')))
-      .pipe(dest(resolve(uiRoot, 'lib/styles/scss')))
+    return src(resolve(uiRoot, 'styles/**')).pipe(dest(resolve(uiRoot, 'dist/styles/scss')))
   }
 
   return [buildComponent, buildStyle, copyScss]
