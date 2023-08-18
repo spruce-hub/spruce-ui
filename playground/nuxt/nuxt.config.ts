@@ -21,13 +21,21 @@ export default defineNuxtConfig({
       ],
     },
   },
-  css: ['@spruce-hub/eui/dist/styles/index.css', '@spruce-hub/icons/dist/styles/index.css'],
+  modules: ['@element-plus/nuxt'],
+  alias: {
+    '@eui': `${eui}`,
+    '@eui/*': `${eui}/*`,
+    '@icons': `${icons}`,
+    '@icons/*': `${icons}/*`,
+  },
   vite: {
     css: {
       preprocessorOptions: {
         scss: {
           additionalData: `
           @use "@spruce-hub/chalk/scss/mixin.scss" as *;
+          @use "@spruce-hub/eui/styles/index.scss" as *;
+          @use "@spruce-hub/icons/styles/index.scss" as *;
           `,
         },
       },

@@ -11,20 +11,18 @@ const navs = [
 </script>
 
 <template>
-  <Preview>
-    <EHeaderMenu :navs="navs">
-      <template #header-left>
-        <div class="ys-logo">
-          <img src="https://oss.sprucefe.com/spruce-ui/logo/logo.png" alt="logo" />
-        </div>
-      </template>
-      <template #header-right>
-        <div class="ys-logo">
-          <img src="https://oss.sprucefe.com/spruce-ui/logo/logo.png" alt="logo" />
-        </div>
-      </template>
-    </EHeaderMenu>
-  </Preview>
+  <EHeaderMenu :navs="navs">
+    <template #header-left>
+      <div class="ys-logo">
+        <img src="https://oss.sprucefe.com/spruce-ui/logo/logo.png" alt="logo" />
+      </div>
+    </template>
+    <template #header-right>
+      <div class="ys-logo">
+        <img src="https://oss.sprucefe.com/spruce-ui/logo/logo.png" alt="logo" />
+      </div>
+    </template>
+  </EHeaderMenu>
 </template>
 
 <style lang="scss" scoped>
