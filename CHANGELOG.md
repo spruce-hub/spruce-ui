@@ -1,3 +1,17 @@
+## [1.0.4](https://github.com/spruce-hub/spruce-ui/compare/v1.0.3...v1.0.4) (2023-08-18)
+
+
+### ✨Features
+
+* **icon:** `YIcon` 通过 `props` 设置样式 ([88c7d8b](https://github.com/spruce-hub/spruce-ui/commit/88c7d8b3ad91c768d655b72dccd5280d94675174))
+
+
+### 🛠️Chore
+
+* **other:** 优化组件演示服务 ([480f707](https://github.com/spruce-hub/spruce-ui/commit/480f707605f580ab9d71bf52427e222a17f17c6e))
+
+
+
 ## [1.0.3](https://github.com/spruce-hub/spruce-ui/compare/v1.0.2...v1.0.3) (2023-08-16)
 
 
