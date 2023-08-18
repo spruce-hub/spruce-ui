@@ -1,13 +1,15 @@
 .ys-icon {
   --color: inherit;
+  --font-size: inherit;
   --text-color: var(--color);
+  --text-size: inherit;
 
   display: inline-flex;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
   color: var(--color);
-  font-size: inherit;
+  font-size: var(--font-size);
   &.ys-is--loading .ys-icon__svg {
     animation: ys-icon-rotating 2s linear infinite;
   }
@@ -23,6 +25,7 @@
 .ys-icon__text {
   height: 1em;
   line-height: 1em;
+  font-size: var(--text-size);
   color: var(--text-color);
   margin-left: 4px;
 }
