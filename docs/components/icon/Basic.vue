@@ -1,12 +1,17 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import { YIcon, Success } from '@spruce-hub/icons'
+
+const s = ref(20)
+const c = ref('--ys-primary')
 </script>
 
 <template>
-  <YIcon>
-    <Success />
-  </YIcon>
-  <YIcon color="#13c2c2">
+  <YIcon
+    text="Spruce UI"
+    :size="`${s}px`"
+    :css-var="[`--color: var(${c})`, '--text-size: 14px', '--text-color: var(--ys-gray-200)']"
+  >
     <Success />
   </YIcon>
 </template>
