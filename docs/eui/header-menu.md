@@ -1,7 +1,3 @@
----
-author: Noah Yu
----
-
 # Header Menu
 
 具有下拉菜单的头部

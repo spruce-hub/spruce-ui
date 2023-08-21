@@ -1,7 +1,6 @@
 # Composables
 
-- `useNamespace`
-  - 标准化 class 命名
+### class 助手 `useNamespace`
 
 ```ts
 const { bem, is } = useNamespace('example')

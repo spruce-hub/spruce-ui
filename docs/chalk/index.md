@@ -1,18 +1,4 @@
----
-author: Noah Yu
----
-
-# 快速开始
-
-:::tip
-如果您的项目正在使用 Spruce UI 提供的组件，那么该样式库是默认内置的
-
-如果您还想使用全局变量、mixin 等，那么您可以选择导入以下 SCSS 的其中一个
-
-仅样式库：`@spruce-hub/chalk/scss/mixin.scss`
-
-包含组件库和样式库：`@spruce-hub/<name>/dist/styles/scss/mixins/mixin.scss`
-:::
+# 使用指南
 
 ## 安装
 

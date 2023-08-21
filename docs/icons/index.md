@@ -1,10 +1,6 @@
----
-author: Noah Yu
----
-
 # Icon
 
-为 [SVG 图标](/icons/) 提供一个规范的宿主环境
+为 [SVG 图标](/icons/) 提供宿主环境
 
 ## Install
 

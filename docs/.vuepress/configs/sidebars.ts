@@ -1,23 +1,22 @@
 export const sidebars = {
-  '/guide/': [
-    { text: '设计原则', link: '/guide/design' },
-    { text: '安装', link: '/guide/install' },
-    { text: '快速开始', link: '/guide/quickstart' },
-  ],
-  '/icons/': [
-    { text: '使用指南', link: '/icons/' },
-    { text: '图标集', link: '/icons/list' },
-  ],
   '/eui/': [
+    {
+      text: '使用指南',
+      link: '/eui/',
+    },
     {
       text: 'Header',
       children: ['/eui/header-menu'],
     },
   ],
+  '/icons/': [
+    { text: '使用指南', link: '/icons/' },
+    { text: '图标集', link: '/icons/list' },
+  ],
   '/chalk/': [
     {
-      text: '快速开始',
-      link: '/chalk/quickstart',
+      text: '使用指南',
+      link: '/chalk/',
     },
     {
       text: '主题',
