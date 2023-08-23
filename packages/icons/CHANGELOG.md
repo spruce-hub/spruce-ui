@@ -1,3 +1,12 @@
+## [1.0.5](https://github.com/spruce-hub/spruce-ui/compare/v1.0.4...v1.0.5) (2023-08-23)
+
+
+### 🐛Bug Fixes
+
+* 修改InProgress，原先的图标内指针带有颜色 ([f13933f](https://github.com/spruce-hub/spruce-ui/commit/f13933fd36d7dfba3c93d5a4d9e9210e6a4d32c4))
+
+
+
 ## [1.0.4](https://github.com/spruce-hub/spruce-ui/compare/v1.0.3...v1.0.4) (2023-08-18)
 
 
