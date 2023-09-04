@@ -11,6 +11,7 @@ import {
   Integral,
   Location,
   LocationInformation,
+  RegionFilled,
 } from '@spruce-hub/icons'
 
 const groupIcons = [
@@ -24,6 +25,7 @@ const groupIcons = [
   Integral,
   Location,
   LocationInformation,
+  RegionFilled,
 ]
 </script>
 
