@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import IconList from '../icon-list.vue'
-import { QuestionCircle, Attachment, Email } from '@spruce-hub/icons'
+import { QuestionCircle, Attachment, Cooperation, Tool } from '@spruce-hub/icons'
 
-const groupIcons = [QuestionCircle, Attachment, Email]
+const groupIcons = [QuestionCircle, Attachment, Cooperation, Tool]
 </script>
 
 <template>
