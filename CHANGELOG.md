@@ -1,3 +1,12 @@
+## [1.0.7](https://github.com/spruce-hub/spruce-ui/compare/v1.0.6...v1.0.7) (2023-09-11)
+
+
+### 🐛Bug Fixes
+
+* **icon:** 修复 `YIcon` 在 Safari 浏览器下不能正确显示的缺陷 ([ddc737a](https://github.com/spruce-hub/spruce-ui/commit/ddc737a4d987467b57635ff0c893a4dee0558b7a))
+
+
+
 ## [1.0.6](https://github.com/spruce-hub/spruce-ui/compare/v1.0.5...v1.0.6) (2023-09-05)
 
 

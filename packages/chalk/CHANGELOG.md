@@ -1,3 +1,7 @@
+## [1.0.7](https://github.com/spruce-hub/spruce-ui/compare/v1.0.6...v1.0.7) (2023-09-11)
+
+
+
 ## [1.0.6](https://github.com/spruce-hub/spruce-ui/compare/v1.0.5...v1.0.6) (2023-09-05)
 
 
