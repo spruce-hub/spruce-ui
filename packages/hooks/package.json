@@ -1,6 +1,6 @@
 {
   "name": "@spruce-hub/ui-hooks",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Spruce UI composables",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

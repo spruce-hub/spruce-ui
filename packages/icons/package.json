@@ -1,6 +1,6 @@
 {
   "name": "@spruce-hub/icons",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "图标库",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

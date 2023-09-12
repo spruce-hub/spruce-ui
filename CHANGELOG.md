@@ -1,3 +1,12 @@
+## [1.0.8](https://github.com/spruce-hub/spruce-ui/compare/v1.0.7...v1.0.8) (2023-09-12)
+
+
+### ✨Features
+
+* **icon:** 新增 `rtl` 属性控制图标在文案的右侧 ([d0ba67f](https://github.com/spruce-hub/spruce-ui/commit/d0ba67f7c2e698f0ad3ef6dce905925c88b96a6a))
+
+
+
 ## [1.0.7](https://github.com/spruce-hub/spruce-ui/compare/v1.0.6...v1.0.7) (2023-09-11)
 
 
