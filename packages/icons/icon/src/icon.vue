@@ -45,7 +45,7 @@ const textStyle = computed<CSSProperties>(() => {
 </script>
 
 <template>
-  <span class="ys-icon" :style="[iconStyle, cssVar]">
+  <span :class="['ys-icon', { 'ys-icon--rtl': rtl }]" :style="[iconStyle, cssVar]">
     <i class="ys-icon__svg">
       <slot>
         <component :is="component" />

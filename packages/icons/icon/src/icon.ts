@@ -50,4 +50,5 @@ export const iconProps = {
     type: cssVarPropType(Array),
     default: [],
   },
+  rtl: Boolean,
 }

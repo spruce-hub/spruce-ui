@@ -10,6 +10,13 @@
   flex-shrink: 0;
   color: var(--color);
   font-size: var(--font-size);
+  &.ys-icon--rtl {
+    flex-direction: row-reverse;
+    .ys-icon__text {
+      margin-left: 0;
+      margin-right: 4px;
+    }
+  }
   &.ys-is--loading .ys-icon__svg {
     animation: ys-icon-rotating 2s linear infinite;
   }
@@ -19,6 +26,10 @@
   width: 1em;
   height: 1em;
   line-height: 1em;
+  svg {
+    width: 1em;
+    height: 1em;
+  }
 }
 .ys-icon__text {
   height: 1em;
