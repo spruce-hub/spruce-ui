@@ -58,10 +58,11 @@ const copy = async (name: string) => {
   }
 }
 .icon {
+  font-size: 30px;
   text-align: center;
   svg {
-    width: 30px;
-    height: 30px;
+    width: 1em;
+    height: 1em;
   }
 }
 .icon-name {

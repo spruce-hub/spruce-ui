@@ -59,6 +59,8 @@ export default defineNuxtConfig({
 
 `text` 属性在图标右侧添加文案
 
+`rtl` 属性控制图标在文案的右边
+
 <Preview>
   <IconText />
 </Preview>
@@ -112,15 +114,16 @@ type CssVars =
 
 ### Icon Attributes
 
-| Attributes | Type        | Default | Required | Description |
-| ---------- | ----------- | ------- | -------- | ----------- |
-| color      | `string`    | -       | 否       | 图标颜色    |
-| size       | `number`    | -       | 否       | 图标尺寸    |
-| component  | `Component` | `null`  | 否       | icon 组件   |
-| text       | `string`    | -       | 否       | 文案        |
-| textColor  | `string`    | -       | 否       | 文案颜色    |
-| textSize   | `string`    | -       | 否       | 文案字号    |
-| cssVar     | `string[]`  | `[]`    | 否       | css 变量    |
+| Attributes | Type        | Default | Required | Description              |
+| ---------- | ----------- | ------- | -------- | ------------------------ |
+| color      | `string`    | -       | 否       | 图标颜色                 |
+| size       | `number`    | -       | 否       | 图标尺寸                 |
+| component  | `Component` | `null`  | 否       | icon 组件                |
+| text       | `string`    | -       | 否       | 文案                     |
+| textColor  | `string`    | -       | 否       | 文案颜色                 |
+| textSize   | `string`    | -       | 否       | 文案字号                 |
+| rtl        | `boolean`   | -       | 否       | 属性控制图标在文案的右边 |
+| cssVar     | `string[]`  | `[]`    | 否       | css 变量                 |
 
 ### Icon Slot
 

@@ -9,6 +9,9 @@ import { YIcon, Success } from '@spruce-hub/icons'
   <YIcon color="#13c2c2" :size="14" text="改变颜色" text-color="#f00">
     <Success />
   </YIcon>
+  <YIcon color="#13c2c2" :size="14" rtl text="图标在右边" text-color="#f00">
+    <Success />
+  </YIcon>
 </template>
 
 <style lang="scss" scoped>
