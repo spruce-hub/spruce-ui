@@ -1,3 +1,12 @@
+## [1.0.9](https://github.com/spruce-hub/spruce-ui/compare/v1.0.8...v1.0.9) (2023-09-19)
+
+
+### ✨Features
+
+* **icon:** add icons ([2646879](https://github.com/spruce-hub/spruce-ui/commit/264687927b7e27eaed82337f190cdd7d4bd7640f))
+
+
+
 ## [1.0.8](https://github.com/spruce-hub/spruce-ui/compare/v1.0.7...v1.0.8) (2023-09-12)
 
 
