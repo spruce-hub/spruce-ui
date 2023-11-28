@@ -1,10 +1,34 @@
 'use strict'
+
 const compareFunc = require('compare-func')
 
-const conventionalChangelog = require('conventional-changelog-angular/conventional-changelog')
-const parserOpts = require('conventional-changelog-angular/parser-opts')
-const recommendedBumpOpts = require('conventional-changelog-angular/conventional-recommended-bump')
-const writerOpts = require('conventional-changelog-angular/writer-opts')
+const { createParserOpts } = require('conventional-changelog-angular/parserOpts')
+const { createWriterOpts } = require('conventional-changelog-angular/writerOpts')
+const {
+  createConventionalChangelogOpts,
+} = require('conventional-changelog-angular/conventionalChangelog')
+const {
+  createConventionalRecommendedBumpOpts,
+} = require('conventional-changelog-angular/conventionalRecommendedBump')
+
+async function createPreset() {
+  const parserOpts = createParserOpts()
+  const writerOpts = await createWriterOpts()
+  const conventionalChangelog = createConventionalChangelogOpts(parserOpts, writerOpts)
+  const recommendedBumpOpts = createConventionalRecommendedBumpOpts(parserOpts)
+
+  writerOpts.transform = getWriterOpts().transform
+  writerOpts.commitGroupsSort = getWriterOpts().commitGroupsSort
+
+  return {
+    parserOpts,
+    writerOpts,
+    conventionalChangelog,
+    recommendedBumpOpts,
+  }
+}
+
+module.exports = createPreset
 
 function getWriterOpts() {
   return {
@@ -128,18 +152,3 @@ function getWriterOpts() {
     notesSort: compareFunc,
   }
 }
-
-module.exports = Promise.all([
-  conventionalChangelog,
-  parserOpts,
-  recommendedBumpOpts,
-  writerOpts,
-]).then(([conventionalChangelog, parserOpts, recommendedBumpOpts, writerOpts]) => {
-  writerOpts.transform = getWriterOpts().transform
-  writerOpts.groupBy = getWriterOpts().groupBy
-  writerOpts.commitGroupsSort = getWriterOpts().commitGroupsSort
-  writerOpts.commitsSort = getWriterOpts().commitsSort
-  writerOpts.noteGroupsSort = getWriterOpts().noteGroupsSort
-  writerOpts.notesSort = getWriterOpts().notesSort
-  return { conventionalChangelog, parserOpts, recommendedBumpOpts, writerOpts }
-})
