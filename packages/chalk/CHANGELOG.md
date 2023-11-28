@@ -1,3 +1,12 @@
+## [1.0.10](https://github.com/spruce-hub/spruce-ui/compare/v1.0.9...v1.0.10) (2023-11-28)
+
+
+### 🛠️Chore
+
+* **package:** 更新依赖包 ([b3b2ada](https://github.com/spruce-hub/spruce-ui/commit/b3b2ada14cb58575eab8e20ffc8682a32163e066))
+
+
+
 ## [1.0.9](https://github.com/spruce-hub/spruce-ui/compare/v1.0.8...v1.0.9) (2023-09-19)
 
 
@@ -161,9 +170,9 @@
 
 ### 🛠️Chore
 
-* **package:** update sass ([a15cf5a](https://github.com/spruce-hub/spruce-ui/commit/a15cf5a97b85ed8331e34f306dc51d12d0bfb7be))
 * **issue:** 降低 sass 版本，详情可查看(sass/dart-sass[#1995](https://github.com/spruce-hub/spruce-ui/issues/1995)) ([9cd3feb](https://github.com/spruce-hub/spruce-ui/commit/9cd3feb320bcbf92318545b739a91fe93881ab1f))
 * **package:** update deps ([578527a](https://github.com/spruce-hub/spruce-ui/commit/578527a7e3d5e46868db269d2cdaaa9c00bd2508))
+* **package:** update sass ([a15cf5a](https://github.com/spruce-hub/spruce-ui/commit/a15cf5a97b85ed8331e34f306dc51d12d0bfb7be))
 
 
 

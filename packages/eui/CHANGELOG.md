@@ -1,3 +1,12 @@
+## [1.0.10](https://github.com/spruce-hub/spruce-ui/compare/v1.0.9...v1.0.10) (2023-11-28)
+
+
+### 🛠️Chore
+
+* **package:** 更新依赖包 ([b3b2ada](https://github.com/spruce-hub/spruce-ui/commit/b3b2ada14cb58575eab8e20ffc8682a32163e066))
+
+
+
 ## [1.0.9](https://github.com/spruce-hub/spruce-ui/compare/v1.0.8...v1.0.9) (2023-09-19)
 
 
@@ -54,8 +63,8 @@
 
 ### ✨Features
 
-* 去其糟粕 ([3fed117](https://github.com/spruce-hub/spruce-ui/commit/3fed1173d9c48e2b4f88c7225f4c6a907e1f6014))
 * **component:** 默认导入 css，无需手动导入 ([8b490e9](https://github.com/spruce-hub/spruce-ui/commit/8b490e9cd66e8fe36201b4d6fc3a35e2b2342bf4))
+* 去其糟粕 ([3fed117](https://github.com/spruce-hub/spruce-ui/commit/3fed1173d9c48e2b4f88c7225f4c6a907e1f6014))
 
 
 
@@ -161,8 +170,8 @@
 
 ### 🔨Code Refactoring
 
-* **style:** 导入 `@spruce-hub/chalk` ([14bbc27](https://github.com/spruce-hub/spruce-ui/commit/14bbc2795f26d1fdd4c05a0d009cc93bb08d66bd))
 * **component:** 简化组件的默认导出 ([6e14459](https://github.com/spruce-hub/spruce-ui/commit/6e14459b7dedaf80f2d74619fb2e00479a763563))
+* **style:** 导入 `@spruce-hub/chalk` ([14bbc27](https://github.com/spruce-hub/spruce-ui/commit/14bbc2795f26d1fdd4c05a0d009cc93bb08d66bd))
 
 
 ### 🛠️Chore
@@ -203,14 +212,14 @@
 
 ### ✨Features
 
-* **component:** eui添加count-down组件 ([bc03789](https://github.com/spruce-hub/spruce-ui/commit/bc03789b607fbe38f47e70bb648ed90201cfc32c))
 * add `@spruce-hub/eui` ([ca94030](https://github.com/spruce-hub/spruce-ui/commit/ca94030f0defcbe5ee726c53e42d3de637e91936))
+* **component:** eui添加count-down组件 ([bc03789](https://github.com/spruce-hub/spruce-ui/commit/bc03789b607fbe38f47e70bb648ed90201cfc32c))
 
 
 ### 🐛Bug Fixes
 
-* 重新设计 icon 构建模式，防止出现命名冲突 ([cd09114](https://github.com/spruce-hub/spruce-ui/commit/cd091144e9f9e56f8966b9b2c5227acfc36cf9e2))
 * 使用统一的命名空间 ([ff2ac63](https://github.com/spruce-hub/spruce-ui/commit/ff2ac63d24049707a9e20b4bad5a19db71edfef0))
+* 重新设计 icon 构建模式，防止出现命名冲突 ([cd09114](https://github.com/spruce-hub/spruce-ui/commit/cd091144e9f9e56f8966b9b2c5227acfc36cf9e2))
 
 
 ### 🔨Code Refactoring
@@ -220,8 +229,8 @@
 
 ### ✅Tests
 
-* 修复代码错误 ([8d4c13b](https://github.com/spruce-hub/spruce-ui/commit/8d4c13b25e49f0ae6b81589ca0ec4e2ff20d1023))
 * **component:** 修复 `eui` 单元测试的 bug ([76ee20e](https://github.com/spruce-hub/spruce-ui/commit/76ee20e1b80e46a05a1412e8f9e4aa5c1e334592))
+* 修复代码错误 ([8d4c13b](https://github.com/spruce-hub/spruce-ui/commit/8d4c13b25e49f0ae6b81589ca0ec4e2ff20d1023))
 
 
 ### ⚡Performance Improvements

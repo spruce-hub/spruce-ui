@@ -1,3 +1,17 @@
+## [1.0.10](https://github.com/spruce-hub/spruce-ui/compare/v1.0.9...v1.0.10) (2023-11-28)
+
+
+### ✨Features
+
+* **component:** add icon ([692d78f](https://github.com/spruce-hub/spruce-ui/commit/692d78fa3eade3aa0a4c3fcfa57493e1a4d06782))
+
+
+### 🛠️Chore
+
+* **package:** 更新依赖包 ([b3b2ada](https://github.com/spruce-hub/spruce-ui/commit/b3b2ada14cb58575eab8e20ffc8682a32163e066))
+
+
+
 ## [1.0.9](https://github.com/spruce-hub/spruce-ui/compare/v1.0.8...v1.0.9) (2023-09-19)
 
 
@@ -141,8 +155,8 @@
 ### ✨Features
 
 * **icon:** add `YIcon` component ([04b2468](https://github.com/spruce-hub/spruce-ui/commit/04b24680977fd6269012b5cab12f6c0caa2e0820))
-* **icon:** add FollowFilled icon ([40cf15a](https://github.com/spruce-hub/spruce-ui/commit/40cf15ad185ba280e6631dad4acf9de252beb3e6))
 * **icon:** add email icon ([117a229](https://github.com/spruce-hub/spruce-ui/commit/117a2298017b67a723cf901107a74ed20eacb440))
+* **icon:** add FollowFilled icon ([40cf15a](https://github.com/spruce-hub/spruce-ui/commit/40cf15ad185ba280e6631dad4acf9de252beb3e6))
 
 
 
@@ -221,9 +235,9 @@
 
 ### 🛠️Chore
 
+* **git:** 忽略自动创建的全局声明文件 ([b1c14d8](https://github.com/spruce-hub/spruce-ui/commit/b1c14d814fd82429899cf12cac51c93f953c9ff8))
 * **package:** update config ([97c4763](https://github.com/spruce-hub/spruce-ui/commit/97c47634eff53483f0515341c500c99c00c5b6b3))
 * **README:** update README.md ([5c9daa8](https://github.com/spruce-hub/spruce-ui/commit/5c9daa8d71f4f7f65b4352c35f4e2efdc9d0db5d))
-* **git:** 忽略自动创建的全局声明文件 ([b1c14d8](https://github.com/spruce-hub/spruce-ui/commit/b1c14d814fd82429899cf12cac51c93f953c9ff8))
 
 
 
@@ -255,10 +269,10 @@
 
 ### ✨Features
 
-* **icons:** add so many icons ([cf0e53c](https://github.com/spruce-hub/spruce-ui/commit/cf0e53c44cf8b132fec32925119d4d75c1139e1a))
 * add icon "move" and "pen-edit" ([3ff3ec7](https://github.com/spruce-hub/spruce-ui/commit/3ff3ec75b6ffd0ec6cb4aeab28a3f3ad6ed90352))
 * **component:** svg should have type ([46accd9](https://github.com/spruce-hub/spruce-ui/commit/46accd9ce5027986459371bf2757907d1b23e8ba))
 * first commit ([d1aacac](https://github.com/spruce-hub/spruce-ui/commit/d1aacac4ed25e52c9fb025a64031e8ae7ef60581))
+* **icons:** add so many icons ([cf0e53c](https://github.com/spruce-hub/spruce-ui/commit/cf0e53c44cf8b132fec32925119d4d75c1139e1a))
 
 
 ### 🐛Bug Fixes
@@ -273,10 +287,10 @@
 
 ### 🛠️Chore
 
-* update config ([66fcca0](https://github.com/spruce-hub/spruce-ui/commit/66fcca0b333ca4c2cfe8c5267f6e0cc46ab1f93e))
-* update package.json ([333ac85](https://github.com/spruce-hub/spruce-ui/commit/333ac85e6fa84c44df03c4e1e3bd6cb0ca558200))
 * scope is [@spruce-hub](https://github.com/spruce-hub) ([8340ef9](https://github.com/spruce-hub/spruce-ui/commit/8340ef986ca5dca594d6c8b7277a719253b920dc))
+* update config ([66fcca0](https://github.com/spruce-hub/spruce-ui/commit/66fcca0b333ca4c2cfe8c5267f6e0cc46ab1f93e))
 * update config ([43eda94](https://github.com/spruce-hub/spruce-ui/commit/43eda94269a80859cda217a2eca796bf3aa8c706))
+* update package.json ([333ac85](https://github.com/spruce-hub/spruce-ui/commit/333ac85e6fa84c44df03c4e1e3bd6cb0ca558200))
 * 更新开发工具的版本要求 ([743817d](https://github.com/spruce-hub/spruce-ui/commit/743817d275f9be1f84138451e4afd3ef1ae06600))
 
 
