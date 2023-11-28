@@ -17,7 +17,7 @@
 
 ## 特性
 
-- Composition API
+- Composition API1
 - TypeScript
 - SCSS
 
