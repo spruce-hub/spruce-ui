@@ -26,6 +26,7 @@ import {
   Dialog,
   Save,
   Download,
+  AddToList,
 } from '@spruce-hub/icons'
 
 const groupIcons = [
@@ -54,6 +55,7 @@ const groupIcons = [
   Dialog,
   Save,
   Download,
+  AddToList,
 ]
 </script>
 
