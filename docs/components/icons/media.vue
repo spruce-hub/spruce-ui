@@ -10,9 +10,21 @@ import {
   Email,
   EmailLine,
   Servers,
+  VideoLine,
 } from '@spruce-hub/icons'
 
-const mediaIcons = [Phone, Telephone, Pic, Service, Servers, Keyboard, Print, Email, EmailLine]
+const mediaIcons = [
+  Phone,
+  Telephone,
+  Pic,
+  Service,
+  Servers,
+  Keyboard,
+  Print,
+  Email,
+  EmailLine,
+  VideoLine,
+]
 </script>
 
 <template>

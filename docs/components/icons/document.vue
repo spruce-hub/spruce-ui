@@ -11,6 +11,8 @@ import {
   PendingPay,
   Date,
   Audit,
+  ElectronicManual,
+  PaperManual,
 } from '@spruce-hub/icons'
 
 const groupIcons = [
@@ -24,6 +26,8 @@ const groupIcons = [
   PendingPay,
   Date,
   Audit,
+  ElectronicManual,
+  PaperManual,
 ]
 </script>
 
