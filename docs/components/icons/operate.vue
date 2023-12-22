@@ -27,6 +27,10 @@ import {
   Save,
   Download,
   AddToList,
+  DownloadCircle,
+  DownloadSimple,
+  ImportList,
+  ExportList,
 } from '@spruce-hub/icons'
 
 const groupIcons = [
@@ -56,6 +60,10 @@ const groupIcons = [
   Save,
   Download,
   AddToList,
+  DownloadCircle,
+  DownloadSimple,
+  ImportList,
+  ExportList,
 ]
 </script>
 
