@@ -11,6 +11,8 @@ import {
   EmailLine,
   Servers,
   VideoLine,
+  InProgress,
+  ClockLine,
 } from '@spruce-hub/icons'
 
 const mediaIcons = [
@@ -24,6 +26,8 @@ const mediaIcons = [
   Email,
   EmailLine,
   VideoLine,
+  InProgress,
+  ClockLine,
 ]
 </script>
 
